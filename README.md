@@ -1,5 +1,9 @@
 My personal website!
 
-Template credit to https://github.com/codrops/OnScrollEffectLayout
+Template credits to:
+ - https://github.com/codrops/OnScrollEffectLayout
+ - https://github.com/codrops/ResponsiveIconGrid 
 
-More improvements to come soon!
+ Improvements in the works:
+ - An interactive map of where I have been in the world 
+ - An efficient contact page with a lot of links to my public profiles
