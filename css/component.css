@@ -9,6 +9,12 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon/icomoon.svg') format('svg');
+}
+
+
 /* General grid styles */
 .cbp-ig-grid {
 	list-style: none;
