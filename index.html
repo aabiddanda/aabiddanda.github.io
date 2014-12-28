@@ -8,109 +8,50 @@
 		<meta name="description" content="Arjun Biddanda's Home Page" />
 		<meta name="keywords" content="Arjun Biddanda" />
 		<meta name="author" content="Arjun Biddanda" />
-		<!-- <link rel="stylesheet" type="text/css" href="css/test.css" /> -->
+		
+		<!-- Including FLAT UI -->
+		<link href="dist/css/vendor/bootstrap.min.css" rel="stylesheet">
+		<link href="dist/css/flat-ui.css" rel="stylesheet">
 
-		<style>
-		html, body {
-			margin: 0px;
-			background: #f0f0f0;
-		}
-
-		img.frame {
-			border: 10px solid #eee;
-		}
-
-		a, a:link, a:visited {
-			text-decoration: none;
-			color: #3d3d3d;
-			border-bottom: 1px dotted #b7b7b7
-		}
-
-		/*The actual body stuff*/
-		.content {
-			width: 1000px;
-			margin: 20px auto 20px auto;
-			font: normal 10pt 'Lucida Grande', Verdana, Arial, Sans-Serif;
-		}
-
-		strong {
-			font-variant: small-caps;
-			font-size: 15px;	
-		}
-
-		header { 
-			font-variant: small-caps;
-			font-size: 20px;
-		}
-
-		.block-left {
-			float: left
-		}
-
-		.block-right {
-			width: 400px;
-			float: left;
-			margin-left: 20px;
-			line-height: 150%;
-			text-align: justify;
-		}
-
-		.block-bottom {
-			clear: both;
-			float: bottom;
-			text-align: center;
-			color:#1e1e1e;
-			padding-top: 10px;
-		}
-		</style>
-		<style type="text/css"></style>
 	</head>
-	<body>
-		<div class="content">
-			<div class="block-left"> 
-				<img class="frame" src="img/cornell.jpg" width="400">
-				<br>
-				<!-- <img class="frame" src="img/cat1.jpg" width="400"> -->
-			</div>
-			<div class="block-right"> 
-			<!-- Need to update here -->
-			<header>Arjun Biddanda</header>
-			<br>
-			<a href="mailto:aab227@cornell.edu">aab227@cornell.edu</a>
-			<br>
-			<i>
-			102 Weill Hall
-			<br>
-			237 Tower Rd
-			<br>
-			Ithaca, NY 14853
-			<br>
-			<i>
 
+	<body>
+	<div class="container">
+		<div class="col-md-5">
+	    <img src="img/cornell.jpg" width="400" class="img-rounded">
+      <p class="img-comment"> Far Above Cayuga's Waters (A Cornell sunset over Cayuga Lake)</p>
+		</div>
+		<div class="col-md-5">
+			<header>Arjun Biddanda</header>
+				<a href="mailto:aab227@cornell.edu">aab227@cornell.edu</a>
+				<br>
+				<i>
+				102 Weill Hall
+				<br>
+				237 Tower Rd
+				<br>
+				Ithaca, NY 14853
+				<br>
+				<i>
+			<span><a class="fui-linkedin" href="http://www.linkedin.com/in/arjunbiddanda"></a></span>
+			<span><a class="fui-github" href="http://github.com/arjunbiddanda"></a></span>
 			<br>
+			<br>
+
 			<strong>Research</strong>
 			<p> I am currently a senior at Cornell University studying Computer Science. My interests are in taking methods from Machine Learning, Graph Theory, and Statistics and applying them to large-scale genomic problems.</p>
-			<p> Currently I am working in <a href="http://keinanlab.cb.bscb.cornell.edu">Alon Keinan's Lab</a> studying the effects of sex-biased admixture and developing software to better analyze the X-chromosome in genome-wide association studies.</p>	
+			<p> Currently I am working in <a href="http://keinanlab.cb.bscb.cornell.edu">Alon Keinan's Lab</a> studying the effects of sex-biased admixture and developing software to analyze the X-chromosome in Genome-Wide association studies.</p>
 
+		</div>
 
-			<strong>Software</strong>
-			<br>
-			<p>I host most of my software on my <a href="http://github.com/arjunbiddanda">GitHub page</a>. A couple of interesting projects with genomic applications are below:
-			</p>
-			<ul>
-				<i>An <a href="http://github.com/arjunbiddanda/Genomic_Pipelines/tree/master/IBD_Analysis_Pipeline"> IBD analysis pipeline </a> - useful for inferring haplotype blocks from unphased SNP data</i>
-				<i>
-				<br> 
-				<i>An <a href="http://github.com/arjunbiddanda/Genomic_Pipelines/tree/master/ADMIXTURE_Plotting_Pipeline">ADMIXTURE plotting pipeline</a> - Used in conjuction with ADMIXTURE and DISTRUCT for nicely plotting results
-				</i>	
-
-			</ul>
-
-			</div>
-			<div class="block-bottom">
-				"
-				Research is formalized curiosity. It is poking and prying with a purpose. ~ Zora Neale Hurston
-				" 
+	</div>
+			<div class="container">
+				<div class="pvl">
+				  <blockquote>
+	          <p>"Research is formalized curiosity. It is poking and prying with a purpose."</p>
+	          <small>Zora Neale Hurston</small>
+	        </blockquote>
+				</div>
 			</div>
 
 		</div>
