@@ -220,6 +220,7 @@
   content: "\e631";
   }
 .fui-mail:before {
+  font-size: 2.0em;
   content: "\e632";
   }
 .fui-lock:before {
@@ -292,6 +293,7 @@
   content: "\e649";
   }
 .fui-spotify:before {
+  font-size: 2.0em;
   content: "\e64a";
   }
 .fui-skype:before {
@@ -304,6 +306,7 @@
   content: "\e64d";
   }
 .fui-linkedin:before {
+  font-size: 2.0em;
   content: "\e64e";
   }
 .fui-google-plus:before {
@@ -346,6 +349,7 @@
   content: "\e65b";
   }
 .fui-github:before {
+  font-size: 2.0em;
   content: "\e65c";
   }
 .fui-foursquare:before {
