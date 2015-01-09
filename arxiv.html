@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 	<head>
 		<meta charset="UTF-8" />
@@ -27,6 +26,41 @@
   	}
 	</style>
 
+	<!-- 
+		This is where we will actually send the requests
+		-->
+	<script type="text/javascript">
+		function httpGet(theUrl) {
+	    var xmlHttp = null;
+
+	    xmlHttp = new XMLHttpRequest();
+	    xmlHttp.open( "GET", theUrl, false );
+	    xmlHttp.send( null );
+	    return xmlHttp.responseText;
+	  }
+
+	  // Need to further understand the ArXiv API
+		function random_request(){
+			var today = new Date();
+			var day = today.getDate();
+			var month = today.getMonth() + 1;
+			var year = today.getFullYear();
+
+			if (day < 10){
+				day = '0' + day;
+			}
+			if (month < 10){
+				month = '0' + month;
+			}
+
+			alert("xmlHttp");
+			// var txt = httpGet("http://export.arxiv.org/apiquery?search_query=all:electron&start=10&max_results=10");
+
+			// alert(txt);
+		}
+	</script>
+
+
 	<body>
 		<div class="top-two">
 			<div align="center" class="container">
@@ -37,7 +71,7 @@
 					</p>
 				</div>
 			  <div align="center">
-				<a href="#fakelink"><img src="dist/img/icons/svg/compas.svg" width="175" alt="Compas"></a>
+				<input type="image" onclick="random_request()" src="dist/img/icons/svg/compas.svg" width="175" alt="Compas"></input>
 				<br>
 	      </div>
 
