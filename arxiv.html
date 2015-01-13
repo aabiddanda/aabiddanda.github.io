@@ -39,24 +39,34 @@
 	    return xmlHttp.responseText;
 	  }
 
-	  // Need to further understand the ArXiv API
-		function random_request(){
-			var today = new Date();
-			var day = today.getDate();
-			var month = today.getMonth() + 1;
-			var year = today.getFullYear();
+	  // Method to get the different categories
+	  function random_category(){
+	  	// Need to build this into the different categories
+	  	var categories = ["astro-ph", "cond-mat", "gr-qc", "hep-ex", "hep-lat", "hep-ph", "hep-th", "math-ph", "nlin", "nucl-ex", "nucl-th", "physics", "quant-ph", "math.AG", "math.AT", "math.AP", "math.CT", "math.CA", "math.CO", "math.AC", "math.CV", "math.DG", "math.DS", "math.FA", "math.GM", "math.GN", "math.GT", "math.GR", "math.HO", "math.IT", "math.KT", "math.LO", "math.MP", "math.MG", "math.NT", "math.NA", "math.OA", "math.OC", "math.PR", "math.QA", "math.RT", "math.RA", "math.SP", "math.ST", "math.SG"];
+	  	var r = Math.floor((Math.random() * categories.length));
+	  	// alert(categories[r])
+	  	return categories[r]
+	  }
 
-			if (day < 10){
-				day = '0' + day;
-			}
-			if (month < 10){
-				month = '0' + month;
-			}
+		function make_request(){
+			// var today = new Date();
+			// var day = today.getDate();
+			// var month = today.getMonth() + 1;
+			// var year = today.getFullYear();
 
-			alert("xmlHttp");
-			// var txt = httpGet("http://export.arxiv.org/apiquery?search_query=all:electron&start=10&max_results=10");
+			// if (day < 10){
+			// 	day = '0' + day;
+			// }
+			// if (month < 10){
+			// 	month = '0' + month;
+			// }
 
-			// alert(txt);
+			// We are searching by the category here
+			var request = "http://export.arxiv.org/api/query?search_query=cat:".concat(random_category(),"&sortBy=submittedDate&sortOrder=descending")
+
+			var txt = httpGet(request);
+
+			alert(txt);
 		}
 	</script>
 
@@ -71,7 +81,7 @@
 					</p>
 				</div>
 			  <div align="center">
-				<input type="image" onclick="random_request()" src="dist/img/icons/svg/compas.svg" width="175" alt="Compas"></input>
+				<input type="image" onclick="make_request()" src="dist/img/icons/svg/compas.svg" width="175" alt="Compas"></input>
 				<br>
 	      </div>
 
