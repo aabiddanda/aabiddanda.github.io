@@ -30,43 +30,44 @@
 		This is where we will actually send the requests
 		-->
 	<script type="text/javascript">
-		function httpGet(theUrl) {
-	    var xmlHttp = null;
-
-	    xmlHttp = new XMLHttpRequest();
-	    xmlHttp.open( "GET", theUrl, false );
-	    xmlHttp.send( null );
-	    return xmlHttp.responseText;
-	  }
-
-	  // Method to get the different categories
+		// Method to get the different categories
 	  function random_category(){
 	  	// Need to build this into the different categories
 	  	var categories = ["astro-ph", "cond-mat", "gr-qc", "hep-ex", "hep-lat", "hep-ph", "hep-th", "math-ph", "nlin", "nucl-ex", "nucl-th", "physics", "quant-ph", "math.AG", "math.AT", "math.AP", "math.CT", "math.CA", "math.CO", "math.AC", "math.CV", "math.DG", "math.DS", "math.FA", "math.GM", "math.GN", "math.GT", "math.GR", "math.HO", "math.IT", "math.KT", "math.LO", "math.MP", "math.MG", "math.NT", "math.NA", "math.OA", "math.OC", "math.PR", "math.QA", "math.RT", "math.RA", "math.SP", "math.ST", "math.SG"];
 	  	var r = Math.floor((Math.random() * categories.length));
-	  	// alert(categories[r])
 	  	return categories[r]
 	  }
 
+		function httpGet(url) {
+	    var xmlHttp = null;
+
+	    xmlHttp = new XMLHttpRequest();
+	    xmlHttp.open( "GET", url, false );
+	    xmlHttp.send( null );
+	    return xmlHttp.responseXML;
+	  }
+
+	  // Returns the URL for the actual PDF that we may need
+	  function getID(id_array){
+	  	var r = Math.floor((Math.random() * id_array.length) + 1);
+	  	var xmlString = id_array[r];
+	  	// TODO: this errors out sometimes, need to catch the respective strings that are doing this.
+	  	// Snippet below from http://css-tricks.com/snippets/javascript/strip-html-tags-in-javascript/
+	  	// replacing the abstract with a direct pdf link
+	  	xmlString = new XMLSerializer().serializeToString(xmlString).replace(/(<([^>]+)>)/ig,"").replace("abs", "pdf");
+	  	return xmlString.concat(".pdf");
+	  }
+
 		function make_request(){
-			// var today = new Date();
-			// var day = today.getDate();
-			// var month = today.getMonth() + 1;
-			// var year = today.getFullYear();
-
-			// if (day < 10){
-			// 	day = '0' + day;
-			// }
-			// if (month < 10){
-			// 	month = '0' + month;
-			// }
-
 			// We are searching by the category here
+			// Might want to display only 10 or so
 			var request = "http://export.arxiv.org/api/query?search_query=cat:".concat(random_category(),"&sortBy=submittedDate&sortOrder=descending")
 
-			var txt = httpGet(request);
-
-			alert(txt);
+			var data = httpGet(request);
+			var allIDs = data.getElementsByTagName("id");
+			var random_url = getID(allIDs);
+			// alert(random_url);
+			window.open(random_url, "_blank");
 		}
 	</script>
 
