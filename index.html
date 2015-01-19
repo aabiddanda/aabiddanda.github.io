@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
@@ -11,8 +11,11 @@
 		
 		<!-- Including FLAT UI -->
 		<link href="dist/css/vendor/bootstrap.min.css" rel="stylesheet">
-		<link href="dist/css/flat-ui.css" rel="stylesheet">
-
+		<link href="dist/css/flat-ui.min.css" rel="stylesheet">
+		
+		<!-- Borrowed from Stack Overflow post, would ideally like to get script files locally -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	</head>
 
 	<style type="text/css">
@@ -25,22 +28,35 @@
 	<div class="container">
 			<nav class="navbar navbar-inverse" role="navigation">
 	  <div class="navbar-header">
-	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+<!-- 	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
 	      <span class="sr-only">Toggle navigation</span>
-	    </button>
-	    <a class="navbar-brand" href="#">Arjun Biddanda</a>
+	    </button> -->
+	    <a class="navbar-brand">Arjun Biddanda</a>
 	  </div>
 	  <div class="collapse navbar-collapse" id="navbar-collapse-01">
 	    <ul class="nav navbar-nav">
-	      <li><a href="#fakelink">About Me</a></li>
-	      <li><a href="#fakelink">Contact Me</a></li>
-	      <li><a href="#fakelink">Projects</a></li>
+	      <li><a href="about.html">About Me</a></li>
+	     	<li class="dropdown">
+	     		<a class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+	     		<ul class="dropdown-menu">
+	     			<li><a href="stumbler.html"> Preprint Stumbler(v0.1)</a></li>
+	     		</ul>
+	     	</li>
+        <li class="dropdown">
+		      <a class="dropdown-toggle" data-toggle="dropdown">Contact Me<span class="caret"></span></a>
+		      <ul class="dropdown-menu">
+		        <li><a class="fui-mail" href="mailto:aab227@cornell.edu">  Email</a> </li>
+		        <li><a class="fui-github" href"http://github.com/arjunbiddanda">  Github</a></li>
+		        <li><a class="fui-linkedin" href="http://www.linkedin.com/in/arjunbiddanda">  LinkedIn</a></li>
+		        <li><a class="fui-spotify" href="http://open.spotify.com/user/arjunbiddanda"> Spotify</a></li>
+		      </ul>
+		    </li>
 	    </ul>
 	  </div><!-- /.navbar-collapse -->
 	</nav><!-- /navbar -->
-		<div class="col-md-5">
-	    <img src="img/cornell.jpg" width="365" class="img-rounded">
-      <p class="img-comment"> Far Above Cayuga's Waters (A Cornell sunset over Cayuga Lake)</p>
+		<div align="center">
+	    <img src="img/cornell2.jpg" width="700" class="img-rounded">
+      <p class="img-comment"> Far Above Cayuga's Waters (Courtesy: Google Images)</p>
 		</div>
 
 <!-- 		<div class="col-md-5">
@@ -55,12 +71,6 @@
 			<h5><strong>Research</strong></h5>
 			<p> I am currently a senior at Cornell University studying Computer Science. My interests are in taking methods from Machine Learning, Graph Theory, and Statistics and applying them to large-scale genomic problems.</p>
 			<p> Currently I am working in <a href="http://keinanlab.cb.bscb.cornell.edu">Alon Keinan's Lab</a> studying the effects of sex-biased admixture and developing software to analyze the X-chromosome in Genome-Wide association studies.</p>
-
-			<strong>Projects</strong>
-			<ul>
-				<li><a href="stumbler.html"> Preprint Stumbler (v0.1)</a></li>
-			</ul>
-
 
 
 		</div> -->
