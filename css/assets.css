@@ -99,15 +99,6 @@ ul li a {
 	opacity: 0.5; 
 }
 
-.projects {
-	width: 300px;
-	margin: 0 auto;
-}
-
-.projects li a {
-	opacity: 0.8;
-}
-
 ul li a:hover { 
 	opacity: 1; 
 	-webkit-transition: all 0.2s ease-in-out; 
@@ -145,7 +136,19 @@ ul li a:hover {
 
   image-rendering: optimizeQuality; 
   opacity: 0.70;
-  /*filter: alpha();*/
   -ms-interpolation-mode: bicubic; 
   z-index: -2; 
+}
+
+.credit{
+	position: bottom;
+	max-width: 480px; 
+	padding: 75px; 
+	display: block; 
+	z-index: 10;
+	margin: 5% auto 0; 
+	color: #fff;
+	font-family: 'Roboto','helvetica neue', helvetica, arial, sans-serif; 
+	font-size: 0.75em;
+	font-weight: 200;
 }
