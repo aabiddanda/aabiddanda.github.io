@@ -62,7 +62,7 @@ body {
 }
 
 p { 
-	font-size: 1.3em; 
+	font-size: 1.5em; 
 	line-height: 1.35em; 
 	color: #fff;
 	padding: 0; 
@@ -96,7 +96,7 @@ ul li i {
 
 ul li a { 
 	font-family: 'Roboto', 'helvetica neue', helvetica, arial, sans-serif; 
-	opacity: 0.5; 
+	opacity: 0.65; 
 }
 
 ul li a:hover { 
@@ -135,18 +135,21 @@ ul li a:hover {
   min-height: 100%;
 
   image-rendering: optimizeQuality; 
-  opacity: 0.70;
+  opacity: 0.80;
   -ms-interpolation-mode: bicubic; 
   z-index: -2; 
 }
 
 .credit{
-	position: bottom;
+	position: fixed;
+	bottom: 0;
 	max-width: 480px; 
-	padding: 75px; 
-	display: block; 
+	padding: 25px; 
+	/*display: block; */
 	z-index: 10;
-	margin: 5% auto 0; 
+	margin: 5% auto 0;
+	left: 0;
+	right: 0; 
 	color: #fff;
 	font-family: 'Roboto','helvetica neue', helvetica, arial, sans-serif; 
 	font-size: 0.75em;
