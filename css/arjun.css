@@ -1,6 +1,8 @@
 /*
 This is an adpatation of a CSS file used by David Marby (http://dmarby.se/)
 */
+@import url(//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic);
+@import url(//fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
 /* CSS reset */
 html, body, div, span, applet, object, iframe,
@@ -31,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -83,7 +86,7 @@ h2 {
 
 p { 
 	font-size: 1.30em; 
-	line-height: 1.25em; 
+	line-height: 1.20em; 
 	color: #fff;
 	padding: 0; 
 	margin: 30px 0 20px; 
@@ -93,6 +96,21 @@ p {
 
 p strong {
   font-weight: 600;
+}
+
+/* CSS for snippet captions...*/
+ps {
+	font-size: 1.00em; 
+	line-height: 1.00em; 
+	color: #fff;
+	padding: 0; 
+	margin: 30px 0 20px; 
+	font-family: 'Roboto','helvetica neue', helvetica, arial, sans-serif; 
+	font-weight: 300;
+}
+
+ps strong{
+	font-weight: 600;
 }
 
 a { 
@@ -131,25 +149,26 @@ ul li a:hover {
 	-webkit-transition: all 0.2s ease-in-out; 
 }
 
+/* Code highlighting things...*/
+
 /* centered columns styles */
 .row-centered {
     text-align:center;
+    display: block;
 }
+
 .col-centered {
     display:inline-block;
     float:none;
     width: 300px;
-    /* reset the text-align */
-    /*text-align:left;*/
-    /* inline-block space fix */
-    /*margin-right:-4px;*/
+    vertical-align: text-top;
 }
 
 .logo h1 a { 
 	width: 200px; 
 	height: 200px; 
 	display: block; 
-	background: url('../img/Biddanda.png') center center no-repeat; 
+	background: url('/img/Biddanda.png') center center no-repeat; 
 	text-indent: -9999px; 
 	padding: 0; 
 	margin: 0 auto; 
@@ -168,6 +187,25 @@ ul li a:hover {
 	margin: 2% auto 0; 
 }
 
+#snippet {
+  /*padding: 1em;*/
+  text-align: left;
+  /*background: #500;*/
+}
+
+#snippet pre {
+	tab-size: 2;
+  margin: 0em;
+}
+
+#snippet pre code {
+	display: block; 	
+	/*height: 15em;*/
+  padding: 1em;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font: normal 10pt Ubuntu Mono;
+}
 
 .bg {
 	position: fixed;
@@ -183,6 +221,9 @@ ul li a:hover {
   z-index: -2; 
 }
 
+
+
+/* TODO : figure out how to adapt for longer articles*/
 .credit{
 	position: fixed;
 	bottom: 0;
