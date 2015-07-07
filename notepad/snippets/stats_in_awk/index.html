@@ -5,8 +5,8 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> 
 		<title>Stats in Awk</title>
-		<meta name="description" content="Arjun Biddanda" />
-		<meta name="keywords" content="Arjun Biddanda" />
+		<meta name="description" content="Stats in Awk" />
+		<meta name="keywords" content="stats, awk" />
 		<meta name="author" content="Arjun Biddanda" />
 
 		<link href='//fonts.googleapis.com/css?family=Roboto:300,500' rel='stylesheet' type='text/css'>
@@ -28,25 +28,34 @@
 		 	 	<pre><code class="hljs bash">
 		 	 	<span class="hljs-shebang">#!/bin/bash </span>
 		 	 	<span class="hljs-comment">-------------</span>
+		 	 	<span class="hljs-comment"># Usage : stats_awk &lt;filename&gt; &lt;column number&gt; </span>
 		 	 	<span class="hljs-function">
 		 	 	<span class="hljs-title">stats_awk</span> (){
 		 	 	</span>
 		 	 		file=<span class="hljs-variable">$1</span>
 		 	 		col=<span class="hljs-variable">$2</span>
-					n=$(wc -l $file| awk '{print $1}')
-					mean=$( awk -v c=$col -v n=$n 'NR > 1 {sum += $c;} END {print sum / n}' $file )
 
-					<span class="hljs-built-in">echo</span> <span class="hljs-string">"MEAN"</span>
-					<span class="hljs-built-in">echo</span> <span class="hljs-string">"<span class="hljs-variable">$mean</span>"</span> 
+					mean=$( awk -v c=$col -v n=$n '{sum+=$c} END {print sum / n}' $file )
+					n=$( echo <span class="hljs-variable">$mean</span> | awk '{print $2}' )
+					mean=$( echo <span class="hljs-variable">$mean</span> | awk '{print $1}' )
+					var=$( awk -v c=$col -v n=$n -v a=$avg '{sum+=($c-a)**2} END {print sum / (n-1)}' $file )
 
+					<span class="hljs-built-in">echo -e</span> <span class="hljs-string">"MEAN\tVAR\tN"</span>
+					<span class="hljs-built-in">echo -e</span> <span class="hljs-string">"<span class="hljs-variable">$mean</span>\t<span class="hljs-variable">$var</span>\t<span class="hljs-variable">$n</span>"</span> 
 		 	 	}
 		 	 	</code></pre>
 	 	 	</div>
 
 	 	 	</br>
+	 	 	<!-- TODO : make description better -->
 	 	 	<ps>
-	 	 	<strong> Simple Stats in Awk</strong></br> 
-	 	 	Sometimes when dealing with large files, we only care about one specific column of data and would like some level of summary statistics for this particular column. Reading a large datatable into R can take a while, but awk is a perfect tool for this! The above function can greatly improve your command-line efficiency when working with large datafiles. 
+	 	 	<strong> Simple Statistics in awk</strong></br> 
+	 	 	Reading a large data table into R can take an agonizingly long time. Often times we are also just interested in the data in one particular column. </br>
+	 	 	The function above computes the mean and variance of a particular column using awk. I plan to post later on some more complicated stats that can be derived using awk. </br>
+
+<!-- 	 	 	<strong><a href="http://invisible-island.net/mawk/">mawk</a></strong> is a perfect tool for doing exactly this. Mawk is an alternative version of the commonly used tool <strong><a href="http://www.grymoire.com/Unix/Awk.html">awk</a></strong>. -->
+
+	 	 	An excellent related post on awk and its particular uses in a bioinfomatics environment can be found <strong><a href="http://williamslab.bscb.cornell.edu/?page_id=235">here</a></strong>
 
 		</div>
 

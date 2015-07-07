@@ -85,8 +85,8 @@ h2 {
 }
 
 p { 
-	font-size: 1.30em; 
-	line-height: 1.20em; 
+	font-size: 1.25em; 
+	line-height: 1.10em; 
 	color: #fff;
 	padding: 0; 
 	margin: 30px 0 20px; 
@@ -172,7 +172,7 @@ ul li a:hover {
 	text-indent: -9999px; 
 	padding: 0; 
 	margin: 0 auto; 
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 	border: 2px #fff solid;
 	text-align: center; 
 	-webkit-border-radius: 50em;
