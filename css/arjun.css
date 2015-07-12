@@ -100,8 +100,8 @@ p strong {
 
 /* CSS for snippet captions...*/
 ps {
-	font-size: 1.00em; 
-	line-height: 1.00em; 
+	font-size: 1.10em; 
+	line-height: 1.10em; 
 	color: #fff;
 	padding: 0; 
 	margin: 30px 0 20px; 
@@ -216,7 +216,7 @@ ul li a:hover {
   min-height: 100%;
 
   image-rendering: optimizeQuality; 
-  opacity: 0.55;
+  opacity: 0.455555;
   -ms-interpolation-mode: bicubic; 
   z-index: -2; 
 }
