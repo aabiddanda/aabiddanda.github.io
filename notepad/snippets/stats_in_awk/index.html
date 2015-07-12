@@ -35,10 +35,10 @@
 		 	 		file=<span class="hljs-variable">$1</span>
 		 	 		col=<span class="hljs-variable">$2</span>
 
-					mean=$( awk -v c=$col -v n=$n '{sum+=$c} END {print sum / n}' $file )
+					mean=$( awk -v c=$col '{sum+=$c} END {print sum / NR "\t" NR}' $file )
 					n=$( echo <span class="hljs-variable">$mean</span> | awk '{print $2}' )
 					mean=$( echo <span class="hljs-variable">$mean</span> | awk '{print $1}' )
-					var=$( awk -v c=$col -v n=$n -v a=$avg '{sum+=($c-a)**2} END {print sum / (n-1)}' $file )
+					var=$( awk -v c=$col -v a=$avg '{sum+=($c-a)**2} END {print sum / (NR-1)}' $file )
 
 					<span class="hljs-built-in">echo -e</span> <span class="hljs-string">"MEAN\tVAR\tN"</span>
 					<span class="hljs-built-in">echo -e</span> <span class="hljs-string">"<span class="hljs-variable">$mean</span>\t<span class="hljs-variable">$var</span>\t<span class="hljs-variable">$n</span>"</span> 
@@ -50,10 +50,7 @@
 	 	 	<!-- TODO : make description better -->
 	 	 	<ps>
 	 	 	<strong> Simple Statistics in awk</strong></br> 
-	 	 	Reading a large data table into R can take an agonizingly long time. Often times we are also just interested in the data in one particular column. </br>
-	 	 	The function above computes the mean and variance of a particular column using awk. I plan to post later on some more complicated stats that can be derived using awk. </br>
-
-<!-- 	 	 	<strong><a href="http://invisible-island.net/mawk/">mawk</a></strong> is a perfect tool for doing exactly this. Mawk is an alternative version of the commonly used tool <strong><a href="http://www.grymoire.com/Unix/Awk.html">awk</a></strong>. -->
+	 	 	Reading a large data table into R can take an agonizingly long time. Often times we are also just interested in the data in one particular column. The function above computes the mean and variance of a particular column using awk. I plan to post later on some more complicated stats that can be computed using awk. A more high-performance version of awk is <strong> <a href="http://invisible-island.net/mawk/">mawk</a></strong>, but it only captures a subset of the functionality that awk has. For datatables that are very large (~30-100 MB), the difference between awk and mawk is made apparent.  
 
 	 	 	An excellent related post on awk and its particular uses in a bioinfomatics environment can be found <strong><a href="http://williamslab.bscb.cornell.edu/?page_id=235">here</a></strong>
 
