@@ -10,7 +10,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.20;
 }
 
 ol, ul {
@@ -165,26 +165,6 @@ ul li a:hover {
 	display: block; 
 	z-index: 10;
 	margin: 2% auto 0; 
-}
-
-#snippet {
-  /*padding: 1em;*/
-  text-align: left;
-  /*background: #500;*/
-}
-
-#snippet pre {
-	tab-size: 2;
-  margin: 0em;
-}
-
-#snippet pre code {
-	display: block; 	
-	/*height: 15em;*/
-  padding: 1em;
-  overflow-y: auto;
-  overflow-x: hidden;
-  font: normal 10pt Ubuntu Mono;
 }
 
 .bg {
