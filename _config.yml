@@ -1,7 +1,7 @@
 # Site settings
 title: Arjun Biddanda
 email: abiddanda@uchicago.edu
-description: My Blog (Just trying out jekyll)
+description: Arjun Biddanda's Homepage
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 twitter_username: arjunbiddanda

@@ -5,12 +5,9 @@ date:   2015-07-15 22:37:23
 categories: snippet
 ---
 
-
-<img class="bg" src="/img/chicago_skyline.jpg">
-
 <div align="left">
 
-{% highlight bash %}
+{% highlight bash tabsize=2 %}
 
 	stats_awk (){
 	file=$1
@@ -25,7 +22,7 @@ categories: snippet
 {% endhighlight %}
 
 <p>
-Reading a large data table into R can take an agonizingly long time. Let this function do things faster for you. Consider using <strong><a href="http://invisible-island.net/mawk/">mawk</a></strong> for higher performance. 
+Reading a large data table into R can take an agonizingly long time, especailly if you just want some quick summary statistics of one column of data. Let this function do things faster for you. Consider using <strong><a href="http://invisible-island.net/mawk/">mawk</a></strong> for higher performance. 
 </p>
 </div>
 
