@@ -24,5 +24,19 @@ categories: snippet
 <p>
 Reading a large data table into R can take an agonizingly long time, especailly if you just want some quick summary statistics of one column of data. Let this function do things faster for you. Consider using <strong><a href="http://invisible-island.net/mawk/">mawk</a></strong> for higher performance. 
 </p>
+
+<p>
+<strong>EDIT:</strong> 
+
+Using the <strong> <a href="https://cran.r-project.org/web/packages/data.table/index.html">data.table</a></strong> package in R yields times that are close to the implementation above with <strong><a href="http://invisible-island.net/mawk/">mawk</a></strong> but you get more summary statistics. The function is below:
+
+{% highlight bash tabsize=2 %}
+
+# Usage : rsummary <filename> <columnnumber>
+rsummary(){ R --vanilla --slave -e 'library(data.table); t <- fread("'$1'"); summary(t$V'$2')' }
+
+{% endhighlight %}
+
+</p>	
 </div>
 
