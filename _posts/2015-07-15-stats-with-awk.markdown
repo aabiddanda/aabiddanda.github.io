@@ -8,7 +8,7 @@ categories: snippet
 <div align="left">
 
 {% highlight bash tabsize=2 %}
-
+	# Usage : stats_awk <filename> <columnnumber>
 	stats_awk (){
 	file=$1
 	col=$2
@@ -28,7 +28,7 @@ Reading a large data table into R can take an agonizingly long time, especailly 
 <p>
 <strong>EDIT:</strong> 
 
-Using the <strong> <a href="https://cran.r-project.org/web/packages/data.table/index.html">data.table</a></strong> package in R yields times that are close to the implementation above with <strong><a href="http://invisible-island.net/mawk/">mawk</a></strong> but you get more summary statistics. The function is below:
+Using the <strong> <a href="https://cran.r-project.org/web/packages/data.table/index.html">data.table</a></strong> package in R yields times that are close (but still not as fast) to the implementation above with <strong><a href="http://invisible-island.net/mawk/">mawk</a></strong> but you get more summary statistics. The function is below:
 
 {% highlight bash tabsize=2 %}
 
