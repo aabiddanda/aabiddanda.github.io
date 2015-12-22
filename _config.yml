@@ -1,17 +1,37 @@
-# Site settings
+permalink   : /:categories/:year/:title/
+markdown    : redcarpet
+redcarpet:  
+  input : GFM
+
+gems: [jekyll-paginate]
+
+paginate: 2 #6
+comments: true
+paginate_path: "/page/:num"
+
+source: source
+destination: _site
+sass:
+  sass_dir: _scss
+  style: compressed
+
+# How do you change the background here?
+cover: /assets/images/default-cover.png
+
+# site title, description, meta_description, meta_keywords
+name: Arjun Biddanda
 title: Arjun Biddanda
-email: abiddanda@uchicago.edu
-description: Arjun Biddanda's Homepage
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
-twitter_username: arjunbiddanda
-github_username:  arjunbiddanda
+description: "Home"
+keywords: "Arjun Biddanda, population, genetics, blog"
+url: http://arjunbiddanda.github.io
+baseurl: ""
+domain_name: arjunbiddanda.github.io
+disqus_shortname: "arjunbiddanda"
 
-# Build settings
-markdown: kramdown
-kramdown:
- input : GFM
+author:
+  name      : Arjun Biddanda
+  email     : abiddanda[at]uchicago.edu
+  url       : arjunbiddanda.github.io
+  twitter   : http://twitter.com/arjunbiddanda
+  github    : http://github.com/arjunbiddanda
 
-# Handling Reading
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
