@@ -6,9 +6,9 @@ permalink: /about/
 
 Hello, I'm Arjun Biddanda
 
-I am a PhD student at the [University of Chicago](http://www.uchicago.edu/) studying [Human Genetics](https://genes.uchicago.edu/)
+I am a PhD student at the [University of Chicago](http://www.uchicago.edu/) studying [Human Genetics](https://genes.uchicago.edu/).
 
-My research interests are in developing statistical methods to tackle problems in [Population Genetics](https://en.wikipedia.org/wiki/Population_genetics). 
+My research interests lie primarily in the fields of statistical and [population genetics](https://en.wikipedia.org/wiki/Population_genetics). 
 
 Previously I spent 4 wonderful years at [Cornell University](http://www.cornell.edu/) studying Computer Science. 
 
