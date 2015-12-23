@@ -13,8 +13,6 @@ permalink: /contact/
 </style>
 <head>
 
-<!-- TODO : need the icons to be bigger, and more spaced... -->
-
 <div align="center">
 	<ul id="contact">
 
@@ -26,6 +24,7 @@ permalink: /contact/
 	<a target="_blank" href="{{site.author.twitter}}"><i class="fa fa-twitter fa-4x"></i></a>
 	</li>
 
+<!-- TODO : revise the github icon -->
 	<li>
 	<a href="{{site.author.github}}"><i class="fa fa-github fa-4x"></i></a>
 	</li>

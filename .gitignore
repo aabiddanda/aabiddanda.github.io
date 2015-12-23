@@ -1,5 +1,5 @@
 *.DS_store
 .sass-cache/
 Gemfile*
-_drafts/*
+source/_drafts/*
 _site/*

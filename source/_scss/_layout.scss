@@ -185,11 +185,11 @@
 }
 
 .author-thumb {
-  opacity: .7;
+  opacity: .8;
   display: inline-block;
   transition: opacity .2s ease;
   padding: 5px;
-  border: 1px solid $white-color;
+  border: 3px solid $white-color;
 
   img {
     width: 100px;

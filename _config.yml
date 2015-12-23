@@ -5,7 +5,7 @@ redcarpet:
 
 gems: [jekyll-paginate]
 
-paginate: 2 #6
+paginate: 4 #6
 comments: true
 paginate_path: "/page/:num"
 
@@ -18,8 +18,9 @@ sass:
 # How do you change the background here?
 cover: /assets/images/default-cover.png
 
+# TODO : need to fill this up.
 # site title, description, meta_description, meta_keywords
-name: Arjun Biddanda
+name: 
 title: Arjun Biddanda
 description: "Home"
 keywords: "Arjun Biddanda, population, genetics, blog"
