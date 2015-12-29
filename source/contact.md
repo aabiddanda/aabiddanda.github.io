@@ -17,16 +17,16 @@ permalink: /contact/
 	<ul id="contact">
 
 	<li>
-	<a target="_blank" href="mailto:{{site.author.email}}"><i class="fa fa-envelope fa-4x"></i></a>
+	<a target="_blank" href="mailto:{{site.author.email}}"><i class="fa fa-envelope-square fa-5x"></i></a>
 	</li>
 
 	<li>
-	<a target="_blank" href="{{site.author.twitter}}"><i class="fa fa-twitter fa-4x"></i></a>
+	<a target="_blank" href="{{site.author.twitter}}"><i class="fa fa-twitter-square fa-5x"></i></a>
 	</li>
 
 <!-- TODO : revise the github icon -->
 	<li>
-	<a href="{{site.author.github}}"><i class="fa fa-github fa-4x"></i></a>
+	<a href="{{site.author.github}}"><i class="fa fa-github-square fa-5x"></i></a>
 	</li>
 
 	</ul> 

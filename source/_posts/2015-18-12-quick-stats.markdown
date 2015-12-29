@@ -2,7 +2,7 @@
 layout: post
 title:  "Quick Terminal Statistics"
 description: "Summary Statistics without leaving the Terminal"
-date:   2015-12-17 19:19:43
+date:   2015-12-28 19:19:43
 keywords: "terminal, statistics, awk, mawk"
 category: code snippet
 comments: true
@@ -10,7 +10,7 @@ comments: true
 
 Since I do computational research, I spend a great deal of my day at the command-line. It tends to be slightly annoying when I have to go into R or python and read in a file just to get a summary of a single column of data to make sure that something is not off in my data. I like to err on the cautious side and check the data that I am working with fairly frequently.
 
-I wrote two versions of a function to get summary statistics (really simple ones), one using R and one using [mawk]("http://invisible-island.net/mawk/"). [Mawk]("http://invisible-island.net/mawk/") is a variant on the ever-popular awk command-line utility that has been optimized for a subset of awk commands and is noticeably faster in most cases.  
+I wrote two versions of a function to get summary statistics on a particular column of data (really simple ones), one using R and one using [mawk]("http://invisible-island.net/mawk/"). [Mawk]("http://invisible-island.net/mawk/") is a variant on the ever-popular awk command-line utility that has been optimized for a subset of awk commands and is noticeably faster in most cases.  
 
 Using R:
 
@@ -39,7 +39,7 @@ mawk_stats (){
 
 For a comparison of the methods, I ran both functions on a 231 MB file representing phased genotypes from Chromosome 22 of the [1000 Genomes Consortium](http://www.1000genomes.org/) data. I used the functions `rsummary` and `mawk_stats` to calculate summary statistics of the phenotype across individuals, which I simulated as \\(Y \sim N(0,5)\\).
 
-The comparison of the two functions (along with a version coded in awk) can be shown by the below screenshot on my laptop. 
+The comparison of the two functions (along with a version of `mawk_stats` that uses awk) can be shown by the below screenshot on my laptop. 
 
 ![Test Screenshot]({{ "/images/blog_images/quick_stats_comparison2.png" | prepend: site.baseurl }})
 <div align="center">
