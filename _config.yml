@@ -9,7 +9,7 @@ paginate: 4 #6
 comments: true
 paginate_path: "/page/:num"
 
-source: source
+# source: source
 destination: _site
 sass:
   sass_dir: _scss
@@ -31,7 +31,7 @@ disqus_shortname: "arjunbiddanda"
 
 author:
   name      : Arjun Biddanda
-  email     : abiddanda[at]uchicago.edu
+  email     : abiddanda@uchicago.edu
   url       : arjunbiddanda.github.io
   twitter   : http://twitter.com/arjunbiddanda
   github    : http://github.com/arjunbiddanda
