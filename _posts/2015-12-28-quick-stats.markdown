@@ -37,13 +37,13 @@ mawk_stats (){
 
 {% endhighlight %}
 
-For a comparison of the methods, I ran both functions on a 231 MB file representing phased genotypes from Chromosome 22 of the [1000 Genomes Consortium](http://www.1000genomes.org/) data. I used the functions `rsummary` and `mawk_stats` to calculate summary statistics of the phenotype across individuals, which I simulated using R.
+For a comparison of the methods, I ran both functions on a 231 MB file representing phased genotypes from Chromosome 22 of the [1000 Genomes Consortium](http://www.1000genomes.org/) Phase 3 data. I used the functions `rsummary` and `mawk_stats` to calculate summary statistics of the phenotype across individuals, which I simulated using R.
 
-The comparison of the two functions (along with a version of `mawk_stats` that uses awk) can be shown by the below screenshot on my laptop. 
+The comparison of the two functions (along with a version of `mawk_stats` that uses awk) can be shown by the below screenshot. 
 
 ![StatComparison]({{ "/images/blog_images/quick_stats_comparison2.png"}})
 
-*top = `mawk`; middle = `awk`; bottom = `R`*
+<!-- *top = `mawk`; middle = `awk`; bottom = `R`* -->
 
 It is clear that using `awk` gains us a little speed over the version in R, but that could be attributable to the fact that we do not compute the median or quartiles. However, when we move to using `mawk` we see a huge speedup (2 seconds vs. 19 seconds).
 
