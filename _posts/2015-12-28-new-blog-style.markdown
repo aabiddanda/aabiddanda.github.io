@@ -4,7 +4,7 @@ title:  "New Blog"
 description: "Intro Blog Post"
 date:   2015-12-28 19:19:43
 keywords: "welcome, update, blog, Jekyll"
-category: blog post
+category: miscellaneous
 comments: false
 ---
 

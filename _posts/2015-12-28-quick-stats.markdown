@@ -4,7 +4,7 @@ title:  "Quick Terminal Statistics"
 description: "Summary Statistics without leaving the Terminal"
 date:   2015-12-28 19:19:43
 keywords: "terminal, statistics, awk, mawk"
-category: code snippet
+category: programming
 comments: true
 ---
 
