@@ -24,9 +24,8 @@ permalink: /contact/
 	<a target="_blank" href="{{site.author.twitter}}"><i class="fa fa-twitter-square fa-5x"></i></a>
 	</li>
 
-<!-- TODO : revise the github icon -->
 	<li>
-	<a href="{{site.author.github}}"><i class="fa fa-github-square fa-5x"></i></a>
+	<a target="_blank" href="{{site.author.github}}"><i class="fa fa-github-square fa-5x"></i></a>
 	</li>
 
 	</ul> 
