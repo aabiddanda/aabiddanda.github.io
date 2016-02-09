@@ -3,7 +3,7 @@ markdown    : redcarpet
 redcarpet:  
   input : GFM
 
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jekyll-gist]
 
 paginate: 4 #6
 comments: true
@@ -23,16 +23,16 @@ cover: /assets/images/default-cover.png
 name:
 title: Arjun Biddanda
 description: "Home"
-keywords: "Arjun Biddanda, population, genetics, blog"
-url: http://arjunbiddanda.github.io
+keywords: "Arjun Biddanda, population genetics, math, blog"
+url: http://abiddanda.github.io
 baseurl: ""
-domain_name: arjunbiddanda.github.io
+domain_name: abiddanda.github.io
 disqus_shortname: "arjunbiddanda"
 
 author:
   name      : Arjun Biddanda
   email     : abiddanda@uchicago.edu
-  url       : arjunbiddanda.github.io
+  url       : abiddanda.github.io
   twitter   : http://twitter.com/arjunbiddanda
-  github    : http://github.com/arjunbiddanda
+  github    : http://github.com/abiddanda
 

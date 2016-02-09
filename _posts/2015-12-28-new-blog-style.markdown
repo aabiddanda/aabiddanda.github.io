@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "New Blog"
+title:  "New Year, New Blog"
 description: "Intro Blog Post"
 date:   2015-12-28 19:19:43
 keywords: "welcome, update, blog, Jekyll"
