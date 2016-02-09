@@ -1,5 +1,5 @@
 permalink   : /:categories/:year/:title/
-markdown    : redcarpet
+markdown    : kramdown
 redcarpet:  
   input : GFM
 
