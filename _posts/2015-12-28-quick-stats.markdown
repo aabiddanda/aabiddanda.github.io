@@ -8,7 +8,7 @@ category: programming
 comments: true
 ---
 
-Since I do computational research, I spend a great deal of my day at the command-line. It tends to be slightly annoying when I have to go into R or python and read in a file just to get a summary of a single column of data to make sure that something is not off in my data. I like to err on the cautious side and check the data that I am working with fairly frequently.
+Since I do computational research, I spend a great deal of my day at the command-line. It tends to be slightly annoying when I have to go into R or python and read in a file just to get a summary of a single column of data to make sure that something is not wrong with the analyses. I like to err on the cautious side and check the data that I am working with fairly frequently.
 
 I wrote two versions of a function to get summary statistics on a particular column of data (really simple ones), one using R and one using [mawk]("http://invisible-island.net/mawk/"). [Mawk]("http://invisible-island.net/mawk/") is a variant on the ever-popular awk command-line utility that has been optimized for a subset of awk commands and is noticeably faster in most cases.  
 

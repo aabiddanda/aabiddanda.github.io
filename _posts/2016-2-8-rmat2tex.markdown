@@ -18,3 +18,8 @@ For accomplishing this we need a function to convert an R matrix to a valid LaTe
 So now that we are able to convert an R matrix into a string that represents the same matrix in LaTeX. From within an R chunk we can then print out LaTeX formatted string and if we include the chunk option `results = asis` we are able to see the LaTeX output. For a clean example please see this [gist](https://gist.githubusercontent.com/abiddanda/2b67282aa15c06fe31e7/raw/21e2ee60320829e172e13d97d61d2d131914abb1/r2mat_test.Rmd)
 
 While writing this function I also found the [`printr` package](http://yihui.name/printr/) which looks quite good for tables. However it is lacking a little bit in the clean representation of matrices. There are clearly some deficiencies in this first version of the function. Most notably is that it cannot handle matrices larger than 10 by 10. This can be remedied by allowing for dots within the matrix to represent intermediate values. I am hoping to resolve this soon.
+
+## Update 3/21/16:
+
+I have since found a way to extend the column and row limits on a matrix by including the line ``\setcounter{MaxMatrixCols}``. While this does not intelligently look for if the matrix is symmetric and uses dots in the representation, it is a decent fix for including more columns and rows. Just be warned that your eyes may hurt when going beyond more than 20 rows or so! 
+
