@@ -16,7 +16,7 @@ sass:
   style: compressed
 
 # How do you change the background here?
-cover: /assets/images/default-cover.png
+cover: /images/journey.jpg
 
 # TODO : need to fill this up.
 # site title, description, meta_description, meta_keywords

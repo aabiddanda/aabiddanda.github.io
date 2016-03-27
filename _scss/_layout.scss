@@ -162,9 +162,15 @@
 /**
  * Site Header
  */
-.site-header,
+.site-header{
+  background: url("../images/chicago.jpg"), no-repeat #fff scroll;
+  background-color: $primary-color;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .site-footer {
-  background: url("../images/journey.jpg"), no-repeat #fff scroll;
+  background: url("../images/chicago-footer.jpg"), no-repeat #fff scroll;
   background-color: $primary-color;
   background-repeat: no-repeat;
   background-size: cover;
@@ -180,7 +186,7 @@
 
   h1 {
     margin-top: 1em;
-    color: rgba($white-color, .75);
+    color: #000;
   }
 }
 
@@ -307,6 +313,7 @@ $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
 
   h1 {
     margin-bottom: .3em;
+    color: #000;
   }
 
   a {
@@ -321,6 +328,7 @@ $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
   .post-meta {
     display: block;
     margin-bottom: 1em;
+    color: #000;
   }
 
   &:after {
@@ -336,7 +344,7 @@ $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
 
 .post-meta {
   font-style: italic;
-  color: #aaa;
+  color: #000;
 }
 
 .posts {
@@ -357,7 +365,7 @@ $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
   margin-top: 1.5em;
 
   small, a {
-    color: rgba($white-color, .75);
+    color: #000;
   }
 
   small {
@@ -395,32 +403,3 @@ $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
   }
 }
 
-.github-corner {
-  &:hover .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
-}
-
-@keyframes octocat-wave {
-  0%,100% {
-    transform: rotate(0);
-  }
-
-  20%,60% {
-    transform: rotate(-25deg);
-  }
-
-  40%,80% {
-    transform: rotate(10deg);
-  }
-}
-
-@media (max-width: 500px) {
-  .github-corner:hover .octo-arm {
-    animation: none;
-  }
-
-  .github-corner .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
-}
