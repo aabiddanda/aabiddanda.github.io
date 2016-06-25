@@ -16,9 +16,6 @@ permalink: /contact/
 <div align="center">
 	<ul id="contact">
 
-	<li>
-	<a target="_blank" href="mailto:{{site.author.email}}"><i class="fa fa-envelope-square fa-5x"></i></a>
-	</li>
 
 	<li>
 	<a target="_blank" href="{{site.author.twitter}}"><i class="fa fa-twitter-square fa-5x"></i></a>
