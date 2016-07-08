@@ -1,0 +1,20 @@
+Title: R Matrices in LaTeX
+Date: 2016-03-21 8:00:00
+Tags: programming, R
+
+R is beautiful for working with matrices and data frames. I have started working in RMarkdown for most of my problem sets and reports due to the ability to create really nice plots and weave them seamlessly into the document.  
+
+The problem that I am addressing here is somewhat niche. The way that matrices are displayed after printing them from an R chunk is not that aesthetically pleasing. I have always been a huge fan of the typesetting for matrices in LaTeX, but doing this for (somewhat) large matrices by hand in LaTeX can be quite time-consuming. It would be quite easy if we could just convert an R matrix to a LaTeX chunk.
+
+For accomplishing this we need a function to convert an R matrix to a valid LaTeX string. Working with strings in R is also something that it really is not built for, but works reasonably well. The following function will give a valid LaTeX string for a given matrix. 
+
+[gist:id=2b67282aa15c06fe31e7,file=mat2tex.r]
+
+So now that we are able to convert an R matrix into a string that represents the same matrix in LaTeX. From within an R chunk we can then print out LaTeX formatted string and if we include the chunk option `results = asis` we are able to see the LaTeX output. For a clean example please see this [gist](https://gist.githubusercontent.com/abiddanda/2b67282aa15c06fe31e7/raw/21e2ee60320829e172e13d97d61d2d131914abb1/r2mat_test.Rmd)
+
+While writing this function I also found the [`printr` package](http://yihui.name/printr/) which looks quite good for tables. However it is lacking a little bit in the clean representation of matrices. There are clearly some deficiencies in this first version of the function. Most notably is that it cannot handle matrices larger than 10 by 10. This can be remedied by allowing for dots within the matrix to represent intermediate values. I am hoping to resolve this soon.
+
+## Update 3/21/16:
+
+I have since found a way to extend the column and row limits on a matrix by including the line ``\setcounter{MaxMatrixCols}``. While this does not intelligently look for if the matrix is symmetric and uses dots in the representation, it is a decent fix for including more columns and rows. Just be warned that your eyes may hurt when going beyond more than 20 rows or so! 
+
