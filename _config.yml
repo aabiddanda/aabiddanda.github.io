@@ -24,15 +24,15 @@ name:
 title: Arjun Biddanda
 description: "Home"
 keywords: "Arjun Biddanda, population genetics, math, blog"
-url: http://abiddanda.github.io
+url: http://aabiddanda.github.io
 baseurl: ""
-domain_name: abiddanda.github.io
+domain_name: aabiddanda.github.io
 disqus_shortname: "arjunbiddanda"
 
 author:
   name      : Arjun Biddanda
   email     : abiddanda@uchicago.edu
-  url       : abiddanda.github.io
-  twitter   : http://twitter.com/arjunbiddanda
-  github    : http://github.com/abiddanda
+  url       : aabiddanda.github.io
+  twitter   : http://twitter.com/aabiddanda
+  github    : http://github.com/aabiddanda
 
