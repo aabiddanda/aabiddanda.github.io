@@ -10,17 +10,12 @@ sys.path.append(os.curdir)
 
 from pelicanconf import *
 
-SITEURL = 'https://blog.alexandrevicenzi.com'
-FAVICON = SITEURL + '/images/favicon.ico'
+SITEURL = 'https://abiddanda.github.io'
+FAVICON = SITEURL + '/images/author.ico'
 RELATIVE_URLS = False
-
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
-DISQUS_SITENAME = "alexandrevicenziblog"
-GOOGLE_ANALYTICS = "UA-55543164-3"
-ADD_THIS_ID = 'ra-55adbb025d4f7e55'
+DISQUS_SITENAME = "abiddanda.github.io"
 
 USE_LESS = False

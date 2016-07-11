@@ -15,7 +15,7 @@ PYGMENTS_STYLE = 'monokai'
 
 ROBOTS = u'index, follow'
 
-THEME = u'/usr/local/lib/python3.5/site-packages/pelican/themes/Flex'
+THEME = u'/usr/local/lib/python3.5/site-packages/pelican/themes/Flex-1.2'
 PATH = u'content'
 TIMEZONE = u'America/Chicago'
 DEFAULT_LANG = u'en'
@@ -40,12 +40,6 @@ MENUITEMS = (('Archives', '/archives.html'),
              ('Categories', '/categories.html'),
              ('Tags', '/tags.html'),)
 
-#CC_LICENSE = {
-#    'name': 'Creative Commons Attribution-ShareAlike',
-#    'version': '4.0',
-#    'slug': 'by-sa'
-# }
-
 COPYRIGHT_YEAR = 2016
 
 DEFAULT_PAGINATION = 5
@@ -54,5 +48,3 @@ PLUGINS = ['pelican_gist']
 
 USE_LESS = True
 
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
