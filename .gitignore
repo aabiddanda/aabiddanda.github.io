@@ -1,6 +1,2 @@
-*.DS_store
-.sass-cache/
-Gemfile*
-_drafts/*
-_site/*
-images/draft_images/*
+__pycache__/
+output/
