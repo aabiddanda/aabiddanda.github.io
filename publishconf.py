@@ -10,7 +10,7 @@ sys.path.append(os.curdir)
 
 from pelicanconf import *
 
-SITEURL = 'https://abiddanda.github.io'
+SITEURL = 'https://aabiddanda.github.io'
 FAVICON = SITEURL + '/images/author.ico'
 RELATIVE_URLS = False
 

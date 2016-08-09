@@ -5,9 +5,9 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Arjun Biddanda'
 SITEURL = u'http://localhost:8000'
-SITENAME = u"Arjun Biddanda's Blog"
+SITENAME = u"Arjun Biddanda's Homepage"
 SITETITLE = AUTHOR
-SITESUBTITLE = u'Aspiring Mathematical Biologist'
+SITESUBTITLE = u'Ph.D Student in Human Genetics'
 SITELOGO = SITEURL + '/images/author.png'
 FAVICON = SITEURL + '/images/author.ico'
 BROWSER_COLOR = '#333333'
@@ -32,9 +32,10 @@ USE_FOLDER_AS_CATEGORY = True
 
 MAIN_MENU = True
 
-
-SOCIAL = (('github', 'https://github.com/abiddanda'),
-          ('twitter', 'https://twitter.com/aabiddanda'))
+SOCIAL = (('github', 'https://github.com/aabiddanda'),
+          ('twitter', 'https://twitter.com/aabiddanda'),
+          ('envelope-o', 'mailto:abiddanda@uchicago.edu'),
+          ('university', SITEURL + '/aabiddanda_cv2016.pdf'))
 
 MENUITEMS = (('Archives', '/archives.html'),
              ('Categories', '/categories.html'),

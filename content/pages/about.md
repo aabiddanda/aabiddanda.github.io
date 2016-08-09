@@ -2,9 +2,11 @@ Title: About
 Date: 2015-07-18 08:00
 Modified: 2015-07-18 08:00
 
-I am a PhD student at the [University of Chicago](http://www.uchicago.edu/) in the department of [Human Genetics](https://genes.uchicago.edu/). My research interests lie primarily in the fields of statistical and [population genetics](https://en.wikipedia.org/wiki/Population_genetics). 
+I am a PhD student in [Human Genetics](https://genes.uchicago.edu/) at the [University of Chicago](http://www.uchicago.edu/) working with [John Novembre](https://jnpopgen.org). I recieved my BSc in Computer Science from [Cornell University](http://www.cornell.edu/) in 2015. 
 
-Prior to the University of Chicago, I recieved my BSc from [Cornell University](http://www.cornell.edu/) in Computer Science.
 
-In my free time I enjoy traveling, playing ping-pong, and [cooking](https://github.com/arjunbiddanda/Recipes/blob/master/cookbook.pdf).
+My research interests are in theoretical and applied [population genetics](https://en.wikipedia.org/wiki/Population_genetics), particularly in humans. I'm interested in developing statistical and computational methods to investigate the evolutionary forces that have shaped human genotypic and phenotypic variation. Its an extremely exciting time to be working in this field due to the explosion of genomic data that is now available. 
+
+
+When not thinking about population genetic problems I enjoy traveling, playing table-tennis, and [cooking](https://github.com/arjunbiddanda/Recipes).
 
