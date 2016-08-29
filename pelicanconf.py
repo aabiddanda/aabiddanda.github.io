@@ -34,7 +34,6 @@ MAIN_MENU = True
 
 SOCIAL = (('github', 'https://github.com/aabiddanda'),
           ('twitter', 'https://twitter.com/aabiddanda'),
-          ('envelope-o', 'mailto:abiddanda@uchicago.edu'),
           ('university', SITEURL + '/aabiddanda_cv2016.pdf'))
 
 MENUITEMS = (('Archives', '/archives.html'),
@@ -45,7 +44,7 @@ COPYRIGHT_YEAR = 2016
 
 DEFAULT_PAGINATION = 5
 
-PLUGINS = ['pelican_gist']
+PLUGINS = ['pelican_gist', 'render_math']
 
 USE_LESS = True
 
