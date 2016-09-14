@@ -2,9 +2,9 @@ Title: R Matrices in LaTeX
 Date: 2016-03-21 8:00:00
 Tags: programming, R
 
-R is beautiful for working with matrices and data frames. I enjoy working in RMarkdown for my problem sets and reports due to the ability to create really nice plots and weave them seamlessly into the document. 
+R is beautiful for working with matrices and data frames. I have started working in RMarkdown for most of my problem sets and reports due to the ability to create really nice plots and weave them seamlessly into the document.  
 
-The way that matrices are displayed after printing them from an R chunk is not that aesthetically pleasing. I have always been a huge fan of the typesetting for matrices in LaTeX, but doing this for (somewhat) large matrices by hand in LaTeX can be quite time-consuming. It would be quite easy if we could just convert an R matrix to a LaTeX chunk.
+The problem that I am addressing here is somewhat niche. The way that matrices are displayed after printing them from an R chunk is not that aesthetically pleasing. I have always been a huge fan of the typesetting for matrices in LaTeX, but doing this for (somewhat) large matrices by hand in LaTeX can be quite time-consuming. It would be quite easy if we could just convert an R matrix to a LaTeX chunk.
 
 For accomplishing this we need a function to convert an R matrix to a valid LaTeX string. Working with strings in R is also something that it really is not built for, but works reasonably well. The following function will give a valid LaTeX string for a given matrix. 
 

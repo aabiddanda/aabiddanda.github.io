@@ -14,13 +14,16 @@ Fast forward a couple of years (and a couple of slices of humble pie), and I enc
 
 Graphs can be used to describe the relationships between individuals within a population, and plays a non-trivial role in modern population genetics. Indeed, the simple pedigrees from introductory genetics and their approximations (e.g. [Kingman's Coalescent](https://en.wikipedia.org/wiki/Coalescent_theory)) are graphs which describe the relationships between your samples.  
 
-<!-- Find a good figure depicting Identity by Descent in Pedigree -->
+<p align="center">
+  <img src="/images/blog_images/ibd.png", alt="Test1">
+</p>
 
 In the age of personal genomics, a lot of insights about ancestry are driven by the detection of haplotype sharing. The fiIndeed this is the approach taken by 23andMe and AncestryDNA, arguably the two biggest personal genetics companies. The output of these algorithms should be sets of edges (shared IBD segments) between individuals. Since the nodes are defined by the individuals, and the edges are then defined by the sharing of IBD segments. 
 
 
-<!-- Include figure from  -->
-
+<p align="center">
+  <img src="/images/blog_images/gusev_mbe2012_fig2.jpg", alt="Test2">
+</p>
 
 
 Now that we have a full-fledged graph, we can start asking questions about features of the graph. Here, I am particularly interested in the degree distribution of the graph. The degree distribution should tell me intuitively how "tightly packed" the graph is. 
