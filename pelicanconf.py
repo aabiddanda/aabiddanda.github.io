@@ -44,6 +44,8 @@ COPYRIGHT_YEAR = 2016
 
 DEFAULT_PAGINATION = 5
 
+DISQUS_SITENAME = "aabiddanda.github.io"
+
 PLUGINS = ['pelican_gist', 'render_math']
 
 USE_LESS = True

@@ -16,6 +16,6 @@ RELATIVE_URLS = False
 
 DELETE_OUTPUT_DIRECTORY = True
 
-DISQUS_SITENAME = "abiddanda.github.io"
+DISQUS_SITENAME = "aabiddanda.github.io"
 
 USE_LESS = False
