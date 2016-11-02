@@ -1,0 +1,37 @@
+<nav class="header-nav reveal">
+  <a href="{{ site.baseurl }}" class="header-logo" title="{{ site.name }}">{{ site.name }}</a>
+  <ul class="header-links">
+    {% if site.social.twitter %}
+      <li>
+        <a href="http://twitter.com/{{ site.social.twitter }}" target="_blank" title="Twitter">
+          <span class="icon icon-social-twitter"></span>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.social.github %}
+      <li>
+        <a href="http://github.com/{{ site.social.github }}" target="_blank" title="GitHub">
+          <span class="icon icon-social-github"></span>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.cv %}
+      <li>
+        <a href="{site.baseurl}/{{ site.social.cv }}" target="_blank" title="Curriculum Vitae">
+          <span class="icon icon-var-university"></span>
+        </a>
+      </li>
+    {% endif %}
+    <li>
+      <a href="{{ site.baseurl }}blog" target="_blank" title="Blog">Blog
+      </a>
+    </li>
+    {% if site.rss_enabled == true %}
+      <li>
+        <a href="{{ site.baseurl }}feed.xml" target="_blank" title="RSS">
+          <span class="icon icon-social-rss"></span>
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+</nav>
