@@ -1,5 +1,0 @@
-fabric
-pelican
-markdown
-ghp-import
-pelican-gist
