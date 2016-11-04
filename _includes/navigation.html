@@ -15,15 +15,15 @@
         </a>
       </li>
     {% endif %}
-    {% if site.cv %}
-      <li>
-        <a href="{site.baseurl}/{{ site.social.cv }}" target="_blank" title="Curriculum Vitae">
-          <span class="icon icon-var-university"></span>
-        </a>
-      </li>
+    {% if site.social.cv %}
+    <li>
+      <a href="{{site.baseurl}}{{ site.social.cv }}" target="_blank" title="Curriculum Vitae">
+        <span class="icon icon-university"></span>
+      </a>
+    </li>
     {% endif %}
     <li>
-      <a href="{{ site.baseurl }}blog" target="_blank" title="Blog">Blog
+      <a href="{{ site.baseurl }}blog" title="Blog">Blog
       </a>
     </li>
     {% if site.rss_enabled == true %}
