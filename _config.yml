@@ -16,7 +16,7 @@ social:
   github: aabiddanda
   linkedin: # Add your LinkedIn link
   twitter: aabiddanda
-  cv: aabiddanda_cv2016.pdf
+  cv: aabiddanda_cv.pdf
 
 # Important settings (change at own risk)
 
@@ -38,7 +38,7 @@ collections:
     output: true
     permalink: /tag/:slug/
 defaults:
-  - 
+  -
     scope:
       path: ""
       type: my_tags
