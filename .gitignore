@@ -2,3 +2,7 @@ __pycache__/
 output/
 .asset-cache/
 _drafts/
+.asset_cache/
+_site/
+posts/
+assets/

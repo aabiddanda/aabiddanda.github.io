@@ -1,150 +1,27 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Arjun Biddanda | Publications</title>
-  <meta name="description" content="Publications">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: default
+title: "Publications"
+description: "Publications"
+---
 
-  <meta property="og:title" content="Publications">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="/publications/">
-  <meta property="og:description" content="Publications">
-  <meta property="og:site_name" content="Arjun Biddanda">
-  <meta property="og:image" content="/assets/og-image.jpg">
+<ul class="article-list">
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="/publications/">
-  <meta name="twitter:title" content="Publications">
-  <meta name="twitter:description" content="Publications">
-  <meta name="twitter:image" content="/assets/og-image.jpg">
-
-  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <link href="feed.xml" type="application/rss+xml" rel="alternate" title="Arjun Biddanda Last 10 blog posts" />
-
-  
-    <link type="text/css" rel="stylesheet" href="/assets/light.css">
-  
-</head>
-
-<body>
-  <main role="main">
-    <div class="grid grid-centered">
-      <div class="grid-cell">
-        <nav class="header-nav reveal">
-  <a href="/" class="header-logo" title="Arjun Biddanda">Arjun Biddanda</a>
-  <ul class="header-links">
-    <li>
-      <a href="/publications" title="Publications">
-        <span class="icon icon-ios-paper"></span>
-      </a>
-    </li>
-    
-    <li>
-      <a href="/aabiddanda_cv2016.pdf" target="_blank" title="Curriculum Vitae">
-        <span class="icon icon-university"></span>
-      </a>
-    </li>
-    
-    <li>
-      <a href="/blog" title="Blog">
-        <span class="icon icon-ios-book"></span>
-      </a>
-    </li>
-    
-      <li>
-        <a href="http://twitter.com/aabiddanda" target="_blank" title="Twitter">
-          <span class="icon icon-social-twitter"></span>
-        </a>
-      </li>
-    
-    
-      <li>
-        <a href="http://github.com/aabiddanda" target="_blank" title="GitHub">
-          <span class="icon icon-social-github"></span>
-        </a>
-      </li>
-    
-
-
-    
-  </ul>
-</nav>
-
-        <ul class="article-list">
-    <li class="article-list-item ">
-      <a href="https://www.ncbi.nlm.nih.gov/pubmed/27377974" title="The genetic history of Cochin Jews from India">
-        <h5>
-          The genetic history of Cochin Jews from India <i>(Human Genetics)</i>
-          <span class="icon icon-ios-arrow-thin-right"></span>
-        </h5>
-      </a>
-      <p>Yedael Y. Waldman, <b>Arjun Biddanda</b>, Maya Dubrovsky, Christopher L. Campbell, Carole Oddoux, Eitan Friedman, Gil Atzmon, Eran Halperin, Harry Ostrer, Alon Keinan</p>
-      <div class="article-list-footer">
-        <span class="article-list-date">
-          July 04, 2016
-        </span>
-        <span class="article-list-divider">-</span>
-      </div>
-    </li>
-
-    <li class="article-list-item ">
-      <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0152056" title="The genetics of Bene Israel from India Reveals Both Substantial Jewish and Indian Ancestry">
-        <h5>
-          The genetics of Bene Israel from India Reveals Both Substantial Jewish and Indian Ancestry <i>(PLoS One)</i>
-          <span class="icon icon-ios-arrow-thin-right"></span>
-        </h5>
-      </a>
-      <p>Yedael Y. Waldman*, <b>Arjun Biddanda*</b>, Natalie R. Davidson, Paul Billing-Ross, Maya Dubrovsky, Christopher L. Campbell, Carole Oddoux, Eitan Friedman, Gil Atzmon, Eran Halperin, Harry Ostrer, Alon Keinan</p>
-      <div class="article-list-footer">
-        <span class="article-list-date">
-          March 24, 2016
-        </span>
-        <span class="article-list-divider">-</span>
-      </div>
-    </li>
-
-    <li class="article-list-item ">
-      <a href="https://www.ncbi.nlm.nih.gov/pubmed/26268243" title="XWAS : A Software Toolset for Genetic Data Analysis and Association Studies of the X Chromosome">
-        <h5>
-          XWAS : A Software Toolset for Genetic Data Analysis and
-Association Studies of the X Chromosome <i>(Journal of Heredity)</i>
-          <span class="icon icon-ios-arrow-thin-right"></span>
-        </h5>
-      </a>
-      <p>Feng Gao*, Diana Chang*, <b>Arjun Biddanda*</b>, Li Ma, Yingjie Guo, Zilu Zhou, Alon Keinan</p>
-      <div class="article-list-footer">
-        <span class="article-list-date">
-          August 12, 2015
-        </span>
-        <span class="article-list-divider">-</span>
-      </div>
-    </li>
-
+{% for pub in site.data.pubs %}
+  <li class="article-list-item ">
+    <a href="{{ pub.url }}" title="{{ pub.title }}">
+      <h5>
+        {{ pub.title }} <i>({{ pub.journal }})</i>
+        <span class="icon icon-ios-arrow-thin-right"></span>
+      </h5>
+    </a>
+    <p>{{ pub.authors }}</p>
+    <div class="article-list-footer">
+      <span class="article-list-date">
+        {{ pub.date }}
+      </span>
+      <span class="article-list-divider">-</span>
+    </div>
+  </li>
+{% endfor %}
 
 </ul>
-
-        <footer class="footer reveal" align="center">
-    <span class="block">Made with ♥ using <a href="http://jekyllrb.com/">Jekyll</a> &amp; <a href="https://github.com/nielsenramon/chalk" title="Chalk">Chalk</a> · &lt;/&gt; on <a href="https://github.com/heiswayi" title="Hosted on GitHub">GitHub</a></span>
-</footer>
-
-      </div>
-    </div>
-  </main>
-  <script type="text/javascript" src="/assets/vendor.js"></script>
-<script type="text/javascript" src="/assets/application.js"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
-<script>
-  WebFont.load({
-    google: {
-      families: ['Cormorant Garamond:700', 'Lato:300,400,700']
-    }
-  });
-</script>
-
-
-
-</body>
-</html>
