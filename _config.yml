@@ -1,38 +1,38 @@
 # Mandatory settings
-
-baseurl: /
 name: Arjun Biddanda
 paginate: 5
-paginate_path: "/blog/page:num"
-url: # add site url http://example.com/
+url: # add your site url (format: https://example.com/)
 blog_theme: light # Or use dark
 
 # Optional settings
 
+about_enabled: false # Change to true if you wish to show an icon in the navigation that redirects to the about page
 discus_identifier: # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
+local_fonts: true # Change to true if you wish to use local fonts
 rss_enabled: false # Change to false if not
+scrollappear_enabled: true # Change to false to disable
 social:
+  dribbble: # Add your Dribbble handle
+  facebook: # Add your Facebook handle
+  flickr: # Add your Flickr handle
   github: aabiddanda
-  linkedin: # Add your LinkedIn link
+  linkedin: # Add your LinkedIn handle
   twitter: aabiddanda
-  cv: aabiddanda_cv.pdf
+  email: # Add your Email address
+  bitcoin: # Add your Bitcoin link or address
 
 # Important settings (change at own risk)
 
 assets:
-  compress:
-    css: true
-    js: true
   features:
     automatic_img_size: false
   sources:
-    - _assets/bower
     - _assets/fonts
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
-    - _vendor/
+    - _assets/yarn
 collections:
   my_tags:
     output: true
@@ -45,18 +45,19 @@ defaults:
     values:
       layout: articles_by_tag
 exclude:
-  - .bowerrc
   - .travis.yml
   - bin/*
-  - bower.json
   - circle.yml
   - Gemfile
   - Gemfile.lock
+  - package.json
   - README.md
   - vendor/
-gems:
+  - yarn.lock
+plugins:
   - jekyll-assets
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
+  - jemoji
+paginate_path: /blog/page:num/
 permalink: posts/:slug
