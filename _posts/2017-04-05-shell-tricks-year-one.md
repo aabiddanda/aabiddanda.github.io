@@ -47,7 +47,7 @@ Having a macbook pro, sometimes plugging in `htop` is nice to be able to check t
   alias speedtest='curl -o /dev/null http://speedtest.sea01.softlayer.com/downloads/test10.zip'
 ```
 
-One other thing that I have found nice from time to time is to check the battery health of my laptop (how many charge cycles it has gone through). This is a good indicator of [how long a laptop will last](https://support.apple.com/en-us/HT201585){:target="_blank"}
+One other thing that I have found nice from time to time is to check the battery health of my laptop (how many charge cycles it has gone through). This is a good indicator of [how long a laptop will last](https://support.apple.com/en-us/HT201585)
 
 ```bash
 alias chkbat='system_profiler SPPowerDataType | grep "Cycle Count"'
@@ -59,7 +59,7 @@ Note that the above is only for Mac OS X, but I imagine there should be some lin
 
 One thing that I find myself doing fairly often is setting up directories for projects so that I have a couple of standard directories. This helps me avoid thinking too much about the initial directory structure and that way I can focus on writing the scripts and pipelines that I need to write.
 
-```bash
+`bash
 # Usage : setupproject <project_name>
 setupproject(){
 	mkdir $1
@@ -70,7 +70,7 @@ setupproject(){
 	mkdir $1/plots
 	mkdir $1/doc
 }
-```
+`
 
 Another thing that has helped is having a template from which to setup my python scripts, so that they all roughly follow the same general recipe using `argparse` and other libraries. To see the template file please see [here](https://gist.github.com/aabiddanda/d32a75e8f14b0e471ceb6ff3c625ef1b)
 
