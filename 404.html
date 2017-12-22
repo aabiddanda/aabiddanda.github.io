@@ -1,39 +1,15 @@
 ---
-permalink: /404.html
-sitemap: false
+layout: default
+title: "404: Page not found"
+permalink: 404.html
 ---
 
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{ site.name }} | Page not found</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="page">
+  <h1 class="page-title">404: Page not found</h1>
 
-  {% if site.local_fonts %}
-    {% include stylesheet.html path="fonts" %}
-  {% endif %}
+  <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/SIaFtAKnqBU?autoplay=1&start=3" frameborder="0" allowfullscreen></iframe>-->
 
-  {% if site.blog_theme == "light" %}
-    {% stylesheet notfound-light %}
-    {% include stylesheet.html path="notfound-light" %}
-  {% else %}
-    {% include stylesheet.html path="notfound-dark" %}
-  {% endif %}
-</head>
-<body>
-  <main class="notfound-wrapper">
-    <div class="notfound-content">
-      <h1><a href="{{ '/' | relative_url }}" title="Back to homepage">{{ site.name }}</a></h1>
-      <p>
-        Looks like you got lost. Let's get you back to the <a href="{{ '/' | relative_url }}">homepage</a>!
-      </p>
-    </div>
-  </main>
+	<h1>Ahhhhh!</h1>
 
-  {% unless site.local_fonts %}
-    {% include javascript.html path="webfonts" %}
-  {% endunless %}
-</body>
-</html>
+  <!--<p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="{{ site.baseurl }}/">Head back home</a> to try finding it again, or search for it on the <a href="{{ site.baseurl }}/menu/writing.html">archives page</a>.</p>-->
+</div>
