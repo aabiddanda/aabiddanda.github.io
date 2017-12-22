@@ -1,41 +1,36 @@
-{% if page.thumb_image %}
-  {% if page.thumb_image contains '://' %}
-    {% assign thumb_image = page.thumb_image %}
-  {% else %}
-    {% assign thumb_image = page.thumb_image | asset_path | absolute_url %}
-  {% endif %}
-{% else %}
-  {% assign thumb_image = 'og-image.jpg' | asset_path | absolute_url %}
-{% endif %}
 <head>
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{ site.name }} | {{ page.title }}</title>
-  <meta name="description" content="{{ page.description }}">
+
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.data.settings.title }} | {{ site.data.settings.tagline }}
+    {% else %}
+      {{ page.title }} | {{ site.data.settings.title }}
+    {% endif %}
+  </title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
 
-  <meta property="og:title" content="{{ page.title | escape }}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <meta property="og:description" content="{{ page.description }}">
-  <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="og:image" content="{{ thumb_image }}">
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/main.css">
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/syntax.css">
+  <!-- Use Atom -->
+  {% feed_meta %}
+  <!-- Use RSS-2.0 -->
+  <!--<link href="{{ site.github.url }}/rss-feed.xml" type="application/rss+xml" rel="alternate" title="{{ site.data.settings.title }} | {{ site.data.settings.tagline }}"/>
+  //-->
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="{{ page.url | absolute_url }}">
-  <meta name="twitter:title" content="{{ page.title | escape }}">
-  <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:image" content="{{ thumb_image }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
-  <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
-  <link href="{{ 'feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 10 blog posts" />
+  <script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
 
-  {% if site.local_fonts %}
-    {% include stylesheet.html path="fonts" %}
-  {% endif %}
+  {% include google-analytics.html %}
 
-  {% if site.blog_theme == "light" %}
-    {% include stylesheet.html path="light" %}
-  {% else %}
-    {% include stylesheet.html path="dark" %}
-  {% endif %}
+  <!-- Use Jekyll SEO plugin -->
+  {% seo %}
+
 </head>
