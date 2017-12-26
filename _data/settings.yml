@@ -6,13 +6,14 @@ tagline:
 # Change to true for Disqus comments
 disqus:
   comments: false
-  disqus_shortname: 'https-lenpaul-github-io-lagrange'
+  disqus_shortname: ''
 
-google-ID: 'UA-80213386-1'
+google-ID: ''
 
 menu:
 - {name: 'Research', path: 'menu', url: 'research.html'}
-- {name: 'Publications', path: 'menu', url: 'contact.html'}
+- {name: 'Publications', path: 'menu', url: 'publications.html'}
+- {name: 'Contact', path: 'menu', url: 'contact.html'}
 - {name: 'Blog', path: 'menu', url: 'blog.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer

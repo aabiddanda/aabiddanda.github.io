@@ -1,0 +1,26 @@
+---
+layout: page
+title: Publications
+---
+
+
+<!--TODO : need to alter up some of the  styling here  -->
+<ul>
+{% for pub in site.data.pubs %}
+  <li class="article-list-item ">
+    <a href="{{ pub.url }}" title="{{ pub.title }}">
+      <h5>
+        {{ pub.title }} <i>({{ pub.journal }})</i>
+        <span class="icon icon-ios-arrow-thin-right"></span>
+      </h5>
+    </a>
+    <p>{{ pub.authors }}</p>
+    <div class="article-list-footer">
+      <span class="article-list-date">
+        {{ pub.date }}
+      </span>
+      <span class="article-list-divider">-</span>
+    </div>
+  </li>
+{% endfor %}
+</ul>

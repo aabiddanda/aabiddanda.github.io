@@ -1,6 +1,6 @@
 ---
 layout: default
-title: blog
+title: Blog
 ---
 
 {% for post in paginator.posts %}
@@ -19,6 +19,7 @@ title: blog
   </p>
 </div>
 {% endfor %}
+
 
 <!--[> Pagination links <]-->
 <!--{% if paginator.total_pages > 1 %}-->
