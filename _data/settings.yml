@@ -11,13 +11,14 @@ disqus:
 google-ID: ''
 
 menu:
-- {name: 'Research', path: 'menu', url: 'research.html'}
+#- {name: 'Research', path: 'menu', url: 'research.html'}
 - {name: 'Publications', path: 'menu', url: 'publications.html'}
-- {name: 'Contact', path: 'menu', url: 'contact.html'}
+- {name: 'CV', path: 'menu', url: 'cv.html'}
 - {name: 'Blog', path: 'menu', url: 'blog.html'}
+- {name: 'Contact', path: 'menu', url: 'contact.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
-- {icon: 'github', link: 'https://www.github.com/lenpaul'}
-- {icon: 'twitter', link: 'https://twitter.com/paululele'}
+- {icon: 'github', link: 'https://www.github.com/aabiddanda'}
+- {icon: 'twitter', link: 'https://twitter.com/aabiddanda'}
 #- {icon: 'envelope', link: 'mailto:l.nguyen.paul@gmail.com'}
