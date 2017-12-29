@@ -3,11 +3,13 @@ layout: page
 title: Research
 ---
 
-# Project 1
+# Haplotype-based Methods
 
 
-# Project 2 
+# Spatial Population Genetics with Ancient DNA
+
+Ancient DNA provides a 
 
 
-# Project 3 
+# Conditional Genealogy  
 

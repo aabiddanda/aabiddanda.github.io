@@ -4,7 +4,7 @@
 
 body {
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #515151;
   line-height: 1.5rem;
 }
@@ -43,7 +43,7 @@ a:hover {
 }
 
 img {
-  max-width: 100%;
+	max-width: 100%;
   height: auto;
   border-radius: 5px;
 }
