@@ -11,5 +11,5 @@ title: Research
 Ancient DNA provides a 
 
 
-# Conditional Genealogy  
+# Conditional Genealogi 
 
