@@ -24,7 +24,7 @@ body {
     vertical-align: middle;
 }
 
-@media (max-width: 30em) {
+@media (margin-right: auto, margin-left: auto) {
   body {
     font-size: 14px;
     line-height: 1.5rem;
