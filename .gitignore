@@ -3,3 +3,4 @@ output/
 _drafts/
 _site/
 .jekyll-metadata
+.sass-cache/
