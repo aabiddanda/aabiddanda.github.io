@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Shell Tricks (Grad School Year 1)"
-description: "Shell functions for productivity"
 categories: ["bash", "shell"]
 ---
-
 
 Whenever you find yourself having to do something multiple times (e.g. copy a bunch of files at once) it is useful to have some shortcuts in the shell to be able to do a lot of these operations quickly. Here are a couple of my favorite little functions over the course of my first year in grad school that have helped me out.
 
@@ -78,7 +76,7 @@ setupproject(){
 }
 {% endhighlight %}
 
-Another thing that has helped is having a template from which to setup my python scripts, so that they all roughly follow the same general recipe using `argparse` and other libraries. To see the template file please see [here](https://gist.github.com/aabiddanda/d32a75e8f14b0e471ceb6ff3c625ef1b)
+Another thing that has helped is having a template from which to setup my python scripts, so that they all roughly follow the same general recipe using `click` and other libraries. To see the template file please see [here](https://gist.github.com/aabiddanda/d32a75e8f14b0e471ceb6ff3c625ef1b)
 
 {% highlight bash %}
   # Sets up a canonical python script from a template
