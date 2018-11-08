@@ -1,18 +1,29 @@
+- title : Genomic history of the Sardinian population
+  journal: Nature Genetics
+  authors: Charleston W K Chiang, Joseph H Marcus, Carlo Sidore, <strong>Arjun Biddanda</strong>, Hussein Al-Asadi, Magdalena Zoledziewska, Maristella Pitzalis, Fabio Busonero, Andrea Maschio, Giorgio Pistis, Maristella Steri, Andrea Angius, Kirk E Lohmueller, Gonçalo R Abecasis, David Schlessinger, Francesco Cucca, John Novembre
+  url: https://doi.org/10.1038/s41588-018-0215-8
+  year: 2018
+
+- title: The first horse herders and the impact of early Bronze Age steppe expansions into Asia
+  journal: Science
+  authors: Peter de Barros Damgaard, Rui Martiniano, Jack Kamm, Jose Victor Moreno-Mayar, Guus Kroonen, Michael Peyrot, Gojko Barjamovic, Simon Rasmussen, Claus Zacho, Nurbol Baimukhanov, Victor Zaibert, Victor Merz, <strong>Arjun Biddanda</strong>, Ilja Merz, Vareriy Loman, Valeriy Evdokimov, Emma Usmanova, ..., Richard Durbin, Eske Willerslev
+  url: http://science.sciencemag.org/content/early/2018/05/08/science.aar7711.abstract
+  year: 2018
 
 - title: The genetic history of Cochin Jews from India
   journal: Human Genetics
-  authors: Yedael Y. Waldman, <b>Arjun Biddanda</b>, Maya Dubrovsky, Christopher L. Campbell, Carole Oddoux, Eitan Friedman, Gil Atzmon, Eran Halperin, Harry Ostrer, Alon Keinan
+  authors: Yedael Y. Waldman, <strong>Arjun Biddanda</strong>, Maya Dubrovsky, Christopher L. Campbell, Carole Oddoux, Eitan Friedman, Gil Atzmon, Eran Halperin, Harry Ostrer, Alon Keinan
   url: https://www.ncbi.nlm.nih.gov/pubmed/27377974
   year: 2016
 
 - title: The genetics of Bene Israel from India Reveals Both Substantial Jewish and Indian Ancestry
   journal: Plos One
-  authors: Yedael Y. Waldman, <b>Arjun Biddanda</b>, Natalie R. Davidson, Paul Billing-Ross, Maya Dubrovsky, Christopher L. Campbell, Carole Oddoux, Eitan Friedman, Gil Atzmon, Eran Halperin, Harry Ostrer, Alon Keinan
+  authors: Yedael Y. Waldman<sup>*</sup>, <strong>Arjun Biddanda<sup>*</sup></strong>, Natalie R. Davidson, Paul Billing-Ross, Maya Dubrovsky, Christopher L. Campbell, Carole Oddoux, Eitan Friedman, Gil Atzmon, Eran Halperin, Harry Ostrer, Alon Keinan
   url: http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0152056
   year: 2016
 
 - title: XWAS - A Software Toolset for Genetic Data Analysis and Association Studies of the X Chromosome
   journal: Journal of Heredity
-  authors: Feng Gao, Diana Chang, <b>Arjun Biddanda</b>, Li Ma, Yingjie Guo, Zilu Zhou, Alon Keinan
+  authors: Feng Gao<sup>*</sup>, Diana Chang<sup>*</sup>, <strong>Arjun Biddanda<sup>*</sup></strong>, Li Ma, Yingjie Guo, Zilu Zhou, Alon Keinan
   url: https://www.ncbi.nlm.nih.gov/pubmed/26268243
   year: 2015
