@@ -17,8 +17,20 @@ My research interests span both theoretical and applied population genetics - pa
 
 {% for pub in site.data.pubs %}
 
-[**{{pub.title}}**]({{pub.url}})<br/>
-{{pub.authors}} <br/>
-<i>{{pub.journal}}</i> ({{pub.year}})
+{% if pub.pdf and pub.software %}
+  [**{{pub.title}}**]({{pub.url}})<br/>
+  {{pub.authors}} <br/>
+  <i>{{pub.journal}}</i> ({{pub.year}})<br/>
+  [[PDF]({{pub.pdf}})] [[Software]({{pub.software}})]
+{% elsif pub.pdf %}
+  [**{{pub.title}}**]({{pub.url}})<br/>
+  {{pub.authors}} <br/>
+  <i>{{pub.journal}}</i> ({{pub.year}})<br/>
+  [[PDF]({{pub.pdf}})] 
+{% else %}
+  [**{{pub.title}}**]({{pub.url}})<br/>
+  {{pub.authors}} <br/>
+  <i>{{pub.journal}}</i> ({{pub.year}})<br/>
+{% endif %}
 
 {% endfor %}
