@@ -3,7 +3,7 @@
   authors:  <strong>Arjun Biddanda</strong>, Daniel P Rice, John Novembre
   url: https://doi.org/10.1101/2020.07.01.182311 
   year: 2020 
-  pdf: ~/docs/papers/biddanda_rice_novembre.biorxiv.2020.pdf 
+  pdf: /docs/papers/biddanda_rice_novembre.biorxiv.2020.pdf 
   software: https://aabiddanda.github.io/geovar/
 
 
@@ -12,7 +12,7 @@
   authors: Charleston W K Chiang, Joseph H Marcus, Carlo Sidore, <strong>Arjun Biddanda</strong>, Hussein Al-Asadi, Magdalena Zoledziewska, Maristella Pitzalis, Fabio Busonero, Andrea Maschio, Giorgio Pistis, Maristella Steri, Andrea Angius, Kirk E Lohmueller, Gonçalo R Abecasis, David Schlessinger, Francesco Cucca, John Novembre
   url: https://doi.org/10.1038/s41588-018-0215-8
   year: 2018
-  pdf: ~/docs/papers/chiang_et_al.natgen.2018.pdf 
+  pdf: /docs/papers/chiang_et_al.natgen.2018.pdf 
 
 - title: The first horse herders and the impact of early Bronze Age steppe expansions into Asia
   journal: Science
@@ -37,5 +37,5 @@
   authors: Feng Gao<sup>*</sup>, Diana Chang<sup>*</sup>, <strong>Arjun Biddanda<sup>*</sup></strong>, Li Ma, Yingjie Guo, Zilu Zhou, Alon Keinan
   url: https://www.ncbi.nlm.nih.gov/pubmed/26268243
   year: 2015
-  pdf: ~/docs/papers/gao_chang_biddanda.jhered.2015.pdf 
+  pdf: /docs/papers/gao_chang_biddanda.jhered.2015.pdf 
   software: http://keinanlab.cb.bscb.cornell.edu/content/xwas
