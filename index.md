@@ -15,9 +15,8 @@ I am currently a PhD student in the department of [Human Genetics](https://genes
 [Github]{:target="_blank"} <br/>
 [Google Scholar]{:target="_blank"} <br/> 
 [Twitter]{:target="_blank"} <br/>
-Email:  a[lastname]@uchicago.edu<br/>
+Email:  aa[lastname]@gmail.com<br/>
 
 [Twitter]: https://twitter.com/aabiddanda
 [Github]: https://github.com/aabiddanda
-<!--[Email]: mailto:a<lastname>@uchicago.edu-->
 [Google Scholar]: https://scholar.google.com/citations?user=BWVZXhgAAAAJ&hl=en
