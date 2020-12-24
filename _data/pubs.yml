@@ -1,11 +1,10 @@
 - title : Geographic patterns of human allele frequency variation - a variant-centric perspective 
-  journal: bioRxiv 
+  journal: eLife 
   authors:  <strong>Arjun Biddanda</strong>, Daniel P Rice, John Novembre
-  url: https://doi.org/10.1101/2020.07.01.182311 
+  url: https://elifesciences.org/articles/60107 
   year: 2020 
-  pdf: /docs/papers/biddanda_rice_novembre.biorxiv.2020.pdf 
+  pdf: /docs/papers/biddanda_rice_novembre_elife.2020-v1.pdf
   software: https://aabiddanda.github.io/geovar/
-
 
 - title : Genomic history of the Sardinian population
   journal: Nature Genetics
