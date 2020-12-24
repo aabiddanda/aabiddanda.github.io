@@ -6,16 +6,17 @@ permalink: /
 
 {% include image.html url="images/photo.jpg" caption="" height="350px" align="right" %}
 
-My research spans both theoretical and applied population genetics, utilizing a combination of mathematical, computational, and empirical approaches.
+My research spans both theoretical and applied population genetics, utilizing a combination of mathematical, computational, and empirical approaches. I recieved my PhD in Human Genetics from the University of Chicago, supervised by John Novembre. 
 
-I am currently a PhD student in the department of [Human Genetics](https://genes.uchicago.edu/) at the University of Chicago and am advised by [John Novembre](http://jnpopgen.org/).
+I am currently a Postdoctoral Researcher in the department of [Statistics](https://www.stats.ox.ac.uk/) at the University of Oxford and am advised by [Pier Palamara](https://palamaralab.github.io/).
 
 ## Contact
 
+Email: [firstname].[lastname]@stats.ox.ac.uk<br/>
 [Github]{:target="_blank"} <br/>
 [Google Scholar]{:target="_blank"} <br/> 
 [Twitter]{:target="_blank"} <br/>
-Email:  aa[lastname]@gmail.com<br/>
+
 
 [Twitter]: https://twitter.com/aabiddanda
 [Github]: https://github.com/aabiddanda
