@@ -36,5 +36,5 @@
   authors: Feng Gao<sup>*</sup>, Diana Chang<sup>*</sup>, <strong>Arjun Biddanda<sup>*</sup></strong>, Li Ma, Yingjie Guo, Zilu Zhou, Alon Keinan
   url: https://www.ncbi.nlm.nih.gov/pubmed/26268243
   year: 2015
-  pdf: /docs/papers/gao_chang_biddanda.jhered.2015.pdf 
+  # pdf: /docs/papers/gao_chang_biddanda.jhered.2015.pdf 
   software: http://keinanlab.cb.bscb.cornell.edu/content/xwas

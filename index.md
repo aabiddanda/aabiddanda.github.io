@@ -6,9 +6,9 @@ permalink: /
 
 {% include image.html url="images/photo.jpg" caption="" height="350px" align="right" %}
 
-My research spans both theoretical and applied population genetics, utilizing a combination of mathematical, computational, and empirical approaches. I recieved my PhD in Human Genetics from the University of Chicago, supervised by John Novembre. 
+My research spans both theoretical and applied population genetics, utilizing a combination of mathematical, computational, and empirical approaches. I received my PhD in Human Genetics from the University of Chicago, supervised by John Novembre. 
 
-I am currently a Postdoctoral Researcher in the department of [Statistics](https://www.stats.ox.ac.uk/) at the University of Oxford and am advised by [Pier Palamara](https://palamaralab.github.io/).
+I am currently a Postdoctoral Researcher in the department of [Statistics](https://www.stats.ox.ac.uk/) at the University of Oxford, advised by [Pier Palamara](https://palamaralab.github.io/).
 
 ## Contact
 
