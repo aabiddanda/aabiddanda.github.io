@@ -15,6 +15,11 @@ title: Publications
   {{pub.authors}} <br/>
   <i>{{pub.journal}}</i> ({{pub.year}})<br/>
   [[PDF]({{pub.pdf}})] [[Software]({{pub.software}})]
+{% elsif pub.software %}
+  [**{{pub.title}}**]({{pub.url}})<br/>
+  {{pub.authors}} <br/>
+  <i>{{pub.journal}}</i> ({{pub.year}})<br/>
+  [[Software]({{pub.software}})]
 {% elsif pub.pdf %}
   [**{{pub.title}}**]({{pub.url}})<br/>
   {{pub.authors}} <br/>
