@@ -4,8 +4,6 @@ permalink: /publications/
 title: Publications
 ---
 
-# Publications 
-
 {% assign thumbnail="left" %}
 
 {% for pub in site.data.pubs %}
