@@ -40,5 +40,5 @@ With the rapid increases in (1) sample-sizes and (2) phenotypic measurements in 
 
 * Develop memory-efficient or streaming tools for statistical genetic analyses
 * Leveraging inferred ancestral recombination graphs for statistical genetics
-* Machine learning methods to characterize co-occurring diseases and networks of subtypes
+<!--* Machine learning methods to characterize co-occurring diseases and networks of subtypes-->
 
