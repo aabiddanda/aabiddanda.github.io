@@ -4,17 +4,9 @@ permalink: /research/
 title: Research
 ---
 
-<!-- TODO: need to align this along relevant themes -->
-<!-- My research interests span both theoretical and applied population genetics - particularly within humans. Much of this research is motivated by both the increasing availibility of diverse genomic data types (e.g. ancient DNA) and studies of complex traits. Some recent topics of interest have been:
-	
-* The demographic history of isolated populations
-* The spatial distribution of variants shared between ancient and modern samples
-* Multi-locus models of genetic variation with serial sampling
-* Statistical genetic methods for biobank-scale data -->
-
 ### Population Genetic Theory
 
-{% include image.html url="../images/research_images/exp_time_to_coal_anc.jpg" caption="Expected time to coalescence for<br />  an ancient sample into a modern panel (unpublished.)" height="250px" align="right" %}
+{% include image.html url="../images/research_images/exp_time_to_coal_anc.jpg" caption="Expected time to coalescence <br />for an ancient sample into a modern panel from <br /> Biddanda, Steinrücken, Novembre (bioRxiv) 2021." height="250px" align="right" %}
 
 I have a fond place in my intellecual heart for population genetic theory, and enjoy working on problems that involve some degree of theoretical development and analysis. Typically, these are geared towards understanding how theory can be used to intuit or improve statistical population genetic inference. Some active topics of research are: 
 
