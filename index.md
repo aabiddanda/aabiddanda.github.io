@@ -8,7 +8,9 @@ permalink: /
 
 I am a computational scientist at [54gene](https://54gene.com/) working in the Genomics and Data Science group. 
 
-My research interests span theoretical and applied population genetics, particularly in humans and their applications to understanding complex disease. Prior to my current position, I received my PhD in Human Genetics from the University of Chicago working with [John Novembre](http://jnpopgen.org/), and was a postdoctoral researcher in statistics at Oxford advised by [Pier Palamara](https://palamaralab.github.io). *All of the information on this site represents my own views and not those of my employer.*
+My research interests span theoretical and applied population genetics, particularly in humans and their applications to understanding complex disease. I received my PhD in Human Genetics from the University of Chicago working with [John Novembre](http://jnpopgen.org/), and was a postdoctoral researcher in statistics at Oxford advised by [Pier Palamara](https://palamaralab.github.io). 
+
+*All of the information on this site represents my own views and not those of my employer.*
 
 ## Contact
 
