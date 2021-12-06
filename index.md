@@ -6,13 +6,15 @@ permalink: /
 
 {% include image.html url="images/photo.jpg" caption="" height="350px" align="right" %}
 
-My research spans both theoretical and applied population genetics, utilizing a combination of mathematical, computational, and empirical approaches. I received my PhD in Human Genetics from the University of Chicago, supervised by John Novembre. 
+I am a computational scientist at [54gene](https://54gene.com/) working in the Genomics and Data Science group. 
 
-I am currently a Postdoctoral Researcher in the department of [Statistics](https://www.stats.ox.ac.uk/) at the University of Oxford, advised by [Pier Palamara](https://palamaralab.github.io/).
+My research interests span theoretical and applied population genetics, particularly in humans and their applications to understanding complex disease. I received my PhD in Human Genetics from the University of Chicago working with [John Novembre](http://jnpopgen.org/), and was a postdoctoral researcher in statistics at Oxford advised by [Pier Palamara](https://palamaralab.github.io). 
+
+*All of the information on this site represents my own views and not those of my employer.*
 
 ## Contact
 
-Email: [firstname].[lastname]@stats.ox.ac.uk<br/>
+Email: aa[lastname]@gmail.com<br/>
 [Github]{:target="_blank"} <br/>
 [Google Scholar]{:target="_blank"} <br/> 
 [Twitter]{:target="_blank"} <br/>
