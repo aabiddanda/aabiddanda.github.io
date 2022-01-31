@@ -6,10 +6,11 @@ permalink: /notes/
 
 This is a space for technical notes or other collections on various topics that I have found helpful for understanding population or human genetics but are not either super-novel or not extensive enough that they are worthy of a full paper (or stalled projects that deserve a home). 
 
-<!-- ### Population Genetics -->
+## Statistical/Population Genetics 
+### [Moran Model deviations under large sample-size](https://github.com/aabiddanda/Cannings_Model_Approximations/blob/master/pdf/derivation.pdf)
 
-<!-- * Deviations of the Moran Model from the Coalescent under large sample-size -->
-  <!-- [Paper]() [Code]() -->
+One of my first mini-projects in grad school was looking at how the Moran model behaves under large sample sizes relative to the population size. It was a really fun way to get some theoretical insight into the coalescent process and the limiting behavior of such discrete models. If interested in the code to reproduce any of the figures, you can find the code here in this [repository](https://github.com/aabiddanda/Cannings_Model_Approximations) 
+
 
 ## Genetics & Society
 ### [Reading Group Reflections on Genetics & Race](https://voices.uchicago.edu/geneticists-against-hate/)
