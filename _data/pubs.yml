@@ -6,11 +6,10 @@
   pdf: https://www.biorxiv.org/content/10.1101/2021.11.03.466843v1.full.pdf
 
 - title : Properties of Two-Locus Genealogies and Linkage Disequilibrium in Temporally Structured Samples
-  journal: bioRxiv 
+  journal: Genetics 
   authors:  <strong>Arjun Biddanda</strong>, Matthias Steinrücken, John Novembre
-  url:  https://www.biorxiv.org/content/10.1101/2021.06.17.448867v1
-  year: 2021
-  pdf: https://www.biorxiv.org/content/10.1101/2021.06.17.448867v1.full.pdf
+  url:  https://doi.org/10.1093/genetics/iyac038
+  year: 2022
   software: https://aabiddanda.github.io/aDNA_LD_public/
 
 - title : Geographic patterns of human allele frequency variation - a variant-centric perspective 
