@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Three key online-algorithms in `awk`"
+title: "Three helpful algorithms in `awk`"
 ---
 
 In modern data analysis, the data streams are often so big (on the order of millions of entries) that we often want to have some way to inquire about properties of data elements without having to load the entire dataset into memory. In genomic data analysis, this might be outputting two columns and estimating their correlation, estimating the median of a column, or the number of outliers outside some multiple of the interquartile range.
 
-In terms of swiss-army-knife skills, learning `awk` is an amazing bonus for doing fairly complex things without necessarily having to enter into `python` or `R` and loading in formal data tables. Eventually you likely will have to do that (you can't make plots with `awk` alone as far as I know), but for quick summary statistics we can use `awk` to get a great sense of your data. In this post I'll cover three snippets that are useful aliases to have on most systems with `awk` so you can reliably manipulate datastreams to your will and more quickly check if your data generation is suspect. 
+In terms of swiss-army-knife skills, learning `awk` is an amazing bonus for doing fairly complex things without necessarily having to truly write scripts using `python` or `R` and loading in formal data tables. Eventually you likely will have to do that (you can't make plots with `awk` alone as far as I know), but for quick summary statistics we can use `awk` to get a great sense of your data. In this post I'll cover three snippets that are useful aliases to have on most systems with `awk` so you can reliably manipulate datastreams to your will and more quickly check if your data generation is suspect. 
 
-The key is that we want most of these algorithms to run in time $$\mathcal{O}(n)$$, where $$n$$ is the number of data points that are provided. However, in the spirit of simplicity for some of the downstream algorithms, we have $$\mathcal{O}(n\log n)$$ complexity.
+The key is that we want most of these algorithms to run in time $$\mathcal{O}(n)$$, where $$n$$ is the number of data points that are provided. However, in the spirit of simplicity for some of the downstream algorithms, we have $$\mathcal{O}(n\log n)$$ complexity purely because the code is easier to understand and to take advantage of core Unix utilities.
 
 ## Linear-time Algorithm for Correlation 
 
