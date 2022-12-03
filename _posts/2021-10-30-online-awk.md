@@ -32,10 +32,10 @@ function corr(){
 }
 {% endhighlight %}
 
-
 ##  Median Algorithm
 
-This is a fairly simple algorithm that will come very close to the median (it won't do the averaging though)
+This is a fairly simple algorithm that will come very close to the median (it won't do the averaging though to break intermediate values): 
+
 
 {% highlight bash %}
 function median(){
@@ -45,7 +45,7 @@ function median(){
 }
 {% endhighlight %}
 
-It's not the fastest solution possible but for some context takes about ~30 seconds for 10 million entries on a 2020 Macbook Air without having to necessarily read a file completely into memory.   
+It's not the fastest solution possible but for some context takes about ~30 seconds for 10 million entries on a 2020 Macbook Air without having to necessarily read a file completely into memory. An improved version of this would likely use [Hoare's Selection Algorithm](https://en.wikipedia.org/wiki/Quickselect) in combination with a maintained dictionary of counts.
 
 ## Outlier Detection via Inter-Quartile Range
 
