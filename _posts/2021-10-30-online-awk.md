@@ -13,7 +13,7 @@ The key is that we want most of these algorithms to run in time $$\mathcal{O}(n)
 
 One of the first things you might want to check may be the correlation between two columns in your data if they're numeric values from a direct stream rather than loading the data into memory. This streaming algorithm is one such way:
 
-```
+{% highlight bash %}
 # A port of Welford's online algorithm for correlations ..
 function corr(){
 	awk '{
@@ -30,27 +30,31 @@ function corr(){
 		cxy = (1-f)*(cxy - f*dx*dy);} 
 		END {print cxy/sqrt(vx * vy)}' $1
 }
-```
+
+{% endhighlight %}
 
 ##  Median Algorithm
 
-This is a fairly simple algorithm that will come very close to the median (it won't do the averaging though)
+This is a fairly simple algorithm that will come very close to the median (it won't do the averaging though to break intermediate values): 
 
-```
+{% highlight bash %}
+
 function median(){
   sort -n | awk 'BEGIN {cnt=0;} { 
      vals[cnt] = $1; cnt++;
      } END {print vals[int(cnt/2)]}'
 }
-```
 
-It's not the fastest solution possible but for some context takes about ~30 seconds for 10 million entries on a 2020 Macbook Air without having to necessarily read a file completely into memory.   
+{% endhighlight %}
+
+It's not the fastest solution possible but for some context takes about ~30 seconds for 10 million entries on a 2020 Macbook Air without having to necessarily read a file completely into memory. An improved version of this would likely use [Hoare's Selection Algorithm](https://en.wikipedia.org/wiki/Quickselect) in combination with a maintained dictionary of counts.
 
 ## Outlier Detection via Inter-Quartile Range
 
 One of the typical checks that you might want to do for a data stream would be to check the number of points that fall outside some interquartile range. In order to calculate these interquartile ranges we can then calculate them as below:
 
-```
+{% highlight bash %}
+
 function iqr(){
   sort -n | awk '{
     vals[cnt] = $1; cnt++;
@@ -60,4 +64,5 @@ function iqr(){
       print vals[q1], vals[q3], vals[q3] - vals[q1]
   }'
 }
-```
+
+{% endhighlight %}
