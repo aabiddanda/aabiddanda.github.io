@@ -25,7 +25,7 @@ tags: [eigenvalue, markov chains, graph theory]
 
 # Markov Chains
 
-Markov Chains are a fundamental stochastic processes that are used in a wide variety of fields. They can be represented by state machines where the probability of moving between the states are "transition probabilities. Markov Chains follow the "Markov Property", which plainly stated means that "The probability of you moving to another state in the chain is only dependent on the current state you are at". Below we provide a depiction of a Markov Chain as a graph.
+Markov Chains are a fundamental stochastic processes that are used in a wide variety of fields. They can be represented by state machines where the probability of moving between the states are "transition" probabilities. Markov Chains follow the [Markov Property](https://en.wikipedia.org/wiki/Markov_property), and below we provide a depiction of a Markov Chain as a graph.
 
 <figure class="figure">
   <img src="/images/blog_images/bounds/markov_chain_demo.png" width="500" height="350" alt="">
@@ -48,7 +48,7 @@ The stationary distribution can be described by a distribution on the states \\(
 
 $$ \mathbf{\pi}^T = \mathbf{\pi}^T\mathbf{P} $$
 
-How might we approach finding this stationary distribution though? There are three ways we might try: (1) take the transition matrix \\(P\\) to a very high power and extract a row, (2) solve via a set of global-balance equations, or (3) solve for the stationary distribution via eigen-decomposition. The first approach is quite unprincipled, and the second approach is explained [here](http://stephens999.github.io/fiveMinuteStats/analysis/stationary_distribution.html), so we will go with the eigen-decomposition.
+How might we approach finding this stationary distribution though? There are three ways we might try: (1) take the transition matrix \\(P\\) to a very high power and extract a row, (2) solve via a set of global-balance equations, or (3) solve for the stationary distribution via eigen-decomposition. The first approach is quite unprincipled (because defining the power seems difficult), and the second approach is explained [here](http://stephens999.github.io/fiveMinuteStats/analysis/stationary_distribution.html), so we will go with the eigen-decomposition.
 
 We can describe the eigen-decomposition as the following equation:
 
@@ -69,7 +69,7 @@ Here we go over some theory and methods that pertain to random walks on graphs (
 
 # Eigenvalue Bounds via Poincare Inequalities
 
-In order to pursue this we need to actually define the graph, where there is an edge on \\(\{x,y\}\\) if \\(Q(x,y) > 0\\), where \\( Q(x,y) = \pi(x)P(x,y) \\). This essentially means that an edge should exist if there is any probability of moving from state \\(x\\) to state \\(y\\). We can then define path lengths through the graph from node \\(x\\) to node \\(y\\) as :
+To start we need to actually define the graph, where there is an edge on \\(\{x,y\}\\) if \\(Q(x,y) > 0\\), where \\( Q(x,y) = \pi(x)P(x,y) \\). This means that an edge should exist if there is any probability of moving from state \\(x\\) to state \\(y\\). We can then define path lengths through the graph from node \\(x\\) to node \\(y\\) as :
 
 $$ | \gamma_{xy} |  = \sum_{e \in \gamma_{xy}} \frac{1}{Q(e)} $$
 
@@ -79,17 +79,17 @@ From this notion of paths through the graph, a further definition can be made:
 
 $$ \kappa = \text{max}_e \sum_{e \in \gamma_{xy}} |\gamma_{xy}|\pi(x)\pi(y) $$
 
-The maximum is taken over all directed edges in the graph, and is summed over all paths that contain that maximal edge. This quantity can intuitively be thought of as finding the largest "bottleneck" in the flow of probability between the states of the Markov Chain.
+The maximum is taken over all directed edges in the graph, and is summed over all paths that contain that maximal edge. This quantity can intuitively be thought of as finding the largest "bottleneck" in the flow of probability between the states of the Markov Chain. This is similarly related to ideas about [max-flow/min-cut](https://en.wikipedia.org/wiki/Max-flow_min-cut_theorem) and the [Ford-Fulkerson algorithm](https://en.wikipedia.org/wiki/Ford%E2%80%93Fulkerson_algorithm).
 
 ## Derivation of Poincare Bounds
 
 <!-- TODO : define the phi notation above as a continuous analog -->
 
-In order to prove our upper-bound on the eigenvalue of \\(\mathbf{P}\\) we need to work with the Laplacian of \\(\mathbf{P}\\) which is defined as:
+In order to prove our upper-bound on the eigenvalue of \\(\mathbf{P}\\) we need to work with the [Laplacian](https://en.wikipedia.org/wiki/Laplacian_matrix) of \\(\mathbf{P}\\) which is defined as:
 
 $$ \mathbf{L} = \mathbf{I} - \mathbf{P}, \beta_i = 1 - \lambda_i$$
 
-Where \\(\beta_i\\) are the eigenvalues of \\(\mathbf{L}\\). Following from previous work (Horn and Johnson), we can define the following:
+Where \\(\beta_i\\) are the eigenvalues of \\(\mathbf{L}\\). Following from previous work ([Horn and Johnson](https://www.google.com/books/edition/Matrix_Analysis/PlYQN0ypTwEC?hl=en)), we can define the following:
 
 $$ \beta_i = inf\left\{ \frac{E(\phi, \phi)}{Var(\phi)} \right\} $$
 
@@ -200,6 +200,6 @@ To address this problem, Guan and Stephens proposed an MCMC algorithm where one 
 
 ## References
 
-* Original Diaconis and Stroock Paper
+* [Diaconis and Stroock 1991](https://projecteuclid.org/journals/annals-of-applied-probability/volume-1/issue-1/Geometric-Bounds-for-Eigenvalues-of-Markov-Chains/10.1214/aoap/1177005980.full)
 * Matsen and Wakeley paper
 * Guan and Stephens paper on MCMC with multi-modal distributions
