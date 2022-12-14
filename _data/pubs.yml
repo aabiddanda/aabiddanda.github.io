@@ -1,6 +1,22 @@
-- title: Expanding the stdpopsim species catalog, and lessons learned for realistic genome simulations 
+- title: Whole-genome sequencing across 449 samples spanning 47 ethnolinguistic groups provides insights into genetic diversity in Nigeria 
   journal: bioRxiv
-  authors: M. Elise Lauterbur, Maria Izabel A. Cavassim, ..., Peter L. Ralph, Daniel R. Schrider, Ilan Gronau. 
+  authors: Esha Joshi, <strong>Arjun Biddanda</strong>, Jumi Popoola, Aminu Yakubu, Oluyemisi Osakwe, Deliali Attipoe, 54gene Team, NCD-GHS Consortium, Estelle Dogbo, Babatunde Salako, Oyekanmi Nash, Omolola Salako, Olubukunola Oyedele, Golibe Eze-Echesi, Segun Fatumo, Abasi Ene-Obong, Colm O'Dushlaine
+  year: 2022
+  url: https://www.biorxiv.org/content/10.1101/2022.12.09.519178v1
+  pdf: https://www.biorxiv.org/content/10.1101/2022.12.09.519178v1.full.pdf
+  software: https://54gene-wgs-germline.readthedocs.io/en/latest/
+
+- title: A survey of proteomic variation across two ethnic groups in Nigeria and its relationship to obesity risk 
+  journal: bioRxiv
+  authors: <strong>Arjun Biddanda<sup>*</sup></strong>, Karen Perez de Arce, Golibe Eze-Echesi, Chiamaka Nwuba, Yusuf Ibrahim, Olubukunola Oyedele, Esha Joshi, Boladale Alalade, Olanrewaju Ajayi, Chidimma Nwatu, Aminu Yakubu, Abasi Ene-Obong, Jumi Popoola, Colm O'Dushlaine, Peter Fekkes 
+  year: 2022
+  url: https://www.biorxiv.org/content/10.1101/2022.12.09.519773v1
+  pdf: https://www.biorxiv.org/content/10.1101/2022.12.09.519773v1.full.pdf
+  software: https://54gene-olink-qc.readthedocs.io/en/latest/
+
+- title: Expanding the stdpopsim species catalog, and lessons learned for realistic genome simulations
+  journal: bioRxiv
+  authors: M. Elise Lauterbur, Maria Izabel A. Cavassim, ..., Peter L. Ralph, Daniel R. Schrider, Ilan Gronau.
   year: 2022
   url: https://www.biorxiv.org/content/biorxiv/early/2022/10/31/2022.10.29.514266
   pdf: https://www.biorxiv.org/content/biorxiv/early/2022/10/31/2022.10.29.514266.full.pdf
@@ -9,8 +25,8 @@
   journal: bioRxiv
   authors: <strong>Arjun Biddanda<sup>*</sup></strong>, Esha Bandyopadhyay<sup>*</sup>, Constanza de la Fuente Castro<sup>*</sup>, David Witonsky, Nagarjuna Pasupuleti, Renée Fonseca, Suzanne Freilich, Hannah M. Moots, Jovan Stanisavic, Tabitha Willis, Anoushka Menon, Mohammed S. Mustak, Chinnappa Dilip Kodira, Anjaparavanda P. Naren, Mithun Sikdar, Niraj Rai, Maanasa Raghavan
   year: 2022
-  url: https://www.biorxiv.org/content/10.1101/2022.07.06.498959v1
-  pdf: https://www.biorxiv.org/content/10.1101/2022.07.06.498959v1.full.pdf
+  url: https://www.biorxiv.org/content/10.1101/2022.07.06.498959v2
+  pdf: https://www.biorxiv.org/content/10.1101/2022.07.06.498959v2.full.pdf
 
 - title : Biobank-scale inference of ancestral recombination graphs enables genealogy-based mixed model association of complex traits
   journal: bioRxiv 
