@@ -32,12 +32,11 @@ function corr(){
 }
 {% endhighlight %}
 
-
 ##  Median Algorithm
 
-This is a fairly simple algorithm that will come very close to the median (it won't do the averaging though)
-
+This is a fairly simple algorithm that will come very close to the median (it won't do the averaging though to break intermediate values): 
 {% highlight bash %}
+
 function median(){
   sort -n | awk 'BEGIN {cnt=0;} { 
      vals[cnt] = $1; cnt++;
@@ -45,13 +44,14 @@ function median(){
 }
 {% endhighlight %}
 
-It's not the fastest solution possible but for some context takes about ~30 seconds for 10 million entries on a 2020 Macbook Air without having to necessarily read a file completely into memory.   
+It's not the fastest solution possible but for some context takes about ~30 seconds for 10 million entries on a 2020 Macbook Air without having to necessarily read a file completely into memory. An improved version of this would likely use [Hoare's Selection Algorithm](https://en.wikipedia.org/wiki/Quickselect) in combination with a maintained dictionary of counts.
 
 ## Outlier Detection via Inter-Quartile Range
 
 One of the typical checks that you might want to do for a data stream would be to check the number of points that fall outside some interquartile range. In order to calculate these interquartile ranges we can then calculate them as below:
 
 {% highlight bash %}
+
 function iqr(){
   sort -n | awk '{
     vals[cnt] = $1; cnt++;
