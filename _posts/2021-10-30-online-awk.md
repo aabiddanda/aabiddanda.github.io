@@ -35,9 +35,8 @@ function corr(){
 ##  Median Algorithm
 
 This is a fairly simple algorithm that will come very close to the median (it won't do the averaging though to break intermediate values): 
-
-
 {% highlight bash %}
+
 function median(){
   sort -n | awk 'BEGIN {cnt=0;} { 
      vals[cnt] = $1; cnt++;
@@ -52,6 +51,7 @@ It's not the fastest solution possible but for some context takes about ~30 seco
 One of the typical checks that you might want to do for a data stream would be to check the number of points that fall outside some interquartile range. In order to calculate these interquartile ranges we can then calculate them as below:
 
 {% highlight bash %}
+
 function iqr(){
   sort -n | awk '{
     vals[cnt] = $1; cnt++;
