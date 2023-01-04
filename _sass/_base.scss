@@ -17,7 +17,7 @@ body {
     line-height: $base-line-height;
     color:       $text-color;
     background-color: $background;
-    margin: 0 $spacing-unit/2;
+    margin: 0 calc($spacing-unit / 2);
     -webkit-text-size-adjust: 100%;
 }
 
@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit/2;
+    margin-bottom: calc($spacing-unit / 2);
 }
 
 hr {

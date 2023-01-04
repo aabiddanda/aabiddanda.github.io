@@ -15,8 +15,8 @@ My research interests span theoretical and applied population genetics, particul
 ## Contact
 
 Email: aa[lastname]@gmail.com<br/>
-[Github]{:target="_blank"} <br/>
 [Google Scholar]{:target="_blank"} <br/> 
+[Github]{:target="_blank"} <br/>
 [Twitter]{:target="_blank"} <br/>
 
 
