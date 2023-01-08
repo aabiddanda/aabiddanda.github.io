@@ -166,36 +166,37 @@ $$
 
 While the random-walk assumption may not be appropriate for all scenarios, it certainly holds in a large number of them and that is what makes this bound of use in practical scenarios. It also suggests that algorithmic methods to reduce any element of the denominator will result in faster mixing of the Markov-Chain towards stationarity. In principle, one approach is to artifically reduce the prevalence of "hubs" in the network to decrease the maximal degree of a node within the graph \\( d_* \\) since that value affects the bound with \\(\mathcal{O}(d_*^{-2})\\). 
 
+As an experiment, you can see what the effect of different simulated graph structures are on the second eigenvalue bound \\(\lambda_1\\). Provided a given graph \\(G\\), we can calculate the bounds as mentioned above to check for how close we can get to stationarity. From the brief experiment it appears that graphs where edges are placed according to a uniform probability have a slightly faster mixing rate than "small-world" networks that are randomly generated. For the full notebook details of the specifics of the experiment please see this [gist](https://gist.github.com/aabiddanda/643d71ae881bcb7bd51a53d396286846). 
+
+<figure class="figure">
+  <img src="/images/blog_images/bounds/eigenvalue_bounds.01082022.png" width="600" height="350" alt="">
+  <figcaption class="figcaption">The impact of different graph structures across 100 random graphs</figcaption>
+</figure><br>
+
 
 # Implications
 
-I first learned about these ideas on rates of Markov Chain convergence in the context of two very different models. The first was determining properties of genealogies when there is a specific form of population structure known as the "island model". A figure is given below of a sample island model with 4 demes.
-
-![](/images/blog_images/island_model.png)
+I first learned about these ideas on rates of Markov Chain convergence in the context of two very different models. The first was determining properties of genealogies when there is a specific form of population structure known as the "island model". The island model is population dynamic model where the migration matrix between a set of demes is fully-connected and has weights (migration rates) that are non-zero. However, the migration rates may be different by orders of magnitude, creating scenarios where different collections of "islands" or demes are more well connected.  
 
 The upper bound on the second eigenvalue of a random-walk in an \\(n\\)-deme island model derived by [Matsen and Wakeley](https://wakeleylab.oeb.harvard.edu/publications/convergence-island-model-coalescent-process-populations-restricted-migration) is:
 
 $$
 \begin{aligned}
 \kappa &\leq \frac{b\gamma_*d_*}{n}\\
-\lambda_1 &= 1 - \frac{1}{\kappa}\\
+\lambda_1 &\leq 1 - \frac{1}{\kappa}\\
 &\leq  1 - \frac{n}{b\gamma_*d_*}\\
 \end{aligned}
 $$
 
-Thus we can use the bounds proposed here to compute the upper bound on the convergence to the island model even if there is limited migration. Notably, Matsen and Wakeley use this bound to show that there is no dependence on the number of samples, but rather this can be used to show properties of the genealogies when there is an infinite number of demes (\\(n \rightarrow \infty\\) in our notation)
+Thus we can use the bounds proposed here to compute the upper bound on the convergence to the island model even if there is limited migration (e.g. where some components of the island model are well-connected but limited connectivity between components). Notably, Matsen and Wakeley use this bound to show that there is no dependence on the number of samples, but rather this can be used to show properties of the genealogies when there is an infinite number of demes (\\(n \rightarrow \infty\\) in our notation).
 
-The second context was in Markov Chain Monte Carlo (MCMC) sampling distributions that have multiple modes.
-
-The primary problem with running a Markov Chain to sample from a multi-modal distribution is that if it gets "stuck" in a mode, it can be difficult to sample outside of the mode. In a graph-theoretic analog, it would be like having many small but dense sub-networks and there are very few connections between these small, dense networks. If we review the expression for the eigenvalue bounds that we saw before based on the graph structure we have:
+The second context was in Markov Chain Monte Carlo (MCMC) sampling distributions that have multiple modes. The primary problem with running a Markov Chain to sample from a multi-modal distribution is that if it gets "stuck" in a mode, it can be difficult to sample outside of the mode because the most likely proposal is to stay within that specific mode of the stationary distribution. In the graph-theoretic sense, it would be like having many small but dense sub-networks and there are very few connections between these small, dense networks so it is very difficult to randomly move between sub-networks. If we review the expression for the eigenvalue bounds that we saw before based on the graph structure we have:
 
 $$ \lambda_1 \leq 1 - \frac{2|E|}{bd_*^2\gamma_*} $$
 
-These small-world networks have high node density (which increases the maximum degree of the node) as well as it being quite difficult to travel between them (increasing the maximum path length). These two properties, particularly the increase of the maximum degree, really hurts the rate of convergence to the stationary distribution.
+These small-world networks have high node density (which increases the maximum degree of the node- \\( d_* \\)) as well as it being quite difficult to travel between them (increasing the maximum path length - \\( \gamma_* \\)). These two properties, particularly the increase of the maximum degree, really hurts the rate of convergence to the stationary distribution. To address this problem, one can leverage MCMC algorithms where one runs multiple MCMC chains with different levels of "heat"[^3]. One can also ideally leverage the eigenvalue bounds to set a data-driven establishment of where to set the number of burn-in iterations for MCMC.  
 
-To address this problem, Guan and Stephens proposed an MCMC algorithm where one runs multiple MCMC chains with different levels of "heat"[^3]. This algorithm is known as the STEEP algorithm.
-
-[^3]: "heating" is a technique where you can increase the variance of the proposals to suggest larger jumps (they have a flatter likelihood surface). for more details see [here]()
+[^3]: "heating" or "tempering" is a technique where you can increase the variance of the proposals to suggest larger jumps (they have a flatter likelihood surface). for more details see [here](https://en.wikipedia.org/wiki/Parallel_tempering)
 
 ## References
 
