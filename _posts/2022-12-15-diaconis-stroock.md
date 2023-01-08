@@ -2,7 +2,7 @@
 layout: post
 title: "Diaconis-Stroock Eigenvalue Bounds for Markov Chain Convergence"
 description: "Convergence Limits of Markov Chains"
-tags: [eigenvalue, markov chains, graph theory]
+tags: [eigenvalues, markov chains, graph theory]
 ---
 
 <style>
@@ -65,25 +65,26 @@ From all of the above we have a principled way to compute the stationary distrib
 
 It is nice that this stationary distribution is solvable, but we can also ask *how fast* the approach to the stationary distribution is. This is related to the difference between the first and second eigenvalues in the eigen-decomposition or \\(\| 1 - \lambda_1\|\\). The general idea is that \\(\lambda_1\\) tells us how fast the largest of the vanishing terms (\\(\lambda_i < 1\\)) approach 0 and disappear.
 
-Here we go over some theory and methods that pertain to random walks on graphs (and subsequently Markov Chains) in order to determine bounds on the value of the second eigenvalue \\((\lambda_1)\\) and providing a bound on the convergence of Markov chains to their stationary distributions.
+Here we go over some theory and methods that pertain to random walks on graphs (and subsequently Markov Chains) to determine bounds on the value of the second eigenvalue \\((\lambda_1)\\) and providing a bound on the convergence of Markov chains to their stationary distributions.
 
 # Eigenvalue Bounds via Poincare Inequalities
 
 To start we need to actually define the graph, where there is an edge on \\(\{x,y\}\\) if \\(Q(x,y) > 0\\), where \\( Q(x,y) = \pi(x)P(x,y) \\). This means that an edge should exist if there is any probability of moving from state \\(x\\) to state \\(y\\). We can then define path lengths through the graph from node \\(x\\) to node \\(y\\) as :
 
-$$ | \gamma_{xy} |  = \sum_{e \in \gamma_{xy}} \frac{1}{Q(e)} $$
+$$ |\gamma_{xy}|  = \sum_{e \in \gamma_{xy}} \frac{1}{Q(e)} $$
 
-Assuming the Markov Chain is [irreducible](https://en.wikipedia.org/wiki/Markov_chain#Properties), we know that paths exist from every state to every other state in the Markov Chain.
+, where \\(Q(e) = Q(x,y)\\) if \\(e = {x,y}\\) as a shorthand notation. Assuming the Markov Chain is [irreducible](https://en.wikipedia.org/wiki/Markov_chain#Properties), we know that paths exist from every state to every other state in the Markov Chain.
 
 From this notion of paths through the graph, a further definition can be made:
 
-$$ \kappa = \text{max}_e \sum_{e \in \gamma_{xy}} |\gamma_{xy}|\pi(x)\pi(y) $$
+$$ \kappa = \text{max}_e \sum_{e \ni \gamma_{xy}} |\gamma_{xy}|\pi(x)\pi(y) $$
 
-The maximum is taken over all directed edges in the graph, and is summed over all paths that contain that maximal edge. This quantity can intuitively be thought of as finding the largest "bottleneck" in the flow of probability between the states of the Markov Chain. This is similarly related to ideas about [max-flow/min-cut](https://en.wikipedia.org/wiki/Max-flow_min-cut_theorem) and the [Ford-Fulkerson algorithm](https://en.wikipedia.org/wiki/Ford%E2%80%93Fulkerson_algorithm).
+, where the maximum is taken over all directed edges in the graph, and is summed over all paths that contain that maximal edge. This quantity can intuitively be thought of as finding the largest "bottleneck" in the flow of probability between the states of the Markov Chain that go through the directed edge \\(e\\). This is related to ideas about [max-flow/min-cut](https://en.wikipedia.org/wiki/Max-flow_min-cut_theorem) and the [Ford-Fulkerson algorithm](https://en.wikipedia.org/wiki/Ford%E2%80%93Fulkerson_algorithm).
+
 
 ## Derivation of Poincare Bounds
 
-<!-- TODO : define the phi notation above as a continuous analog -->
+If we define \\(\phi (x)\\) as a continuous function on the finite states of the Markov Chains \\(x \in X\\), we can explore the convergence of the Markov-Chain while accounting for a specific "value" or "weight" for each of the states. 
 
 In order to prove our upper-bound on the eigenvalue of \\(\mathbf{P}\\) we need to work with the [Laplacian](https://en.wikipedia.org/wiki/Laplacian_matrix) of \\(\mathbf{P}\\) which is defined as:
 
@@ -91,44 +92,41 @@ $$ \mathbf{L} = \mathbf{I} - \mathbf{P}, \beta_i = 1 - \lambda_i$$
 
 Where \\(\beta_i\\) are the eigenvalues of \\(\mathbf{L}\\). Following from previous work ([Horn and Johnson](https://www.google.com/books/edition/Matrix_Analysis/PlYQN0ypTwEC?hl=en)), we can define the following:
 
-$$ \beta_i = inf\left\{ \frac{E(\phi, \phi)}{Var(\phi)} \right\} $$
+$$ \beta_1 = inf\left\{ \frac{E(\phi, \phi)}{Var(\phi)} \right\} $$
 
 Where \\(Var(\phi)\\) is the variance of \\(\phi\\) relative to \\(\pi\\) and
 
 $$ E(\phi, \phi) = \frac{1}{2} \sum_{x,y} (\phi(x) - \phi(y))^2Q(x,y)$$
 
-From a definition of \\(Var(\phi)\\) we can start our derivation:
-
-<!-- TODO : need to get the bounds correct here -->
-<!-- TODO : need to get  -->
+From the definitions of \\(Var(\phi)\\) and \\(\kappa\\)  we can start our derivation:
 
 $$
 \begin{aligned}
 	Var(\phi) &= \frac{1}{2} \sum_{x,y \in X} (\phi(x) - \phi(y))^2\pi(x)\pi(y)\\
-	&\leq \frac{1}{2} \sum_{x,y \in X} |\gamma_{xy}|\pi(x)\pi(y) \sum_{\gamma_{xy} \backin e} Q(e)\phi(e)^2\\
-	&= \frac{1}{2} \sum_{e} \phi(e)^2 Q(e) \sum_{\gamma_{x,y} \backin e } |\gamma_{xy}| \pi(x)\pi(y)\\
-	&= E(\phi, \phi) \sum_{\gamma_{x,y} \backin e } |\gamma_{xy}| \pi(x)\pi(y)\\
+	&\leq \frac{1}{2} \sum_{x,y \in X} |\gamma_{xy}|\pi(x)\pi(y) \sum_{\gamma_{xy} \ni e} Q(e)\phi(e)^2\\
+	&= \frac{1}{2} \sum_{e} \phi(e)^2 Q(e) \sum_{\gamma_{x,y} \ni e } |\gamma_{xy}| \pi(x)\pi(y)\\
+	&= E(\phi, \phi) \sum_{\gamma_{x,y} \ni e } |\gamma_{xy}| \pi(x)\pi(y)\\
 	Var(\phi) &\leq \kappa E(\phi, \phi)\\
 	\beta_1 &= inf \left\{ \frac{E(\phi, \phi)}{Var(\phi)} \right\}\\
 	&\geq \frac{E(\phi, \phi)}{\kappa E(\phi, \phi)}\\
 	&\geq \frac{1}{\kappa}\\
-	\lambda_1 &\leq 1 - \beta_i\\
+	\lambda_1 &\leq 1 - \beta_1\\
 	\lambda_1 &\leq 1 - \frac{1}{\kappa}
 \end{aligned}
 $$
 
-Note that while the results above are elegant from a mathematical perspective, for actual practicality this is a little bit tricky since the quantity \\(\kappa\\) contains terms related to the stationary distribution! However we can bound \\(\kappa\\) in terms of structural elements of the Markov Chain graph thereby reducing our reliance on knowing the stationary distribution.
+Note that while the results above are elegant from a mathematical perspective, for actual practicality this is a little bit tricky since the quantity \\(\kappa\\) contains terms related to the stationary distribution! However we can bound \\(\kappa\\) in terms of structural elements of the Markov Chain graph thereby reducing our reliance on knowing the stationary distribution. 
 
 # Eigenvalue Bounds via Graph Structure
 
-To characterize this we must first define the properties of the graph \\(G = (V,E)\\) and a random walk from a node to any of its neighbors is only dependent on the degree of the node:
+To characterize the effect of graph structure on the eigenvalue bounds, we first define the properties of the graph \\(G = (V,E)\\) and a random walk from a node to any of its neighbors being only dependent on the degree of the node:
 
 $$ P(x,y) = \begin{cases}
       \frac{1}{d(x)} & (x,y) \in E \\
       0 & else\\
    \end{cases} $$
 
-Due to this uniformity in choosing the next node, the stationary distribution of visiting a node \\(x\\) is that nodes degree over the total number of edges in the graph \\(\pi(x) = \frac{d(x)}{2\|E\|} \\) [^2].
+Due to this uniformity in choosing the next node, the stationary distribution of visiting a node \\(x\\) is the node's degree over the total number of edges in the graph \\(\pi(x) = \frac{d(x)}{2\|E\|} \\) [^2].
 
 [^2]: Note that here I am assuming that the graph is undirected and contains no cycles.
 
@@ -148,13 +146,13 @@ $$
 	\gamma_* &= max_\gamma |\gamma|\\
 	b &= max_e {\gamma \in \Gamma, e \in \gamma}\\
 	\kappa &= \text{max}_e \sum_{e \in \gamma_{xy}} |\gamma_{xy}|\pi(x)\pi(y)\\
-	&\leq max_e \sum_{e \in \gamma_{xy}} |\gamma_{xy}| \left(\frac{d_{max}}{2|E|}\right)^2\\
+	&\leq max_e \sum_{e \in \gamma_{xy}} |\gamma_{xy}| \left(\frac{d_*}{2|E|}\right)^2\\
 	&\leq \left(\frac{d_*}{2|E|}\right)^2 2|E|\gamma_* b\\
 	&= \frac{bd_*^2\gamma_*}{2|E|}\\
 \end{aligned}
 $$
 
-The term \\(b\\) describes the maximum number of paths that pass through the edge, a measure of which edge bottlenecks the graph. The term \\(\gamma_*\\) simply describes the longest path within the graph (in numbers of edges). \\(d_*\\) is the maximal degree of any node within the graph.
+The term \\(b\\) describes the maximum number of paths that pass through the edge, a measure of which edge bottlenecks the graph. The term \\( \gamma_* \\) simply describes the longest path within the graph (in numbers of edges). \\( d_* \\) is the maximal degree of any node within the graph.
 
 From our redefining the upper bound on \\(\kappa\\) we can turn to our redefinition of the first eigenvalue:
 
@@ -166,11 +164,12 @@ $$
 \end{aligned}
 $$
 
-While the random-walk assumption may not be appropriate for all scenarios, it certainly holds in a large number of them and that is what makes this bound of use to us. One key question that is neglected here is what happens if the edges are weighted.
+While the random-walk assumption may not be appropriate for all scenarios, it certainly holds in a large number of them and that is what makes this bound of use in practical scenarios. It also suggests that algorithmic methods to reduce any element of the denominator will result in faster mixing of the Markov-Chain towards stationarity. In principle, one approach is to artifically reduce the prevalence of "hubs" in the network to decrease the maximal degree of a node within the graph \\( d_* \\) since that value affects the bound with \\(\mathcal{O}(d_*^{-2})\\). 
+
 
 # Implications
 
-I first discovered these ideas on rates of Markov Chain convergence in the context of two very different models. The first was determining properties of genealogies when there is a specific form of population structure known as the "island model". A figure is given below of a sample island model with 4 demes.
+I first learned about these ideas on rates of Markov Chain convergence in the context of two very different models. The first was determining properties of genealogies when there is a specific form of population structure known as the "island model". A figure is given below of a sample island model with 4 demes.
 
 ![](/images/blog_images/island_model.png)
 
@@ -184,7 +183,7 @@ $$
 \end{aligned}
 $$
 
-Thus we can use the bounds proposed here to compute the upper bound on the convergence. Most notably, Matsen and Wakeley in particular use this bound to show that there is no dependence on the number of samples, but rather this can be used to show properties of the genealogies when there is an infinite number of demes (\\(n \rightarrow \infty\\) in our notation)
+Thus we can use the bounds proposed here to compute the upper bound on the convergence to the island model even if there is limited migration. Notably, Matsen and Wakeley use this bound to show that there is no dependence on the number of samples, but rather this can be used to show properties of the genealogies when there is an infinite number of demes (\\(n \rightarrow \infty\\) in our notation)
 
 The second context was in Markov Chain Monte Carlo (MCMC) sampling distributions that have multiple modes.
 
@@ -201,5 +200,5 @@ To address this problem, Guan and Stephens proposed an MCMC algorithm where one 
 ## References
 
 * [Diaconis and Stroock 1991](https://projecteuclid.org/journals/annals-of-applied-probability/volume-1/issue-1/Geometric-Bounds-for-Eigenvalues-of-Markov-Chains/10.1214/aoap/1177005980.full)
-* Matsen and Wakeley paper
-* Guan and Stephens paper on MCMC with multi-modal distributions
+* [Matsen and Wakeley 2006](https://wakeleylab.oeb.harvard.edu/sites/hwpi.harvard.edu/files/wakeleylab/files/matsenandwakeley06.pdf?m=1442935676)
+* [Guan & Krone 2007](https://arxiv.org/abs/math/0703021)
