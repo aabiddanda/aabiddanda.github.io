@@ -9,7 +9,7 @@ This is a space for technical notes or other collections on various topics that 
 ## Statistical/Population Genetics 
 ### [Moran Model deviations under large sample-size](https://github.com/aabiddanda/Cannings_Model_Approximations/blob/master/pdf/derivation.pdf)
 
-One of my first mini-projects in grad school was looking at how the Moran model behaves under large sample sizes relative to the population size. It was a really fun way to get some theoretical insight into the coalescent process and the limiting behavior of such discrete models. If interested in the code to reproduce any of the figures, you can find the code here in this [repository](https://github.com/aabiddanda/Cannings_Model_Approximations) 
+One of my first mini-projects in grad school was looking at how the Moran model behaves under large sample sizes relative to the population size. It was a really fun way to get some theoretical insight into the coalescent process and the limiting behavior of discrete models. If interested in the code to reproduce any of the figures, you can find the code here in this [repository](https://github.com/aabiddanda/Cannings_Model_Approximations). This work was heavily inspired by the work of [Bhaskar, Clark, and Song](https://www.pnas.org/doi/full/10.1073/pnas.1322709111) as I was starting my PhD. 
 
 
 ## Genetics & Society
