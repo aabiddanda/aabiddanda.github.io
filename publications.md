@@ -37,7 +37,7 @@ title: Publications
 
 {% endfor %}
 
-## Articles 
+## Peer-Reviewed Publications 
 {% for pub in site.data.pubs %}
 
 {% if pub.journal != "bioRxiv" %}

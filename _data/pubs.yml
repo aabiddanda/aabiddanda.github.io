@@ -29,11 +29,11 @@
   pdf: https://www.biorxiv.org/content/10.1101/2022.07.06.498959v2.full.pdf
 
 - title : Biobank-scale inference of ancestral recombination graphs enables genealogy-based mixed model association of complex traits
-  journal: bioRxiv 
-  authors:  Brian C Zhang, <strong>Arjun Biddanda</strong>, Pier Francesco Palamara
-  url:  https://www.biorxiv.org/content/10.1101/2021.11.03.466843v1
-  year: 2022
-  pdf: https://www.biorxiv.org/content/10.1101/2021.11.03.466843v1.full.pdf
+  journal: Nature Genetics 
+  authors:  Brian C Zhang, <strong>Arjun Biddanda</strong>, Árni F Gunnarsson, Fergus Cooper, Pier Francesco Palamara
+  url:  https://www.nature.com/articles/s41588-023-01379-x
+  year: 2023
+  software: https://palamaralab.github.io/software/argneedle/
 
 - title: African-specific alleles modify risk for asthma at the 17q12-q21 locus in African Americans
   journal: Genome Medicine 
