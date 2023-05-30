@@ -37,10 +37,17 @@ title: Publications
 
 {% endfor %}
 
-## Peer-Reviewed Publications 
-{% for pub in site.data.pubs %}
 
-{% if pub.journal != "bioRxiv" %}
+<!-- Define the years here -->
+{% assign years = "2023, 2022, 2020, 2018, 2016, 2015" | split: ", " %}
+
+{% for year in years %}
+## {{year}}
+
+{%  for pub in site.data.pubs %}
+
+{% if pub.journal != "bioRxiv" and pub.year == year %}
+
 {% if pub.pdf and pub.software %}
   [**{{pub.title}}**]({{pub.url}})<br/>
   {{pub.authors}} <br/>
@@ -63,5 +70,7 @@ title: Publications
 {% endif %}
 
 {% endif %}
+
+{% endfor %}
 
 {% endfor %}
