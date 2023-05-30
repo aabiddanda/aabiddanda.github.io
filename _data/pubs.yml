@@ -14,19 +14,18 @@
   pdf: https://www.biorxiv.org/content/10.1101/2022.12.09.519773v1.full.pdf
   software: https://54gene-olink-qc.readthedocs.io/en/latest/
 
-- title: Expanding the stdpopsim species catalog, and lessons learned for realistic genome simulations
-  journal: bioRxiv
-  authors: M. Elise Lauterbur, Maria Izabel A. Cavassim, ..., <strong>Arjun Biddanda</strong> , ..., Peter L. Ralph, Daniel R. Schrider, Ilan Gronau.
-  year: 2022
-  url: https://www.biorxiv.org/content/biorxiv/early/2022/10/31/2022.10.29.514266
-  pdf: https://www.biorxiv.org/content/biorxiv/early/2022/10/31/2022.10.29.514266.full.pdf
-
 - title: Integrating genetic and oral histories of Southwest Indian populations
   journal: bioRxiv
   authors: <strong>Arjun Biddanda<sup>*</sup></strong>, Esha Bandyopadhyay<sup>*</sup>, Constanza de la Fuente Castro<sup>*</sup>, David Witonsky, Nagarjuna Pasupuleti, Renée Fonseca, Suzanne Freilich, Hannah M. Moots, Jovan Stanisavic, Tabitha Willis, Anoushka Menon, Mohammed S. Mustak, Chinnappa Dilip Kodira, Anjaparavanda P. Naren, Mithun Sikdar, Niraj Rai, Maanasa Raghavan
   year: 2022
   url: https://www.biorxiv.org/content/10.1101/2022.07.06.498959v2
   pdf: https://www.biorxiv.org/content/10.1101/2022.07.06.498959v2.full.pdf
+
+- title: Expanding the stdpopsim species catalog, and lessons learned for realistic genome simulations
+  journal: eLife
+  authors: M. Elise Lauterbur, Maria Izabel A. Cavassim, ..., <strong>Arjun Biddanda</strong> , ..., Peter L. Ralph, Daniel R. Schrider, Ilan Gronau.
+  year: 2023
+  url: https://elifesciences.org/reviewed-preprints/84874v2
 
 - title : Biobank-scale inference of ancestral recombination graphs enables genealogy-based mixed model association of complex traits
   journal: Nature Genetics 

@@ -19,12 +19,12 @@ Much of my current work is centered on human population genetics -with a goal to
 
 ### Statistical Genetics of Chromosomal Dosage and Aneuploidy
 
-While it is normal for most healthy individuals to contain two-copies of our genome within each cell, there can be deviations to this property either due to mutation (CNVs) or errors in chromosome segregation. A more recent research direction of mine has been to develop statistical methods for the analysis large-scale changes in chromosomal dosage (e.g. copy-number variation, or aneuploidy). Much of my research has been focused on pre-implantation genetic testing (PGT) data, which is typically quite sparse, to infer properties of aneuploidy and recombination landscapes.
+While it is normal for most healthy individuals to contain two-copies of our genome within each cell, there can be deviations to this property either due to mutation (CNVs) or errors in chromosome segregation. A more recent research direction of mine has been to develop statistical methods for the analysis large-scale changes in chromosomal dosage (e.g. copy-number variation, or aneuploidy). Much of my research has been focused on pre-implantation genetic testing (PGT) data, which is typically quite sparse, to infer properties of aneuploidy and meiotic recombination.
 
 Some active topics of research are:
 
 * Inferring crossover rates within embryo PGT datasets and their genetic architecture
-* Refining dosage constraint estimates of genes using embryonic segmental aneuploidies and CNV data
+* Refining dosage constraint estimates of genes using embryonic segmental aneuploidy estimates
 * Evolution of dosage constraints across somatic tissue evolution
 
 ### Theoretical Population Genetics
