@@ -3,24 +3,22 @@ layout: post
 title: "Useful research / programming / productivity tools"
 ---
 
-
 ## Research Tools
 
 1. [Obsidian](https://obsidian.md/)
 
-I'm a terrible notetaker. Like really, really bad. I've been slowly trying to be more diligent about storing little experimental results (e.g. power simulations or theoretical expectations). I've tried a decent number of different note-taking apps over the years and it seems like Obsidian has two elements 
+I'm a terrible notetaker. Like really, really bad. I've been slowly trying to be more diligent about storing little experimental results (e.g. power simulations or theoretical expectations). I've tried a decent number of different note-taking apps over the years and it seems like Obsidian has two elements that put it much farther ahead for note-management than other tools: 
 
+* Its usage of simple markdown language
+* Its based on plain-text stored in a directory 
 
-
+The first point means that writing small equations or linking in images is quite straightforward. The second means that if you combine it with something like Dropbox or another storage platform that you can very easily have your notes be transferrable on a different machine.
 
 2. [Paperpile](https://paperpile.com/app)
 
-Managing citations and a bibliography can be quite daunting when developing a project proposal 
+Managing citations and a bibliography can be quite daunting when developing a grant / paper. In biology (and modern science more generally) the pace of papers coming out that are relevant to your project increases at a fast rate. I've been using Paperpile since around 2020 and its been the one tool that I really think the paid version has massive benefits. 
 
-
-3. 
-
-
+Honestly, the ability to directly "search + cite" in google docs and easy exportation to BibTeX make this a gamechanger. There are some features related to shared libraries that can be quite annoying to deal with (e.g. syncing to Overleaf) but they are improving this substantially year by year so it might hit even greater heights. 
 
 ## Programming Tools
 
@@ -36,7 +34,7 @@ These sorts of "checks against specs" are a much more common framing in function
 
 2. [`pre-commit`](https://pre-commit.com/)
 
-In computational biology it is perhaps less common to care a lot about code style or interpretabilty, but using something like [`pre-commit`](https://pre-commit.com/) can allow you to ensure that your code is readable and interpretable [^1] It also very nicely just automatically reduces variability in styles to a recognized standard across languages which is great! 
+This is somewhat of a repeat from before but its too good to ignore and something lots of folks getting into computational biology for their first project may not encounter for a while. In computational biology it is perhaps less common to care a lot about code style or interpretabilty, but using something like [`pre-commit`](https://pre-commit.com/) can allow you to ensure that your code is readable and interpretable [^1] It also very nicely just automatically reduces variability in styles to a recognized standard across languages which is great! 
 
 Some clear benefits of using these tools are: 
 
@@ -51,6 +49,9 @@ Once you set this up (even for one-off-scripts), it takes maybe 1-2 months befor
 
 ## Productivity Tools 
 
+Admittedly my previous [tools](https://aabiddanda.github.io/blog/2020/12/08/tools) in this realm have been quite "effective"[^2] and its been still helpful. These combined with effective management of your calendar and living based on your calendar during the workday can be quite nice since at the end of the workday you know you were somewhat structured[^3]
 
 
 [1]: There are lots of researchers who care a lot about this - but generally speaking with the frequency at which analyses are required, style and interpretability frequently can take a backseat.
+[2]: Productivity is a strange thing to optimize for in life - more recently its just trying to not burn out and schedule truly relaxing breaks.
+[3]: Things can just arise, but try to only let near-term things derail your day as much as you can!
