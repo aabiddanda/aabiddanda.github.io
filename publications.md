@@ -18,17 +18,18 @@ title: Publications
   [**{{pub.title}}**]({{pub.url}})<br/>
   {{pub.authors}} <br/>
   <i>{{pub.journal}}</i> ({{pub.year}})<br/>
-  [[PDF]({{pub.pdf}})] [[Software]({{pub.software}})]
+  [PDF]({{pub.pdf}})<br/>
+  [Software]({{pub.software}})
 {% elsif pub.software %}
   [**{{pub.title}}**]({{pub.url}})<br/>
   {{pub.authors}} <br/>
   <i>{{pub.journal}}</i> ({{pub.year}})<br/>
-  [[Software]({{pub.software}})]
+  [Software]({{pub.software}})
 {% elsif pub.pdf %}
   [**{{pub.title}}**]({{pub.url}})<br/>
   {{pub.authors}} <br/>
   <i>{{pub.journal}}</i> ({{pub.year}})<br/>
-  [[PDF]({{pub.pdf}})] 
+  [PDF]({{pub.pdf}})
 {% else %}
   [**{{pub.title}}**]({{pub.url}})<br/>
   {{pub.authors}} <br/>
@@ -54,17 +55,18 @@ title: Publications
   [**{{pub.title}}**]({{pub.url}})<br/>
   {{pub.authors}} <br/>
   <i>{{pub.journal}}</i> ({{pub.year}})<br/>
-  [[PDF]({{pub.pdf}})] [[Software]({{pub.software}})]
+  [PDF]({{pub.pdf}})<br/>
+  [Software]({{pub.software}})
 {% elsif pub.software %}
   [**{{pub.title}}**]({{pub.url}})<br/>
   {{pub.authors}} <br/>
   <i>{{pub.journal}}</i> ({{pub.year}})<br/>
-  [[Software]({{pub.software}})]
+  [Software]({{pub.software}})
 {% elsif pub.pdf %}
   [**{{pub.title}}**]({{pub.url}})<br/>
   {{pub.authors}} <br/>
   <i>{{pub.journal}}</i> ({{pub.year}})<br/>
-  [[PDF]({{pub.pdf}})] 
+  [PDF]({{pub.pdf}}) 
 {% else %}
   [**{{pub.title}}**]({{pub.url}})<br/>
   {{pub.authors}} <br/>
@@ -88,17 +90,18 @@ title: Publications
   [**{{pub.title}}**]({{pub.url}})<br/>
   {{pub.authors}} <br/>
   <i>{{pub.journal}}</i> ({{pub.year}})<br/>
-  [[PDF]({{pub.pdf}})] [[Software]({{pub.software}})]
+  [PDF]({{pub.pdf}})<br/>
+  [Software]({{pub.software}})
 {% elsif pub.software %}
   [**{{pub.title}}**]({{pub.url}})<br/>
   {{pub.authors}} <br/>
   <i>{{pub.journal}}</i> ({{pub.year}})<br/>
-  [[Software]({{pub.software}})]
+  [Software]({{pub.software}})
 {% elsif pub.pdf %}
   [**{{pub.title}}**]({{pub.url}})<br/>
   {{pub.authors}} <br/>
   <i>{{pub.journal}}</i> ({{pub.year}})<br/>
-  [[PDF]({{pub.pdf}})] 
+  [PDF]({{pub.pdf}}) 
 {% else %}
   [**{{pub.title}}**]({{pub.url}})<br/>
   {{pub.authors}} <br/>
