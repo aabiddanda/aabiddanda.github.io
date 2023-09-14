@@ -119,7 +119,7 @@ The guidelines for the "PaperJam"[^3] are as follows:
 * The second should be published between 1990 - 2020
 * The third must be published between 2020 - present
 
-*NOTE: you're not limited to genetics! If you have interests outside of genetics/genomics that meet the criteria above and you could talk about that is highly encouraged*
+*NOTE: you're not limited to genetics! If you have interests outside of genetics/genomics that meet the criteria above and you could talk about that is highly encouraged.*
 
 <!-- There might be some common reactions to the task above:  -->
 
@@ -149,9 +149,9 @@ After each speaker, there will be around ~2 minutes for oral feedback from peers
 As an optional lunch discussion (pending interest), we can go over the points made in David Stern's excellent post ["How to give a talk"](https://www.howtogiveatalk.com/). If you are interested, simply read the post and come to lunch with your favorite bit of advice from that 
 
 
-[^0]: Copyright 1996 - Kazuki Takahashi
+[^0]: Copyright 1996 - Kazuki Takahashi.
 [^1]: Not that we believe this will be broken, but useful to state up front. 
 [^2]: [Exodia](https://yugioh.fandom.com/wiki/Exodia) is an absolutely ironclad metaphor for solidarity in academia and collaboration - each piece individually middling, but together , unstoppable.  
-[^3]: This is loosely inspired by previous attempts during group meetings (but with some additional structure). If you are looking for inspiration to make your paper choices see [here](https://www.youtube.com/watch?v=9EcjWd-O4jI){:target="_blank"}
+[^3]: This is loosely inspired by previous attempts during group meetings (but with some additional structure). If you are looking for inspiration to make your paper choices see [here](https://www.youtube.com/watch?v=9EcjWd-O4jI){:target="_blank"}.
 [^5]: If there is demand for this sort of activity in the future - it can certainly be a series of meetings down the road.
 [^6]: When in doubt, remember the only rule of the day! 
