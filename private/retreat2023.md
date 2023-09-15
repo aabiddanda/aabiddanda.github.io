@@ -28,7 +28,7 @@ If you have any questions/comments/concerns/vibes please contact Arjun via slack
 {% include image.html url="../../images/private_images/weareyugi.jpg" caption="<a href=\"https://yugioh.fandom.com/wiki/Heart_of_the_Cards\">Heart of the Lab</a>" height="300px" align="center" %}
 
 
-# Schedule (10/17/23) {#schedule}
+# Schedule (10/16/23) {#schedule}
 
 Given the shorter timeframe for the retreat - we've tried to organize it to be (1) highly focused and (2) limited in the amount of preparation required. We highly recommend getting your caffiene prior to arriving at FastForward U.
 
