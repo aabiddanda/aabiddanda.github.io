@@ -69,8 +69,8 @@ Given the shorter timeframe for the retreat - we've tried to organize it to be (
 <td markdown="span">Free Time (Meetings / Co-working / [Casino](https://www.caesars.com/horseshoe-baltimore) / Etc)</td>
 </tr>
 <tr>
-<td markdown="span">4:30 pm - 6:30 pm </td>
-<td markdown="span">Happy Hour @ [No Land Beyond](https://www.nolandbaltimore.com/)</td>
+<td markdown="span">5:00 pm - 6:30 pm </td>
+<td markdown="span">Happy Hour @ [Dutch Courage](https://dutchcouragebar.com/)</td>
 </tr>
 </tbody>
 </table>
