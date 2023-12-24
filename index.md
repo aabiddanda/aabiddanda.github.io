@@ -20,6 +20,6 @@ Email: aa[lastname]@gmail.com<br/>
 [Twitter]{:target="_blank"} <br/>
 
 
-[Twitter]: https://twitter.com/aabiddanda
+[Twitter]: https://twitter.com/aabiddanda 
 [Github]: https://github.com/aabiddanda
 [Google Scholar]: https://scholar.google.com/citations?user=BWVZXhgAAAAJ&hl=en
