@@ -12,19 +12,19 @@ Much of my current work is centered on human population genetics -with a goal to
 
 * Leveraging ARGs for inference of introgression (particularly when reference samples are unavailable)
 * Association mapping and quantitative genetics using inferred ARGs for complex variants (e.g. CNVs, SVs).
-* Biases in association power and considerations for meta-analysis of complex traits across multiple ancestries
+* Statistical considerations for meta-analysis of complex traits across multiple ancestries
 * Characterizing population history of Indian populations
 
 ### Statistical Genetics of Chromosomal Dosage and Aneuploidy
 
 {% include image.html url="../images/research_images/aneuploidy_dosage.jpg" caption="Schematic of large-scale chromosomal dosage changes<br /> in PGT-A data & differences between segmental aneuploidies <br /> vs. copy-number resolution in adult samples." height="300px" align="right" %}
 
-While it is normal for most healthy individuals to contain two-copies of our genome within each cell, there can be deviations to this property either due to mutation (CNVs) or errors in chromosome segregation. A more recent research direction of mine has been to develop statistical methods for the analysis large-scale changes in chromosomal dosage (e.g. copy-number variation, or whole-chromosome aneuploidy). Much of my research has been focused on pre-implantation genetic testing (PGT) data from in-vitro fertilization (IVF) embryos, which is quite sparsely sampled, to infer properties of aneuploidy and meiotic recombination related to fertility.
+While it is normal for most healthy individuals to contain two-copies of our genome within each cell, there can be deviations to this property either due to mutation (CNVs) or errors in chromosome segregation. A more recent research direction of mine has been to develop statistical methods for the analysis large-scale changes in chromosomal dosage (e.g. copy-number variation, or whole-chromosome aneuploidy). Much of my research has been focused on pre-implantation genetic testing (PGT) data from in-vitro fertilization (IVF) embryos, to infer properties of aneuploidy and meiotic recombination related to fertility.
 
 Some active topics of research in this area:
 
 * Inferring crossover rates in embryo PGT datasets and their genetic architecture
-* Refining dosage constraint estimates of genes using segmental aneuploidies
+* Refining dosage constraint estimates of genes from segmental aneuploidies
 * Evolution of dosage constraint/relaxation across somatic tissue evolution
 
 ### Theoretical Population Genetics
@@ -33,8 +33,7 @@ Some active topics of research in this area:
 
 Much of my applied work draws on results from population genetic theory, and I enjoy working on problems that involve more mathematical rigor. Typically, these are oriented towards understanding how theory can be used to intuit or improve statistical population genetic inference. Some active topics of research in this domain are: 
 
-* Genealogical models with time-stratified sampling
 * Two-locus genealogies with spatial and temporal structure
 * Inference of demographic history using time-stratified data
 * Evolution of recombination rates and meiosis-related traits
-* Genealogical/phylogenetic models for intra-cellular/somatic evolutionary inference 
+* Genealogical models for intra-cellular/somatic evolutionary inference 
