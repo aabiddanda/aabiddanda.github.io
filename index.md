@@ -17,9 +17,9 @@ My research interests span theoretical and applied population genetics, particul
 Email: aa[lastname]@gmail.com<br/>
 [Google Scholar]{:target="_blank"} <br/> 
 [Github]{:target="_blank"} <br/>
-<!-- [Twitter]{:target="_blank"} <br/> -->
+[Twitter]{:target="_blank"} <br/>
 
 
-<!-- [Twitter]: https://twitter.com/aabiddanda -->
+[Twitter]: https://twitter.com/aabiddanda
 [Github]: https://github.com/aabiddanda
 [Google Scholar]: https://scholar.google.com/citations?user=BWVZXhgAAAAJ&hl=en
