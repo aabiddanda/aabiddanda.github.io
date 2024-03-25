@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Is the Maryland flag an outlier?"
-description: "Fun with flags"
+title: "Is the Maryland flag a design outlier?"
 tags: [flags, PCA]
 ---
 

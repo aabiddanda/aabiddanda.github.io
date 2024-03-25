@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Diaconis-Stroock Eigenvalue Bounds for Markov Chain Convergence"
-description: "Convergence Limits of Markov Chains"
 tags: [eigenvalues, markov chains, graph theory]
 ---
 
