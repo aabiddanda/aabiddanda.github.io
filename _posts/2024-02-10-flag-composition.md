@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Flag composition analyses"
+title: "Is the Maryland flag an outlier?"
 description: "Fun with flags"
 tags: [flags, PCA]
 ---
@@ -24,7 +24,7 @@ tags: [flags, PCA]
 </style>
 
 
-I've lived in Maryland for ~2 years now and have always been amazed at two things immediately since moving here: 1) crabs and old bay really set the tone of "Maryland" and 2) a lot more pride in the Maryland flag in daily life. Like *a lot* of pride for the Maryland flag - much more than any other state that I've ever lived in. 
+I've lived in Maryland for ~2 years now and have always been amazed at two things immediately since moving here: 1) crabs and Old Bay really set the tone of "Maryland" in a very philosophical way and 2) there is a lot of pride in the Maryland flag in daily life. Like *a lot* of pride for the Maryland flag - much more than any other state that I've ever lived in. I've seen many more of these flags on houses, bumper stickers, and merchandise than I ever thought I would see for a state flag.  
 
 On the face of it -- the flag seems quite unique in design. With a majority color combination that is not common across a number of US flags (red, black, gold) and a distinct lack of a shade of blue that is on most flags. The checkerboard pattern is also quite unique across flags. 
 
