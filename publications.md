@@ -44,7 +44,7 @@ title: Publications
 
 
 <!-- Define the years here -->
-{% assign years = "2023, 2022, 2020, 2018, 2016, 2015" | split: ", " %}
+{% assign years = "2024, 2023, 2022, 2020, 2018, 2016, 2015" | split: ", " %}
 
 {% for year in years %}
 ## {{year}}
