@@ -16,3 +16,6 @@ permalink: /software/
 
 A small workflow I wrote while in industry to support automated QC of Olink targetted proteomics data for downstream applications. 
 
+### [arjun_plot](https://github.com/aabiddanda/arjun_plot)
+
+A collection of plotting utilities and functions for [matplotlib](https://matplotlib.org/stable/) that I have accrued over the years. Most of the routines are inspired by having to remake plots for publication or common plots that are useful in statistical genetics.
