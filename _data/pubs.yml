@@ -5,10 +5,10 @@
   url: https://www.nature.com/articles/s41586-024-07473-2
 
 - title:  Sources of gene expression variation in a globally diverse human cohort
-  journal: bioRxiv 
+  journal: Nature 
   authors: Dylan J. Taylor, Surya B. Chhetri, Michael G. Tassia, <strong>Arjun Biddanda</strong>, Stephanie M. Yan, Genevieve L. Wojcik, Alexis Battle, Rajiv C. McCoy 
   year: "2024"
-  url: https://www.biorxiv.org/content/10.1101/2023.11.04.565639v4 
+  url: https://www.nature.com/articles/s41586-024-07708-2 
   software: https://github.com/mccoy-lab/MAGE/tree/main
 
 - title: Whole-genome sequencing across 449 samples spanning 47 ethnolinguistic groups provides insights into genetic diversity in Nigeria 
