@@ -11,7 +11,7 @@ title: Publications
 <!-- ### Navigation
 [Preprints](#Preprints) [2023](#2023) [2022](#2022) [2020](#2020) [2018](#2018) [Older](#2016) -->
 
-## Preprints 
+<!-- ## Preprints 
 {% for pub in site.data.pubs %}
 
 {% if pub.journal == "bioRxiv" %}
@@ -40,7 +40,7 @@ title: Publications
 
 {% endif %}
 
-{% endfor %}
+{% endfor %} -->
 
 
 <!-- Define the years here -->
