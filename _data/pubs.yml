@@ -1,15 +1,21 @@
-- title: The Complete Sequence and Comparative Analysis of Ape Sex Chromosomes
-  journal: Nature 
-  authors: Kateryna D. Makova, Brandon D. Pickett, ..., <strong>Arjun Biddanda</strong>, ..., Evan E. Eichler, Adam M. Phillippy
-  year: "2024"
-  url: https://www.nature.com/articles/s41586-024-07473-2
-
 - title:  Sources of gene expression variation in a globally diverse human cohort
   journal: Nature 
   authors: Dylan J. Taylor, Surya B. Chhetri, Michael G. Tassia, <strong>Arjun Biddanda</strong>, Stephanie M. Yan, Genevieve L. Wojcik, Alexis Battle, Rajiv C. McCoy 
   year: "2024"
   url: https://www.nature.com/articles/s41586-024-07708-2 
   software: https://github.com/mccoy-lab/MAGE/tree/main
+
+- title: The Complete Sequence and Comparative Analysis of Ape Sex Chromosomes
+  journal: Nature 
+  authors: Kateryna D. Makova, Brandon D. Pickett, ..., <strong>Arjun Biddanda</strong>, ..., Evan E. Eichler, Adam M. Phillippy
+  year: "2024"
+  url: https://www.nature.com/articles/s41586-024-07473-2
+
+- title: Distinct positions of genetic and oral histories - Perspectives from India
+  journal: HGG Advances
+  authors: <strong>Arjun Biddanda<sup>*</sup></strong>, Esha Bandyopadhyay<sup>*</sup>, Constanza de la Fuente Castro<sup>*</sup>, David Witonsky, Jose A. Urban Aragon, Nagarjuna Pasupuleti, Renée Fonseca, Suzanne Freilich, Hannah M. Moots, Jovan Stanisavic, Tabitha Willis, Anoushka Menon, Mohammed S. Mustak, Chinnappa Dilip Kodira, Anjaparavanda P. Naren, Mithun Sikdar, Niraj Rai, Maanasa Raghavan
+  year: "2024"
+  url: https://www.cell.com/hgg-advances/fulltext/S2666-2477(24)00044-7
 
 - title: Whole-genome sequencing across 449 samples spanning 47 ethnolinguistic groups provides insights into genetic diversity in Nigeria 
   journal: Cell Genomics
@@ -25,12 +31,6 @@
   url: https://www.biorxiv.org/content/10.1101/2022.12.09.519773v1
   pdf: https://www.biorxiv.org/content/10.1101/2022.12.09.519773v1.full.pdf
   software: https://54gene-olink-qc.readthedocs.io/en/latest/
-
-- title: Distinct positions of genetic and oral histories - Perspectives from India
-  journal: HGG Advances
-  authors: <strong>Arjun Biddanda<sup>*</sup></strong>, Esha Bandyopadhyay<sup>*</sup>, Constanza de la Fuente Castro<sup>*</sup>, David Witonsky, Jose A. Urban Aragon, Nagarjuna Pasupuleti, Renée Fonseca, Suzanne Freilich, Hannah M. Moots, Jovan Stanisavic, Tabitha Willis, Anoushka Menon, Mohammed S. Mustak, Chinnappa Dilip Kodira, Anjaparavanda P. Naren, Mithun Sikdar, Niraj Rai, Maanasa Raghavan
-  year: "2024"
-  url: https://www.cell.com/hgg-advances/fulltext/S2666-2477(24)00044-7
 
 - title: Expanding the stdpopsim species catalog, and lessons learned for realistic genome simulations
   journal: eLife
