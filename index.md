@@ -6,7 +6,7 @@ permalink: /
 
 {% include image.html url="images/photo.jpg" caption="" height="350px" align="right" %}
 
-I am currently a postdoctoral fellow at [Johns Hopkins University](https://bio.jhu.edu/),  advised by [Rajiv McCoy](https://mccoy-lab.org/). 
+I am a postdoctoral fellow at [Johns Hopkins University](https://bio.jhu.edu/), advised by [Rajiv McCoy](https://mccoy-lab.org/). 
 
 My [research interests](/research/) span theoretical and applied population genetics, particularly to understand human disease and evolution. I received my PhD in Human Genetics from the University of Chicago working with [John Novembre](http://jnpopgen.org/).   
 

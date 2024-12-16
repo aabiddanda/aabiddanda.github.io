@@ -1,3 +1,17 @@
+
+- title: Study design and the sampling of deleterious rare variants in biobank-scale datasets
+  journal: bioRxiv 
+  authors: Margaret C. Steiner, Daniel P. Rice, <strong> Arjun Biddanda </strong>, Mariadaria K. Ianni-Ravn, Christian Porras, John Novembre
+  year: "2024"
+  url: https://www.biorxiv.org/content/10.1101/2024.12.02.626424v1 
+  software: https://github.com/NovembreLab/spatial_rare_alleles
+
+- title: Complete sequencing of ape genomes.
+  journal: bioRxiv 
+  authors: DongAhn Yoo, ..., <strong> Arjun Biddanda </strong>, ..., Kateryna D. Makova, Adam M. Phillippy, Evan E. Eichler
+  year: "2024"
+  url: https://www.biorxiv.org/content/10.1101/2024.07.31.605654v2 
+
 - title:  Sources of gene expression variation in a globally diverse human cohort
   journal: Nature 
   authors: Dylan J. Taylor, Surya B. Chhetri, Michael G. Tassia, <strong>Arjun Biddanda</strong>, Stephanie M. Yan, Genevieve L. Wojcik, Alexis Battle, Rajiv C. McCoy 
