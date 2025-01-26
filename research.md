@@ -1,8 +1,4 @@
----
-layout: page
-permalink: /research/
-title: Research
----
+## Research
 
 ### Human Statistical and Population Genetics
 
