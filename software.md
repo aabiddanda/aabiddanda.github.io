@@ -1,8 +1,5 @@
----
-layout: page
-title:  Software
-permalink: /software/
----
+
+## Software 
 
 ###  [geovar](https://aabiddanda.github.io/geovar/)
 

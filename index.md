@@ -17,10 +17,10 @@
 :::{grid-item}
 :columns: auto
 
-**Arjun Biddanda**
-Postdoctoral fellow  
-[Johns Hopkins University](https://bio.jhu.edu/) 
-aabiddanda [at] gmail [dot] com    
+**Arjun Biddanda**<br>
+Postdoctoral Fellow<br>
+[Johns Hopkins University](https://bio.jhu.edu/)<br>
+aabiddanda [at] gmail [dot] com<br>
 
 <div>
 <a class="muted-link" style="text-decoration:none" href="https://bsky.app/profile/aabiddanda.bsky.social">
@@ -66,6 +66,8 @@ My work relies on open science, sharing of resources and know-how. I am part of 
 :titlesonly: true
 
 research
+CV <https://aabiddanda.github.io/docs/aabiddanda_cv.pdf>
 publications
 notes
+software
 ```

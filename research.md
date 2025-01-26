@@ -2,7 +2,10 @@
 
 ### Human Statistical and Population Genetics
 
-{% include image.html url="../images/research_images/geographic_dist.jpg" caption="Geographic distribution of genetic variants scaled by<br /> frequency across the 1000 Genomes Populations <br/>from Biddanda, Rice, Novembre (eLife) 2020" height="400px" align="right" %}
+```{image} ./images/research_images/geographic_dist.jpg
+:width: 180px
+:align: right
+```
 
 Much of my current work is centered on human population genetics -with a goal to understand human evolutionary history and improve experimental design for studies of human disease. A subset of my research has been developing methods for using inferred ancestral recombination graphs (ARGs) for both statistical genetics of complex traits or inference of population history. Some recent topics of interest include:
 
@@ -13,7 +16,10 @@ Much of my current work is centered on human population genetics -with a goal to
 
 ### Statistical Genetics of Chromosomal Dosage and Aneuploidy
 
-{% include image.html url="../images/research_images/aneuploidy_dosage.jpg" caption="Schematic of large-scale chromosomal dosage changes<br /> in PGT-A data & differences between segmental aneuploidies <br /> vs. copy-number resolution in adult samples." height="300px" align="right" %}
+```{image} ./images/research_images/aneuploidy_dosage.jpg
+:width: 240px
+:align: right
+```
 
 While it is normal for most healthy individuals to contain two-copies of our genome within each cell, there can be deviations to this property either due to mutation (CNVs) or errors in chromosome segregation. A more recent research direction of mine has been to develop statistical methods for the analysis large-scale changes in chromosomal dosage (e.g. copy-number variation, or whole-chromosome aneuploidy). Much of my research has been focused on pre-implantation genetic testing (PGT) data from in-vitro fertilization (IVF) embryos, to infer properties of aneuploidy and meiotic recombination related to fertility.
 
@@ -25,7 +31,11 @@ Some active topics of research in this area:
 
 ### Theoretical Population Genetics
 
-{% include image.html url="../images/research_images/exp_time_to_coal_anc.jpg" caption="Expected time to coalescence <br />for an ancient sample into a modern panel from <br /> Biddanda, Steinrücken, Novembre (Genetics) 2022." height="250px" align="right" %}
+```{image} ./images/research_images/exp_time_to_coal_anc.jpg
+:width: 240px
+:align: right
+:alt: HODOR
+```
 
 Much of my applied work draws on results from population genetic theory, and I enjoy working on problems that involve more mathematical rigor. Typically, these are oriented towards understanding how theory can be used to intuit or improve statistical population genetic inference. Some active topics of research in this domain are: 
 
