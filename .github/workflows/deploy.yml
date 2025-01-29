@@ -1,0 +1,35 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+    # NOTE: Python is necessary for the pre-rendering (minification) step
+    - name: Install python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+    - name: Cache pip
+      uses: actions/cache@v2
+      with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-v1-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-v1-
+    - name: Install Python dependencies
+      run: |
+        pip install -r requirements.txt
+    - run: sphinx-build -b dirhtml -v . _build
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_build
+        cname: aabiddanda.github.io

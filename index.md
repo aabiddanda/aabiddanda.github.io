@@ -43,9 +43,11 @@ aabiddanda [at] gmail [dot] com<br>
 <h2>About</h2>
 
 
-I am currently a postdoctoral fellow at [Johns Hopkins University](https://bio.jhu.edu/),  advised by [Rajiv McCoy](https://mccoy-lab.org/). 
+I'm a human population geneticist developing statistical methods to better understand the effects of genetic variants on fertility traits and meiotic fidelity. I am currently a postdoctoral fellow in the [McCoy Lab](https://mccoy-lab.org/) at [Johns Hopkins University](https://bio.jhu.edu/). My broader [research interests](/research/) span theoretical and applied population genetics.
 
-My [research interests](/research/) span theoretical and applied population genetics, particularly to understand human disease and evolution. I received my PhD in Human Genetics from the University of Chicago working with [John Novembre](http://jnpopgen.org/).   
+Previously, I was a postdoctoral fellow at the University of Oxford in the group of [Pier Palamara]() and briefly worked as a computational biologist at a biotechnology startup. 
+
+I received my PhD in Human Genetics from the University of Chicago working with [John Novembre](http://jnpopgen.org/). My PhD research primarily focused on developing new theory to understand population genetic datasets consisting of samples from different spatial and temporal sampling perspectives  
 
 <!-- I'm a computational biologists using single-cell genomics data to understand human complex traits and diseases. I am an EMBO and Helen Hay Whitney post-doctoral fellow in the [Pritchard Lab](https://web.stanford.edu/group/pritchardlab/home.html) at Stanford University and a visiting fellow in the [Marson Lab](https://www.marsonlab.org/) at the Gladstone Institutes. 
 
@@ -53,7 +55,7 @@ Previously, I obtained my PhD at the University of Cambridge, working between th
 
 My work relies on open science, sharing of resources and know-how. I am part of the core team of the [scverse consortium](https://scverse.org/) of foundational tools for analysis of omics data in life sciences, where I am work on community outreach and events. 
  -->
-<!-- I make [open source software](https://github.com/MarioniLab/miloR), [analysis workflows](https://github.com/MarioniLab/oor_benchmark) and [curate data resources](https://github.com/Teichlab/Pan_fetal_immune#mapping-the-developing-human-immune-system-across-organs.). -->
+
 <!-- I enjoy several activities and I excel at none: watching movies, reading fiction, board games, cooking, running, cycling, petting dogs. I grew up in Ferrara. -->
 
 
