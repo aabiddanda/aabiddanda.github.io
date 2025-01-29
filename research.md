@@ -1,19 +1,5 @@
 ## Research
 
-### Human Statistical and Population Genetics
-
-```{image} ./images/research_images/geographic_dist.jpg
-:width: 180px
-:align: right
-```
-
-Much of my current work is centered on human population genetics -with a goal to understand human evolutionary history and improve experimental design for studies of human disease. A subset of my research has been developing methods for using inferred ancestral recombination graphs (ARGs) for both statistical genetics of complex traits or inference of population history. Some recent topics of interest include:
-
-* Leveraging ARGs for inference of introgression (particularly when reference samples are unavailable)
-* Association mapping and quantitative genetics using inferred ARGs for complex variants (e.g. CNVs, SVs).
-* Statistical considerations for meta-analysis of complex traits across multiple ancestries
-* Characterizing population history of Indian populations
-
 ### Statistical Genetics of Chromosomal Dosage and Aneuploidy
 
 ```{image} ./images/research_images/aneuploidy_dosage.jpg
@@ -29,12 +15,26 @@ Some active topics of research in this area:
 * Refining dosage constraint estimates of genes from segmental aneuploidies
 * Evolution of dosage constraint/relaxation across somatic tissue evolution
 
+### Human Statistical and Population Genetics
+
+```{image} ./images/research_images/geographic_dist.jpg
+:width: 180px
+:align: right
+```
+
+Much of my current work is centered on human population genetics -with a goal to understand human evolutionary history and improve experimental design for studies of human disease. A subset of my research has been developing methods for using inferred ancestral recombination graphs (ARGs) for both statistical genetics of complex traits or inference of population history. Some recent topics of interest include:
+
+* Leveraging ARGs for inference of introgression (particularly when reference samples are unavailable)
+* Association mapping and quantitative genetics using inferred ARGs for complex variants (e.g. CNVs, SVs).
+* Statistical considerations for meta-analysis of complex traits across multiple ancestries
+* Characterizing population history of Indian populations
+
+
 ### Theoretical Population Genetics
 
 ```{image} ./images/research_images/exp_time_to_coal_anc.jpg
 :width: 240px
 :align: right
-:alt: HODOR
 ```
 
 Much of my applied work draws on results from population genetic theory, and I enjoy working on problems that involve more mathematical rigor. Typically, these are oriented towards understanding how theory can be used to intuit or improve statistical population genetic inference. Some active topics of research in this domain are: 
