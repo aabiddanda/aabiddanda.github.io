@@ -75,13 +75,13 @@ html_theme = "furo"
 
 # Set link name generated in the top bar.
 html_title = "Arjun Biddanda"
-html_favicon = "./_assets/favicon.ico"
+html_favicon = "./images/favicon.ico"
 html_theme_options = {
     "sidebar_hide_name": False,
     "light_css_variables": {
         "font-stack": "acumin-pro, sans-serif",
-        "color-background-primary": "#f5e9dc",
-        "color-background-secondary": "#f5e9dc",
+        "color-background-primary": "#f8f8f8",
+        "color-background-secondary": "#f8f8f8",
         "color-background-hover": "#F5F3ED",
         "color-brand-primary": "black",
         "color-brand-content": "#A46F0D",
