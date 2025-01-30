@@ -56,7 +56,7 @@ I received my PhD in Human Genetics from the University of Chicago working with 
 :titlesonly: true
 
 research
-CV <https://aabiddanda.github.io/docs/aabiddanda_cv.pdf>
+cv
 publications
 notes
 software
