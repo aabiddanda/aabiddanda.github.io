@@ -1,0 +1,12 @@
+div.cell_output table {
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: inherit;
+    font-size: 0.8em;
+    table-layout: fixed;
+}
+
+body:not([data-theme=light]) div.cell_output tbody tr:nth-child(odd) {
+    background: rgba(255, 255, 255, .1);
+}
