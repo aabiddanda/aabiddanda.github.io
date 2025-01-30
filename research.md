@@ -3,7 +3,7 @@
 ### Statistical Genetics of Chromosomal Dosage and Aneuploidy
 
 ```{image} ./images/research_images/aneuploidy_dosage.jpg
-:width: 240px
+:width: 300px
 :align: right
 ```
 
@@ -18,7 +18,7 @@ Some active topics of research in this area:
 ### Human Statistical and Population Genetics
 
 ```{image} ./images/research_images/geographic_dist.jpg
-:width: 180px
+:width: 200px
 :align: right
 ```
 

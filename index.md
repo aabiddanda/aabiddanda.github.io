@@ -42,13 +42,11 @@ aabiddanda [at] gmail [dot] com<br>
 
 <h2>About</h2>
 
-
 I'm a human population geneticist developing statistical methods to better understand the effects of genetic variants on fertility traits and meiotic fidelity. I am currently a postdoctoral fellow in the [McCoy Lab](https://mccoy-lab.org/) at [Johns Hopkins University](https://bio.jhu.edu/). My broader [research interests](/research/) span theoretical and applied population genetics.
 
-Previously, I was a postdoctoral fellow at the University of Oxford in the group of [Pier Palamara](https://palamaralab.github.io/) and briefly worked as a computational biologist at a biotechnology startup. 
+Previously, I was a postdoctoral fellow at the University of Oxford in the group of [Pier Palamara](https://palamaralab.github.io/) and also worked as a computational biologist at a biotechnology startup. 
 
-I received my PhD in Human Genetics from the University of Chicago working with [John Novembre](http://jnpopgen.org/). My PhD research focused on developing new theory to understand population genetic datasets consisting of samples from different spatial and temporal sampling designs, alongside a number of empirical population genetic projects to understand human demographic history. 
-
+I received my PhD in Human Genetics from the University of Chicago working with [John Novembre](http://jnpopgen.org/). My PhD research focused on developing new theory to understand population genetic datasets under different spatial and temporal sampling designs, alongside a number of empirical population genetic projects to understand human demographic history. 
 
 ----
 
