@@ -8,6 +8,6 @@ Download [PDF version](./_static/aabiddanda_cv.pdf)
       width=100%
       height=800px
       border=0pt
-      src="./_static/aabiddanda_cv.pdf">
+      src="https://aabiddanda.github.io/_static/aabiddanda_cv.pdf">
   </iframe>
 </div>
