@@ -1,6 +1,10 @@
 
 ## Software 
 
+### [karyohmm](https://github.com/mccoy-lab/karyohmm)
+
+`karyoHMM` is a model to infer chromosomal gains and losses from noisy array-based PGT-A datasets. The model is based on conditional distributions of B-allele frequencies from genotyping arrays. 
+
 ###  [geovar](https://aabiddanda.github.io/geovar/)
 
 `GeoVar` is a software tool for coarse-grained visualization of multi-population patterns of allele sharing in `python`. If you use this package please cite [this paper](https://elifesciences.org/articles/60107)
