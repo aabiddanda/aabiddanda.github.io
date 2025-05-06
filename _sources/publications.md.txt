@@ -9,9 +9,11 @@ Sara A. Carioscia*, <strong>Arjun Biddanda*</strong>, Margaret R. Starostik, , X
 
 Margaret C. Steiner,  Daniel P. Rice, <strong>Arjun Biddanda</strong>,  Mariadaria K. Ianni-Ravn, Christian Porras, John Novembre. Study design and the sampling of deleterious rare variants in biobank-scale datasets. _bioRxiv_ | [Full Text](https://www.biorxiv.org/content/10.1101/2024.12.02.626424v1)
 
-DongAhn Yoo,  Arang Rhie, ..., <strong> Arjun Biddanda </strong>, ...,  Adam M. Phillippy, Evan E. Eichler. Complete sequencing of ape genomes. _bioRxiv_ | [Full Text](https://www.biorxiv.org/content/10.1101/2024.07.31.605654v2)
-
 ### Peer-Reviewed 
+
+#### 2025
+
+DongAhn Yoo,  Arang Rhie, ..., <strong> Arjun Biddanda </strong>, ...,  Adam M. Phillippy, Evan E. Eichler. Complete sequencing of ape genomes. _Nature_ | [Full Text](https://www.nature.com/articles/s41586-025-08816-3)
 
 #### 2024
 
