@@ -5,15 +5,15 @@
 
 ### Preprints
 
-Arun Das, <strong> Arjun Biddanda</strong>, Rajiv c. McCoy, Michael C. Schatz. Assembling unmapped reads reveals hidden variation in South Asian genomes. _bioRxiv_ | [Full Text](https://www.biorxiv.org/content/10.1101/2025.05.14.653340v1)
+Arun Das, <strong> Arjun Biddanda</strong>, Rajiv C. McCoy, Michael C. Schatz. Assembling unmapped reads reveals hidden variation in South Asian genomes. _bioRxiv_ | [Full Text](https://www.biorxiv.org/content/10.1101/2025.05.14.653340v1)
 
 Sara A. Carioscia*, <strong>Arjun Biddanda*</strong>, Margaret R. Starostik, Xiaona Tang, Eva R. Hoffmann, Zachary P. Demko, Rajiv C. McCoy. Common variation in meiosis genes shapes human recombination phenotypes and aneuploidy risk. _medRxiv_ | [Full Text](https://www.medrxiv.org/content/10.1101/2025.04.02.25325097v1)
-
-Margaret C. Steiner,  Daniel P. Rice, <strong>Arjun Biddanda</strong>,  Mariadaria K. Ianni-Ravn, Christian Porras, John Novembre. Study design and the sampling of deleterious rare variants in biobank-scale datasets. _bioRxiv_ | [Full Text](https://www.biorxiv.org/content/10.1101/2024.12.02.626424v1)
 
 ### Peer-Reviewed 
 
 #### 2025
+
+Margaret C. Steiner,  Daniel P. Rice, <strong>Arjun Biddanda</strong>,  Mariadaria K. Ianni-Ravn, Christian Porras, John Novembre. Study design and the sampling of deleterious rare variants in biobank-scale datasets. _PNAS (accepted)_ | [Full Text](https://www.biorxiv.org/content/10.1101/2024.12.02.626424v1)
 
 DongAhn Yoo,  Arang Rhie, ..., <strong> Arjun Biddanda </strong>, ...,  Adam M. Phillippy, Evan E. Eichler. Complete sequencing of ape genomes. _Nature_ | [Full Text](https://www.nature.com/articles/s41586-025-08816-3)
 
