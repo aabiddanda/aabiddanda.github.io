@@ -1,7 +1,5 @@
----
-layout: post
-title: "Useful Readings"
----
+
+# A Reading List for Statistical / Population Genetics
 
 Over the course of graduate school I noticed that I started to gravitate repeatedly towards particular references as starting points for questions. This is a list of some favorite readings of mine that have been particularly thought-provoking for my research or useful for understanding human genetics in a broader societal context. 
 
