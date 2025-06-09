@@ -62,6 +62,7 @@ I received my PhD in Human Genetics from the University of Chicago working with 
 research
 cv
 publications
-notes
 software
+blog
+notes
 ```
