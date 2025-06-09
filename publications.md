@@ -13,6 +13,8 @@ Sara A. Carioscia*, <strong>Arjun Biddanda*</strong>, Margaret R. Starostik, Xia
 
 #### 2025
 
+Jose A Urban Aragon, ... ,<strong>Arjun Biddanda</strong>, ..., Niraj Rai, Maanasa Raghavan. Population histories of the Indigenous Adivasi and Sinhalese from Sri Lanka using whole genomes. _Current Biology_ | [Full Text](https://doi.org/10.1016/j.cub.2025.04.039)
+
 Margaret C. Steiner,  Daniel P. Rice, <strong>Arjun Biddanda</strong>,  Mariadaria K. Ianni-Ravn, Christian Porras, John Novembre. Study design and the sampling of deleterious rare variants in biobank-scale datasets. _PNAS_ | [Full Text](https://www.pnas.org/doi/10.1073/pnas.2425196122)
 
 DongAhn Yoo,  Arang Rhie, ..., <strong> Arjun Biddanda </strong>, ...,  Adam M. Phillippy, Evan E. Eichler. Complete sequencing of ape genomes. _Nature_ | [Full Text](https://www.nature.com/articles/s41586-025-08816-3)
