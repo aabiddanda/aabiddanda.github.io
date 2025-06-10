@@ -1,9 +1,4 @@
----
-layout: post
-title: "Useful research / programming / productivity tools"
----
-
-## Research Tools
+# Research Tools
 
 ### [Obsidian](https://obsidian.md/)
 

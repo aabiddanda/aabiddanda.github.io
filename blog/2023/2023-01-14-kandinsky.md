@@ -1,7 +1,4 @@
----
-layout: post
-title: "Visualizing my research using Kandinsky diagrams "
----
+# Visualizing my research using Kandinsky diagrams
 
 <style>
   * {
