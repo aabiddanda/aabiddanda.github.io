@@ -9,7 +9,6 @@
 * [Updated Tools](blog/2023/2023-08-04-updated-tools.md)
 * [Kandinsky Diagrams for Visualizing Research](blog/2023/2023-01-14-kandinsky.md)
 
-
 ### 2022
 
 * [Diaconis-Stroock Eigenvalue Bounds](blog/2022/2022-12-15-diaconis-stroock.md)

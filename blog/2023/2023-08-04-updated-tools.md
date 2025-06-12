@@ -1,4 +1,4 @@
-# Research Tools
+# Research Tools (Update)
 
 ### [Obsidian](https://obsidian.md/)
 
