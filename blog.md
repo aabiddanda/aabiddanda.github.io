@@ -2,7 +2,8 @@
 
 ### 2024
 
-
+* [A maximal LD perspective on power in GWAS](blog/2024/2024-07-12-maxld.md)
+* [A compositional analysis of the Maryland Flag](blog/2024/2024-02-10-flag-composition.md)
 
 ### 2023
 
