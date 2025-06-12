@@ -3,6 +3,7 @@
 
 <!-- tags: [linkage disequilibrium, GWAS, tagging variants] -->
 
+## The relationship of LD to GWAS power and variant tagging
 A major goal in human genetics is to understand how the genetic variation in our DNA relates to different phenotypes, such as height or diabetes risk. One of the core tools we use to study this genotype-to-phenotype relationship are genome-wide association studies (GWAS), which tests the association of genotype status against a phenotype. For the purposes of this short post, I will only be considering a quantitative phenotype for which a GWAS is conducted using linear regression.   
 
 For a causal variant - or the actual variant affecting the trait - the expression for the non-centrality parameter of the chi-squared association statistic ($\nu$) is: 
@@ -30,6 +31,7 @@ While $r^2_{max}$ may be symmetric between $f_{tag} $ and $f_{causal}$, the rati
 
 This is not super surprising as the power of an association test is related quadratically to its frequency in the GWAS sample!
 
+## Range of GWAS Discoveries 
 
 However, we can also ask the inverse question: *for a given causal variant and effect-size, what is the possible range of tagging variant frequencies that pass detection?*. If we consider the value $\nu^*$ as the critical value where $1 - F_{\chi^2}(\nu^*) = \alpha$, we must solve the following equation for $f_{tag}$: 
 
@@ -38,7 +40,6 @@ $$ 2 N r^2_{max}(f_{tag},f_{causal}) \beta^2 f_{tag} (1-f_{tag}) - \nu^* = 0$$
 Rearranging the equation, we arrive at:
 
 $$\frac{\nu^*}{2N\beta^2} = f_{tag}(1-f_{tag})r^2_{max}(f_{tag},f_{causal})$$
-
 
 The right-side of the equation will always be quadratic in $f_{tag}$ so we can expect that there will be either *no roots* or *two roots* to the function. We can see in the figure below that this is apparent at different sample sizes (for an approximate threshold of $\alpha = 10^{-8}$).
 
@@ -52,6 +53,8 @@ The right-side of the equation will always be quadratic in $f_{tag}$ so we can e
 <center>Discovery of tag variants for fixed causal variant effect to illustrate range of GWAS findings (left panel). Notice that there are either two roots (green) or no roots (orange) dependent on sample size. Range of tag variant frequencies given underlying causal variant at frequency. (right panel).</center>
 <br>
 
+
+## Further implications for study design
 
 This illustrates that a wide range of tag frequencies (typically including the underlying causal variant) are *possible* in a model where there is maximum LD obtained between the two variants. This can kind of be thought of as an upper-bound on the frequency range of tag variants coinciding with a given causal variant. There are some interesting follow-up areas that one could develop: 
 

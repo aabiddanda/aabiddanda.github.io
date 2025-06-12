@@ -256,6 +256,8 @@
           <section class="tex2jax_ignore mathjax_ignore" id="a-maximal-ld-perspective-on-power-in-gwas">
 <h1>A maximal LD perspective on power in GWAS<a class="headerlink" href="#a-maximal-ld-perspective-on-power-in-gwas" title="Link to this heading">¶</a></h1>
 <!-- tags: [linkage disequilibrium, GWAS, tagging variants] -->
+<section id="the-relationship-of-ld-to-gwas-power-and-variant-tagging">
+<h2>The relationship of LD to GWAS power and variant tagging<a class="headerlink" href="#the-relationship-of-ld-to-gwas-power-and-variant-tagging" title="Link to this heading">¶</a></h2>
 <p>A major goal in human genetics is to understand how the genetic variation in our DNA relates to different phenotypes, such as height or diabetes risk. One of the core tools we use to study this genotype-to-phenotype relationship are genome-wide association studies (GWAS), which tests the association of genotype status against a phenotype. For the purposes of this short post, I will only be considering a quantitative phenotype for which a GWAS is conducted using linear regression.</p>
 <p>For a causal variant - or the actual variant affecting the trait - the expression for the non-centrality parameter of the chi-squared association statistic (<span class="math notranslate nohighlight">\(\nu\)</span>) is:</p>
 <div class="math-wrapper docutils container">
@@ -278,6 +280,9 @@
 <center>Symmetric nature of $r^2_{max}$ for tag and causal variant allele frequencies (left panel). Asymmetric behavior of the ratio in power between causal and tagging variants which always favors the more common variant (right panel)</center>
 <br>
 <p>This is not super surprising as the power of an association test is related quadratically to its frequency in the GWAS sample!</p>
+</section>
+<section id="range-of-gwas-discoveries">
+<h2>Range of GWAS Discoveries<a class="headerlink" href="#range-of-gwas-discoveries" title="Link to this heading">¶</a></h2>
 <p>However, we can also ask the inverse question: <em>for a given causal variant and effect-size, what is the possible range of tagging variant frequencies that pass detection?</em>. If we consider the value <span class="math notranslate nohighlight">\(\nu^*\)</span> as the critical value where <span class="math notranslate nohighlight">\(1 - F_{\chi^2}(\nu^*) = \alpha\)</span>, we must solve the following equation for <span class="math notranslate nohighlight">\(f_{tag}\)</span>:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
@@ -293,12 +298,16 @@
 </a>
 <center>Discovery of tag variants for fixed causal variant effect to illustrate range of GWAS findings (left panel). Notice that there are either two roots (green) or no roots (orange) dependent on sample size. Range of tag variant frequencies given underlying causal variant at frequency. (right panel).</center>
 <br>
+</section>
+<section id="further-implications-for-study-design">
+<h2>Further implications for study design<a class="headerlink" href="#further-implications-for-study-design" title="Link to this heading">¶</a></h2>
 <p>This illustrates that a wide range of tag frequencies (typically including the underlying causal variant) are <em>possible</em> in a model where there is maximum LD obtained between the two variants. This can kind of be thought of as an upper-bound on the frequency range of tag variants coinciding with a given causal variant. There are some interesting follow-up areas that one could develop:</p>
 <ol class="arabic simple">
 <li><p>Consider <em>empirically</em> how much lower on average <span class="math notranslate nohighlight">\(\hat{r}^2 \approx \alpha r^2_{max}\)</span> and how this lowers the range of <em>detectable</em> frequencies for GWAS effects.
 <br></p></li>
 <li><p>Considering sample-composition from different demographic histories and how they impact the GWAS-panel specfic <span class="math notranslate nohighlight">\(\hat{r}^2\)</span> properties. This can also be similarly useful to identify population-by-loci combinations where <span class="math notranslate nohighlight">\(\hat{r}^2\)</span> is <em>maximally different</em> to better limit the range of causal variants discovered.</p></li>
 </ol>
+</section>
 <section id="references">
 <h2>References<a class="headerlink" href="#references" title="Link to this heading">¶</a></h2>
 <ol class="arabic simple">
@@ -363,6 +372,9 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">A maximal LD perspective on power in GWAS</a><ul>
+<li><a class="reference internal" href="#the-relationship-of-ld-to-gwas-power-and-variant-tagging">The relationship of LD to GWAS power and variant tagging</a></li>
+<li><a class="reference internal" href="#range-of-gwas-discoveries">Range of GWAS Discoveries</a></li>
+<li><a class="reference internal" href="#further-implications-for-study-design">Further implications for study design</a></li>
 <li><a class="reference internal" href="#references">References</a></li>
 <li><a class="reference internal" href="#reproducing-plots">Reproducing Plots</a></li>
 </ul>

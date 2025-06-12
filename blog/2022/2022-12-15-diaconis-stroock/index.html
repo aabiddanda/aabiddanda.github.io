@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="../../../genindex/" /><link rel="search" title="Search" href="../../../search/" />
 
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/><!-- Generated with Sphinx 7.4.7 and Furo 2024.08.06 -->
-        <title>Markov Chains - Arjun Biddanda</title>
+        <title>Diaconis-Stroock Eigenvalue Bounds for Markov Chain Convergence - Arjun Biddanda</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -192,7 +192,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -247,36 +247,22 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <style>
-.figure {
-  display: table;
-  margin: auto;
-}
-
-.figure img {
-  max-width: 100%;
-}
-
-.figcaption {
-  display: table-caption;
-  caption-side: bottom;
-  background: white;
-  padding: 10px;
-}
-</style>
-<section class="tex2jax_ignore mathjax_ignore" id="markov-chains">
-<h1>Markov Chains<a class="headerlink" href="#markov-chains" title="Link to this heading">¶</a></h1>
+          <section class="tex2jax_ignore mathjax_ignore" id="diaconis-stroock-eigenvalue-bounds-for-markov-chain-convergence">
+<h1>Diaconis-Stroock Eigenvalue Bounds for Markov Chain Convergence<a class="headerlink" href="#diaconis-stroock-eigenvalue-bounds-for-markov-chain-convergence" title="Link to this heading">¶</a></h1>
+<!-- tags: [eigenvalues, markov chains, graph theory] -->
+<section id="markov-chains">
+<h2>Markov Chains<a class="headerlink" href="#markov-chains" title="Link to this heading">¶</a></h2>
 <p>Markov Chains are a fundamental stochastic processes that are used in a wide variety of fields. They can be represented by state machines where the probability of moving between the states are “transition” probabilities. Markov Chains follow the <a class="reference external" href="https://en.wikipedia.org/wiki/Markov_property">Markov Property</a>, and below we provide a depiction of a Markov Chain as a graph.</p>
-<figure class="figure">
-  <img src="/images/blog_images/bounds/markov_chain_demo.png" width="500" height="350" alt="">
-  <figcaption class="figcaption">A simple Markov Chain</figcaption>
-</figure><br>
+<a class="reference internal image-reference" href="../../../_images/markov_chain_demo.png"><img alt="../../../_images/markov_chain_demo.png" class="align-center" src="../../../_images/markov_chain_demo.png" style="width: 500px; height: 350px;" />
+</a>
+<center>A simple Markov Chain </center>
+<br>
 <p>For the Markov Chain above, we can create a matrix out of the transition probabilities that we move from a starting state to any other state as the following matrix:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
@@ -289,59 +275,59 @@
 \end{split}\]</div>
 </div>
 <p>Now a natural question to ask is whether if we let this state machine play out over infinite time, would it reach some sort of equilibrium? This equilibrium on the states is the <em>stationary distribution</em> of the markov chain.</p>
-<p>The stationary distribution can be described by a distribution on the states \(\mathbf{\pi}\), a column vector that obeys the following equality:</p>
+<p>The stationary distribution can be described by a distribution on the states, <span class="math notranslate nohighlight">\(\mathbf{\pi}\)</span>, a column vector that obeys the following equality:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[ \mathbf{\pi}^T = \mathbf{\pi}^T\mathbf{P} \]</div>
 </div>
-<p>How might we approach finding this stationary distribution though? There are three ways we might try: (1) take the transition matrix \(P\) to a very high power and extract a row, (2) solve via a set of global-balance equations, or (3) solve for the stationary distribution via eigen-decomposition. The first approach is quite unprincipled (because defining the power seems difficult), and the second approach is explained <a class="reference external" href="http://stephens999.github.io/fiveMinuteStats/analysis/stationary_distribution.html">here</a>, so we will go with the eigen-decomposition.</p>
+<p>How might we approach finding this stationary distribution though? There are three ways we might try: (1) take the transition matrix <span class="math notranslate nohighlight">\(P\)</span> to a very high power and extract a row, (2) solve via a set of global-balance equations, or (3) solve for the stationary distribution via eigen-decomposition. The first approach is quite unprincipled (because defining the power seems difficult), and the second approach is explained <a class="reference external" href="http://stephens999.github.io/fiveMinuteStats/analysis/stationary_distribution.html">here</a>, so we will go with the eigen-decomposition.</p>
 <p>We can describe the eigen-decomposition as the following equation:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[ xA = \lambda x \]</div>
 </div>
-<p>Where \(A\) are all of the left-eigenvectors, and \(\lambda\) are all of the eigenvalues. If \(\lambda = 1\) then we would exactly have the equation for the stationary distribution. In fact, there is a nice property about the ordering about the eigenvalues of \(\mathbf{P}\) in that:</p>
+<p>Where <span class="math notranslate nohighlight">\(A\)</span> are all of the left-eigenvectors, and <span class="math notranslate nohighlight">\(\lambda\)</span> are all of the eigenvalues. If <span class="math notranslate nohighlight">\(\lambda = 1\)</span> then we would exactly have the equation for the stationary distribution. In fact, there is a nice property about the ordering about the eigenvalues of <span class="math notranslate nohighlight">\(\mathbf{P}\)</span> in that:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[ 1 = \lambda_0 &gt; \lambda_1 \geq ... \geq \lambda_{m-1} \geq -1, \hspace{4pt} m = |\mathbf{P}|\]</div>
 </div>
 <p>From all of the above we have a principled way to compute the stationary distribution of an arbitrary markov chain, supposing that we can calculate an eigen-decomposition of the transition probability matrix.<a class="footnote-reference brackets" href="#id4" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
-<p>It is nice that this stationary distribution is solvable, but we can also ask <em>how fast</em> the approach to the stationary distribution is. This is related to the difference between the first and second eigenvalues in the eigen-decomposition or \(| 1 - \lambda_1|\). The general idea is that \(\lambda_1\) tells us how fast the largest of the vanishing terms (\(\lambda_i &lt; 1\)) approach 0 and disappear.</p>
-<p>Here we go over some theory and methods that pertain to random walks on graphs (and subsequently Markov Chains) to determine bounds on the value of the second eigenvalue \((\lambda_1)\) and providing a bound on the convergence of Markov chains to their stationary distributions.</p>
+<p>It is nice that this stationary distribution is solvable, but we can also ask <em>how fast</em> the approach to the stationary distribution is. This is related to the difference between the first and second eigenvalues in the eigen-decomposition or <span class="math notranslate nohighlight">\(| 1 - \lambda_1 |\)</span>. The general idea is that <span class="math notranslate nohighlight">\(\lambda_1\)</span> tells us how fast the largest of the vanishing terms (<span class="math notranslate nohighlight">\(\lambda_i &lt; 1\)</span>) approach 0 and disappear.</p>
+<p>Here we go over some theory and methods that pertain to random walks on graphs (and subsequently Markov Chains) to determine bounds on the value of the second eigenvalue <span class="math notranslate nohighlight">\(\lambda_1\)</span> and providing a bound on the convergence of Markov chains to their stationary distributions.</p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="eigenvalue-bounds-via-poincare-inequalities">
-<h1>Eigenvalue Bounds via Poincare Inequalities<a class="headerlink" href="#eigenvalue-bounds-via-poincare-inequalities" title="Link to this heading">¶</a></h1>
-<p>To start we need to actually define the graph, where there is an edge on \({x,y}\) if \(Q(x,y) &gt; 0\), where \( Q(x,y) = \pi(x)P(x,y) \). This means that an edge should exist if there is any probability of moving from state \(x\) to state \(y\). We can then define path lengths through the graph from node \(x\) to node \(y\) as :</p>
+<section id="eigenvalue-bounds-via-poincare-inequalities">
+<h2>Eigenvalue Bounds via Poincare Inequalities<a class="headerlink" href="#eigenvalue-bounds-via-poincare-inequalities" title="Link to this heading">¶</a></h2>
+<p>To start we need to actually define the graph, where there is an edge on <span class="math notranslate nohighlight">\(\{x,y\}\)</span> if <span class="math notranslate nohighlight">\(Q(x,y) &gt; 0\)</span>, where <span class="math notranslate nohighlight">\(Q(x,y) = \pi(x)P(x,y)\)</span>. This means that an edge should exist if there is any probability of moving from state <span class="math notranslate nohighlight">\(x\)</span> to state <span class="math notranslate nohighlight">\(y\)</span>. We can then define path lengths through the graph from node <span class="math notranslate nohighlight">\(x\)</span> to node <span class="math notranslate nohighlight">\(y\)</span> as :</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[ |\gamma_{xy}|  = \sum_{e \in \gamma_{xy}} \frac{1}{Q(e)} \]</div>
 </div>
-<p>, where \(Q(e) = Q(x,y)\) if \(e = {x,y}\) as a shorthand notation. Assuming the Markov Chain is <a class="reference external" href="https://en.wikipedia.org/wiki/Markov_chain#Properties">irreducible</a>, we know that paths exist from every state to every other state in the Markov Chain.</p>
+<p>, where <span class="math notranslate nohighlight">\(Q(e) = Q(x,y)\)</span> if <span class="math notranslate nohighlight">\(e = {x,y}\)</span> as a shorthand notation. Assuming the Markov Chain is <a class="reference external" href="https://en.wikipedia.org/wiki/Markov_chain#Properties">irreducible</a>, we know that paths exist from every state to every other state in the Markov Chain.</p>
 <p>From this notion of paths through the graph, a further definition can be made:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
-\[ \kappa = \text{max}_e \sum_{e \ni \gamma_{xy}} |\gamma_{xy}|\pi(x)\pi(y) \]</div>
+\[\kappa = \text{max}_e \sum_{e \ni \gamma_{xy}} |\gamma_{xy}|\pi(x)\pi(y)\]</div>
 </div>
-<p>, where the maximum is taken over all directed edges in the graph, and is summed over all paths that contain that maximal edge. This quantity can intuitively be thought of as finding the largest “bottleneck” in the flow of probability between the states of the Markov Chain that go through the directed edge \(e\). This is related to ideas about <a class="reference external" href="https://en.wikipedia.org/wiki/Max-flow_min-cut_theorem">max-flow/min-cut</a> and the <a class="reference external" href="https://en.wikipedia.org/wiki/Ford%E2%80%93Fulkerson_algorithm">Ford-Fulkerson algorithm</a>.</p>
+<p>, where the maximum is taken over all directed edges in the graph, and is summed over all paths that contain that maximal edge. This quantity can intuitively be thought of as finding the largest “bottleneck” in the flow of probability between the states of the Markov Chain that go through the directed edge <span class="math notranslate nohighlight">\(e\)</span>. This is related to ideas about <a class="reference external" href="https://en.wikipedia.org/wiki/Max-flow_min-cut_theorem">max-flow/min-cut</a> and the <a class="reference external" href="https://en.wikipedia.org/wiki/Ford%E2%80%93Fulkerson_algorithm">Ford-Fulkerson algorithm</a>.</p>
 <section id="derivation-of-poincare-bounds">
-<h2>Derivation of Poincare Bounds<a class="headerlink" href="#derivation-of-poincare-bounds" title="Link to this heading">¶</a></h2>
-<p>If we define \(\phi (x)\) as a continuous function on the finite states of the Markov Chains \(x \in X\), we can explore the convergence of the Markov-Chain while accounting for a specific “value” or “weight” for each of the states.</p>
-<p>In order to prove our upper-bound on the eigenvalue of \(\mathbf{P}\) we need to work with the <a class="reference external" href="https://en.wikipedia.org/wiki/Laplacian_matrix">Laplacian</a> of \(\mathbf{P}\) which is defined as:</p>
+<h3>Derivation of Poincare Bounds<a class="headerlink" href="#derivation-of-poincare-bounds" title="Link to this heading">¶</a></h3>
+<p>If we define <span class="math notranslate nohighlight">\(\phi (x)\)</span> as a continuous function on the finite states of the Markov Chains <span class="math notranslate nohighlight">\(x \in X\)</span>, we can explore the convergence of the Markov-Chain while accounting for a specific “value” or “weight” for each of the states.</p>
+<p>In order to prove our upper-bound on the eigenvalue of <span class="math notranslate nohighlight">\(\mathbf{P}\)</span> we need to work with the <a class="reference external" href="https://en.wikipedia.org/wiki/Laplacian_matrix">Laplacian</a> of <span class="math notranslate nohighlight">\(\mathbf{P}\)</span> which is defined as:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[ \mathbf{L} = \mathbf{I} - \mathbf{P}, \beta_i = 1 - \lambda_i\]</div>
 </div>
-<p>Where \(\beta_i\) are the eigenvalues of \(\mathbf{L}\). Following from previous work (<a class="reference external" href="https://www.google.com/books/edition/Matrix_Analysis/PlYQN0ypTwEC?hl=en">Horn and Johnson</a>), we can define the following:</p>
+<p>Where <span class="math notranslate nohighlight">\(\beta_i\)</span> are the eigenvalues of <span class="math notranslate nohighlight">\(\mathbf{L}\)</span>. Following from previous work (<a class="reference external" href="https://www.google.com/books/edition/Matrix_Analysis/PlYQN0ypTwEC?hl=en">Horn and Johnson</a>), we can define the following:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[ \beta_1 = inf\left\{ \frac{E(\phi, \phi)}{Var(\phi)} \right\} \]</div>
 </div>
-<p>Where \(Var(\phi)\) is the variance of \(\phi\) relative to \(\pi\) and</p>
+<p>Where <span class="math notranslate nohighlight">\(Var(\phi)\)</span> is the variance of <span class="math notranslate nohighlight">\(\phi\)</span> relative to <span class="math notranslate nohighlight">\(\pi\)</span> and</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[ E(\phi, \phi) = \frac{1}{2} \sum_{x,y} (\phi(x) - \phi(y))^2Q(x,y)\]</div>
 </div>
-<p>From the definitions of \(Var(\phi)\) and \(\kappa\)  we can start our derivation:</p>
+<p>From the definitions of <span class="math notranslate nohighlight">\(Var(\phi)\)</span> and <span class="math notranslate nohighlight">\(\kappa\)</span>  we can start our derivation:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -359,12 +345,12 @@
 \end{aligned}
 \end{split}\]</div>
 </div>
-<p>Note that while the results above are elegant from a mathematical perspective, for actual practicality this is a little bit tricky since the quantity \(\kappa\) contains terms related to the stationary distribution! However we can bound \(\kappa\) in terms of structural elements of the Markov Chain graph thereby reducing our reliance on knowing the stationary distribution.</p>
+<p>Note that while the results above are elegant from a mathematical perspective, for actual practicality this is a little bit tricky since the quantity <span class="math notranslate nohighlight">\(\kappa\)</span> contains terms related to the stationary distribution! However we can bound <span class="math notranslate nohighlight">\(\kappa\)</span> in terms of structural elements of the Markov Chain graph thereby reducing our reliance on knowing the stationary distribution.</p>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="eigenvalue-bounds-via-graph-structure">
-<h1>Eigenvalue Bounds via Graph Structure<a class="headerlink" href="#eigenvalue-bounds-via-graph-structure" title="Link to this heading">¶</a></h1>
-<p>To characterize the effect of graph structure on the eigenvalue bounds, we first define the properties of the graph \(G = (V,E)\) and a random walk from a node to any of its neighbors being only dependent on the degree of the node:</p>
+<section id="eigenvalue-bounds-via-graph-structure">
+<h2>Eigenvalue Bounds via Graph Structure<a class="headerlink" href="#eigenvalue-bounds-via-graph-structure" title="Link to this heading">¶</a></h2>
+<p>To characterize the effect of graph structure on the eigenvalue bounds, we first define the properties of the graph <span class="math notranslate nohighlight">\(G = (V,E)\)</span> and a random walk from a node to any of its neighbors being only dependent on the degree of the node:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[\begin{split} P(x,y) = \begin{cases}
@@ -372,7 +358,7 @@
       0 &amp; else\\
    \end{cases} \end{split}\]</div>
 </div>
-<p>Due to this uniformity in choosing the next node, the stationary distribution of visiting a node \(x\) is the node’s degree over the total number of edges in the graph \(\pi(x) = \frac{d(x)}{2|E|} \) <a class="footnote-reference brackets" href="#id5" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>.</p>
+<p>Due to this uniformity in choosing the next node, the stationary distribution of visiting a node <span class="math notranslate nohighlight">\(x\)</span> is the node’s degree over the total number of edges in the graph <span class="math notranslate nohighlight">\(\pi(x) = \frac{d(x)}{2\|E\|} \)</span> <a class="footnote-reference brackets" href="#id5" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>.</p>
 <p>From there we can define:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
@@ -381,7 +367,7 @@
       0 &amp; else\\
    \end{cases} \end{split}\]</div>
 </div>
-<p>We can then adequately bound \(\kappa\) just by properties of the random walk:</p>
+<p>We can then adequately bound <span class="math notranslate nohighlight">\(\kappa\)</span> just by properties of the random walk:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -397,8 +383,8 @@
 \end{aligned}
 \end{split}\]</div>
 </div>
-<p>The term \(b\) describes the maximum number of paths that pass through the edge, a measure of which edge bottlenecks the graph. The term \( \gamma_* \) simply describes the longest path within the graph (in numbers of edges). \( d_* \) is the maximal degree of any node within the graph.</p>
-<p>From our redefining the upper bound on \(\kappa\) we can turn to our redefinition of the first eigenvalue:</p>
+<p>The term <span class="math notranslate nohighlight">\(b\)</span> describes the maximum number of paths that pass through the edge, a measure of which edge bottlenecks the graph. The term <span class="math notranslate nohighlight">\( \gamma_* \)</span> simply describes the longest path within the graph (in numbers of edges). <span class="math notranslate nohighlight">\( d_* \)</span> is the maximal degree of any node within the graph.</p>
+<p>From our redefining the upper bound on <span class="math notranslate nohighlight">\(\kappa\)</span> we can turn to our redefinition of the first eigenvalue:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -409,17 +395,17 @@
 \end{aligned}
 \end{split}\]</div>
 </div>
-<p>While the random-walk assumption may not be appropriate for all scenarios, it certainly holds in a large number of them and that is what makes this bound of use in practical scenarios. It also suggests that algorithmic methods to reduce any element of the denominator will result in faster mixing of the Markov-Chain towards stationarity. In principle, one approach is to artifically reduce the prevalence of “hubs” in the network to decrease the maximal degree of a node within the graph \( d_* \) since that value affects the bound with \(\mathcal{O}(d_*^{-2})\).</p>
-<p>As an experiment, you can see what the effect of different simulated graph structures are on the second eigenvalue bound \(\lambda_1\). Provided a given graph \(G\), we can calculate the bounds as mentioned above to check for how close we can get to stationarity. From the brief experiment it appears that graphs where edges are placed according to a uniform probability have a slightly faster mixing rate than “small-world” networks that are randomly generated. For the full notebook details of the specifics of the experiment please see this <a class="reference external" href="https://gist.github.com/aabiddanda/643d71ae881bcb7bd51a53d396286846">gist</a>.</p>
-<figure class="figure">
-  <img src="/images/blog_images/bounds/eigenvalue_bounds.01082022.png" width="600" height="350" alt="">
-  <figcaption class="figcaption">The impact of different graph structures across 100 random graphs</figcaption>
-</figure><br>
+<p>While the random-walk assumption may not be appropriate for all scenarios, it certainly holds in a large number of them and that is what makes this bound of use in practical scenarios. It also suggests that algorithmic methods to reduce any element of the denominator will result in faster mixing of the Markov-Chain towards stationarity. In principle, one approach is to artifically reduce the prevalence of “hubs” in the network to decrease the maximal degree of a node within the graph <span class="math notranslate nohighlight">\( d_* \)</span> since that value affects the bound with <span class="math notranslate nohighlight">\(\mathcal{O}(d_*^{-2})\)</span>.</p>
+<p>As an experiment, you can see what the effect of different simulated graph structures are on the second eigenvalue bound <span class="math notranslate nohighlight">\(\lambda_1\)</span>. Provided a given graph <span class="math notranslate nohighlight">\(G\)</span>, we can calculate the bounds as mentioned above to check for how close we can get to stationarity. From the brief experiment it appears that graphs where edges are placed according to a uniform probability have a slightly faster mixing rate than “small-world” networks that are randomly generated. For the full notebook details of the specifics of the experiment please see this <a class="reference external" href="https://gist.github.com/aabiddanda/643d71ae881bcb7bd51a53d396286846">gist</a>.</p>
+<a class="reference internal image-reference" href="../../../_images/eigenvalue_bounds.01082022.png"><img alt="../../../_images/eigenvalue_bounds.01082022.png" class="align-center" src="../../../_images/eigenvalue_bounds.01082022.png" style="width: 600px; height: 350px;" />
+</a>
+<center>The impact of different graph structures across 100 random graphs</center>
+<br>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="implications">
-<h1>Implications<a class="headerlink" href="#implications" title="Link to this heading">¶</a></h1>
-<p>I first learned about these ideas on rates of Markov Chain convergence in the context of two very different models. The first was determining properties of genealogies when there is a specific form of population structure known as the “island model”. The island model is population dynamic model where the migration matrix between a set of demes is fully-connected and has weights (migration rates) that are non-zero. However, the migration rates may be different by orders of magnitude, creating scenarios where different collections of “islands” or demes are more well connected.</p>
-<p>The upper bound on the second eigenvalue of a random-walk in an \(n\)-deme island model derived by <a class="reference external" href="https://wakeleylab.oeb.harvard.edu/publications/convergence-island-model-coalescent-process-populations-restricted-migration">Matsen and Wakeley</a> is:</p>
+<section id="implications">
+<h2>Implications<a class="headerlink" href="#implications" title="Link to this heading">¶</a></h2>
+<p>I first learned about these ideas on rates of Markov Chain convergence in the context of two very different models. The first was determining properties of genealogies when there is a specific form of population structure known as the “island model”. The island model is a population dynamic model where the migration matrix between a set of demes is fully-connected and has weights (migration rates) that are non-zero. However, the migration rates may be different by orders of magnitude, creating scenarios where different collections of “islands” or demes are more well connected.</p>
+<p>The upper bound on the second eigenvalue of a random-walk in an <span class="math notranslate nohighlight">\(n\)</span>-deme island model derived by <a class="reference external" href="https://wakeleylab.oeb.harvard.edu/publications/convergence-island-model-coalescent-process-populations-restricted-migration">Matsen and Wakeley</a> is:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -430,13 +416,14 @@
 \end{aligned}
 \end{split}\]</div>
 </div>
-<p>Thus we can use the bounds proposed here to compute the upper bound on the convergence to the island model even if there is limited migration (e.g. where some components of the island model are well-connected but limited connectivity between components). Notably, Matsen and Wakeley use this bound to show that there is no dependence on the number of samples, but rather this can be used to show properties of the genealogies when there is an infinite number of demes (\(n \rightarrow \infty\) in our notation).</p>
+<p>Thus we can use the bounds proposed here to compute the upper bound on the convergence to the island model even if there is limited migration (e.g. where some components of the island model are well-connected but limited connectivity between components). Notably, Matsen and Wakeley use this bound to show that there is no dependence on the number of samples, but rather this can be used to show properties of the genealogies when there is an infinite number of demes (<span class="math notranslate nohighlight">\(n \rightarrow \infty\)</span> in our notation).</p>
 <p>The second context was in Markov Chain Monte Carlo (MCMC) sampling distributions that have multiple modes. The primary problem with running a Markov Chain to sample from a multi-modal distribution is that if it gets “stuck” in a mode, it can be difficult to sample outside of the mode because the most likely proposal is to stay within that specific mode of the stationary distribution. In the graph-theoretic sense, it would be like having many small but dense sub-networks and there are very few connections between these small, dense networks so it is very difficult to randomly move between sub-networks. If we review the expression for the eigenvalue bounds that we saw before based on the graph structure we have:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[ \lambda_1 \leq 1 - \frac{2|E|}{bd_*^2\gamma_*} \]</div>
 </div>
-<p>These small-world networks have high node density (which increases the maximum degree of the node- \( d_* \)) as well as it being quite difficult to travel between them (increasing the maximum path length - \( \gamma_* \)). These two properties, particularly the increase of the maximum degree, really hurts the rate of convergence to the stationary distribution. To address this problem, one can leverage MCMC algorithms where one runs multiple MCMC chains with different levels of “heat”<a class="footnote-reference brackets" href="#id6" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a>. One can also ideally leverage the eigenvalue bounds to set a data-driven establishment of where to set the number of burn-in iterations for MCMC.</p>
+<p>These small-world networks have high node density (which increases the maximum degree of the node- <span class="math notranslate nohighlight">\( d_* \)</span>) as well as it being quite difficult to travel between them (increasing the maximum path length - <span class="math notranslate nohighlight">\( \gamma_* \)</span>). These two properties, particularly the increase of the maximum degree, really hurts the rate of convergence to the stationary distribution. To address this problem, one can leverage MCMC algorithms where one runs multiple MCMC chains with different levels of “heat”<a class="footnote-reference brackets" href="#id6" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a>. One can also ideally leverage the eigenvalue bounds to set a data-driven establishment of where to set the number of burn-in iterations for MCMC.</p>
+</section>
 <section id="references">
 <h2>References<a class="headerlink" href="#references" title="Link to this heading">¶</a></h2>
 <ul class="simple">
@@ -448,7 +435,7 @@
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id4" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-<p>In practice most algorithms scale at rates \(\mathcal{O}(n^\omega)\) where \(2 &lt; \omega \leq 3\). Even with an iterative algorithm, one would need to perform at least 2 iterations (which run quadratically in the number of matrix entries). For more information on this see this <a class="reference external" href="http://comet.lehman.cuny.edu/vpan/pdf/165.pdf">paper</a></p>
+<p>In practice most algorithms scale at rates <span class="math notranslate nohighlight">\(\mathcal{O}(n^\omega)\)</span>, where <span class="math notranslate nohighlight">\(2 &lt; \omega \leq 3\)</span>. Even with an iterative algorithm, one would need to perform at least 2 iterations (which run quadratically in the number of matrix entries). For more information on this see this <a class="reference external" href="http://comet.lehman.cuny.edu/vpan/pdf/165.pdf">paper</a></p>
 </aside>
 <aside class="footnote brackets" id="id5" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
@@ -500,8 +487,34 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Diaconis-Stroock Eigenvalue Bounds for Markov Chain Convergence</a><ul>
+<li><a class="reference internal" href="#markov-chains">Markov Chains</a></li>
+<li><a class="reference internal" href="#eigenvalue-bounds-via-poincare-inequalities">Eigenvalue Bounds via Poincare Inequalities</a><ul>
+<li><a class="reference internal" href="#derivation-of-poincare-bounds">Derivation of Poincare Bounds</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#eigenvalue-bounds-via-graph-structure">Eigenvalue Bounds via Graph Structure</a></li>
+<li><a class="reference internal" href="#implications">Implications</a></li>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
