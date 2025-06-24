@@ -26,7 +26,10 @@ jobs:
     - name: Install Python dependencies
       run: |
         pip install -r requirements.txt
-    - run: sphinx-build -b dirhtml -v . _build
+    - run: | 
+        sphinx-build -b dirhtml -v . _build
+        mkdir -p _build/.well-known/
+        cp .well-known/atproto-did _build/.well-known/atproto-did 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
