@@ -7,9 +7,11 @@
 
 Arun Das, <strong> Arjun Biddanda</strong>, Rajiv C. McCoy, Michael C. Schatz. Assembling unmapped reads reveals hidden variation in South Asian genomes. _bioRxiv_ | [Full Text](https://www.biorxiv.org/content/10.1101/2025.05.14.653340v1)
 
-Sara A. Carioscia*, <strong>Arjun Biddanda*</strong>, Margaret R. Starostik, Xiaona Tang, Eva R. Hoffmann, Zachary P. Demko, Rajiv C. McCoy. Common variation in meiosis genes shapes human recombination phenotypes and aneuploidy risk. _medRxiv_ | [Full Text](https://www.medrxiv.org/content/10.1101/2025.04.02.25325097v1)
-
 ### Peer-Reviewed 
+
+#### 2026
+
+Sara A. Carioscia*, <strong>Arjun Biddanda*</strong>, Margaret R. Starostik, Xiaona Tang, Eva R. Hoffmann, Zachary P. Demko, Rajiv C. McCoy. Common variation in meiosis genes shapes human recombination phenotypes and aneuploidy risk. _Nature (in press)_ | [medRxiv preprint](https://www.medrxiv.org/content/10.1101/2025.04.02.25325097v1)
 
 #### 2025
 
