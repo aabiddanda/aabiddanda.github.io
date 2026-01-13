@@ -7,7 +7,7 @@
 :align: right
 ```
 
-While it is normal for most healthy individuals to contain two-copies of our genome within each cell, there can be deviations to this property either due to mutation (CNVs) or errors in chromosome segregation. A more recent research direction of mine has been to develop statistical methods for the analysis large-scale changes in chromosomal dosage (e.g. copy-number variation, or whole-chromosome aneuploidy). Much of my research has been focused on pre-implantation genetic testing (PGT) data from in-vitro fertilization (IVF) embryos, to infer properties of aneuploidy and meiotic recombination related to fertility.
+While it is normal for most healthy individuals to contain two copies of our genome within each cell, there can be deviations to this property either due to mutation (copy-number variants) or errors in chromosome segregation. A more recent research direction of mine has been to develop statistical methods for the analysis large-scale changes in chromosomal dosage (e.g. copy-number variation, or whole-chromosome aneuploidy). Much of my research has been focused on pre-implantation genetic testing (PGT) data from in-vitro fertilization (IVF) embryos, to infer properties of aneuploidy and meiotic recombination related to fertility.
 
 Some active topics of research in this area:
 

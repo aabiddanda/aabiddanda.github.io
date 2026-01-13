@@ -7,7 +7,7 @@
 
 ###  [geovar](https://aabiddanda.github.io/geovar/)
 
-`GeoVar` is a software tool for coarse-grained visualization of multi-population patterns of allele sharing in `python`. If you use this package please cite [this paper](https://elifesciences.org/articles/60107)
+`GeoVar` is a software tool for coarse-grained visualization of multi-population patterns of allele sharing in `python`. If you use this package please cite [this paper](https://elifesciences.org/articles/60107).
 
 ### [qtl-power](https://aabiddanda.github.io/qtl-power/)
 
