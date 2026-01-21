@@ -11,7 +11,7 @@ Arun Das, <strong> Arjun Biddanda</strong>, Rajiv C. McCoy, Michael C. Schatz. A
 
 #### 2026
 
-Sara A. Carioscia*, <strong>Arjun Biddanda*</strong>, Margaret R. Starostik, Xiaona Tang, Eva R. Hoffmann, Zachary P. Demko, Rajiv C. McCoy. Common variation in meiosis genes shapes human recombination phenotypes and aneuploidy risk. _Nature (in press)_ | [medRxiv preprint](https://www.medrxiv.org/content/10.1101/2025.04.02.25325097v1)
+Sara A. Carioscia*, <strong>Arjun Biddanda*</strong>, Margaret R. Starostik, Xiaona Tang, Eva R. Hoffmann, Zachary P. Demko, Rajiv C. McCoy. Common variation in meiosis genes shapes human recombination phenotypes and aneuploidy risk. _Nature_ | [Full Text](https://www.nature.com/articles/s41586-025-09964-2)
 
 #### 2025
 
