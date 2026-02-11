@@ -5,13 +5,16 @@
 
 ### Preprints
 
+Ben Jeffrey, Yan Wong,  ...<strong> Arjun Biddanda</strong>, ..., Peter L. Ralph, Jerome Kelleher. Population-scale Ancestral Recombination Graphs with tskit 1.0. _arXiv_ | [Full Text](https://arxiv.org/abs/2602.09649)
+
+
 Arun Das, <strong> Arjun Biddanda</strong>, Rajiv C. McCoy, Michael C. Schatz. Assembling unmapped reads reveals hidden variation in South Asian genomes. _bioRxiv_ | [Full Text](https://www.biorxiv.org/content/10.1101/2025.05.14.653340v1)
 
 ### Peer-Reviewed 
 
 #### 2026
 
-Sara A. Carioscia*, <strong>Arjun Biddanda*</strong>, Margaret R. Starostik, Xiaona Tang, Eva R. Hoffmann, Zachary P. Demko, Rajiv C. McCoy. Common variation in meiosis genes shapes human recombination phenotypes and aneuploidy risk. _Nature_ | [Full Text](https://www.nature.com/articles/s41586-025-09964-2)
+Sara A. Carioscia*, <strong>Arjun Biddanda*</strong>, Margaret R. Starostik, Xiaona Tang, Eva R. Hoffmann, Zachary P. Demko, Rajiv C. McCoy. Common variation in meiosis genes shapes human recombination phenotypes and aneuploidy risk. _Nature_ | [Full Text](https://www.nature.com/articles/s41586-025-09964-2) | [Research Briefing](https://rdcu.be/e282d) | [Press](https://hub.jhu.edu/2026/01/21/genetic-factors-influencing-pregnancy-loss/)
 
 #### 2025
 
