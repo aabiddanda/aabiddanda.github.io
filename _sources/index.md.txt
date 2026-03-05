@@ -41,16 +41,14 @@ aabiddanda [at] gmail [dot] com<br>
 ::::
 ----
 
-**I am on the academic job market! If your department is looking for a population geneticist with broad interests - please drop me a line.**
-
 
 <h3>About</h3>
 
-I'm a human geneticist developing statistical methods to better understand the effects of genetic variation on fertility traits and meiotic fidelity. I am currently a postdoctoral fellow in the [McCoy Lab](https://mccoy-lab.org/) at [Johns Hopkins University](https://bio.jhu.edu/). My [research interests](/research/) span problems in theoretical and applied population genetics.
+I am a human geneticist developing statistical methods to understand fertility traits and human evolution. I am currently a postdoctoral fellow in the [McCoy Lab](https://mccoy-lab.org/) at [Johns Hopkins University](https://bio.jhu.edu/). My [research interests](/research/) span problems in theoretical and applied population genetics.
 
-Previously, I was a postdoctoral fellow at the University of Oxford in the group of [Pier Palamara](https://palamaralab.github.io/) and also worked as a computational biologist at a biotechnology startup. 
+Previously, I was a postdoctoral fellow at the University of Oxford in the group of [Pier Palamara](https://palamaralab.github.io/) and also worked as a computational biologist at a biotechnology startup. I received my PhD in Human Genetics from the University of Chicago working with [John Novembre](http://jnpopgen.org/). 
 
-I received my PhD in Human Genetics from the University of Chicago working with [John Novembre](http://jnpopgen.org/). My PhD research focused on developing new theory to understand population genetic datasets under different spatial and temporal sampling designs, alongside a number of empirical population genetic projects to understand human demographic history.
+My PhD research focused on developing new theory to understand population genetic datasets under different spatial and temporal sampling designs, alongside a number of empirical population genetic projects to understand human demographic history.
 
 ----
 
