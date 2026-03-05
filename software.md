@@ -1,9 +1,13 @@
 
 ## Software 
 
+### [trace](https://github.com/aabiddanda/trace)
+
+`trace` is a model to infer introgression using ancestral recombination graphs (ARGs) based on a model looking for distortions in local genealogies. It was co-developed with Yulin Zhang at UC Berkeley. If you use this method, please cite this [preprint](https://www.biorxiv.org/content/10.64898/2026.03.03.709416v1)
+
 ### [karyohmm](https://github.com/mccoy-lab/karyohmm)
 
-`karyoHMM` is a model to infer chromosomal gains and losses from noisy array-based PGT-A datasets. The model is based on conditional distributions of B-allele frequencies from genotyping arrays. 
+`karyoHMM` is a model to infer chromosomal gains and losses from noisy array-based PGT-A datasets. The model is based on conditional distributions of B-allele frequencies from genotyping arrays. If you use this package, please cite [this paper](https://www.nature.com/articles/s41586-025-09964-2)
 
 ###  [geovar](https://aabiddanda.github.io/geovar/)
 

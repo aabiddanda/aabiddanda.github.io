@@ -1,9 +1,12 @@
 
 ## Publications
 
-<sup>* indicates equal contribution</sup>
+<sup>* indicates equal contribution</sup></br>
+<sup>&Dagger; indicates corresponding author</sup>
 
 ### Preprints
+
+Yulin Zhang<sup>* &Dagger;</sup>, <strong> Arjun Biddanda<sup>* &Dagger;</sup> </strong>, Sarah A. Johnson, Colm O'Dushlaine, Priya Moorjani<sup>&Dagger;</sup>. Recovering signatures of archaic introgression using ancestral recombination graphs _bioRxiv_ | [Full Text](https://www.biorxiv.org/content/10.64898/2026.03.03.709416v1) | [Software](https://github.com/YulinZhang9806/trace) 
 
 Ben Jeffrey, Yan Wong,  ...<strong> Arjun Biddanda</strong>, ..., Peter L. Ralph, Jerome Kelleher. Population-scale Ancestral Recombination Graphs with tskit 1.0. _arXiv_ | [Full Text](https://arxiv.org/abs/2602.09649)
 
@@ -14,7 +17,7 @@ Arun Das, <strong> Arjun Biddanda</strong>, Rajiv C. McCoy, Michael C. Schatz. A
 
 #### 2026
 
-Sara A. Carioscia*, <strong>Arjun Biddanda*</strong>, Margaret R. Starostik, Xiaona Tang, Eva R. Hoffmann, Zachary P. Demko, Rajiv C. McCoy. Common variation in meiosis genes shapes human recombination phenotypes and aneuploidy risk. _Nature_ | [Full Text](https://www.nature.com/articles/s41586-025-09964-2) | [Research Briefing](https://rdcu.be/e282d) | [Press](https://hub.jhu.edu/2026/01/21/genetic-factors-influencing-pregnancy-loss/)
+Sara A. Carioscia<sup>* </sup>, <strong>Arjun Biddanda<sup>* </sup></strong>, Margaret R. Starostik, Xiaona Tang, Eva R. Hoffmann, Zachary P. Demko, Rajiv C. McCoy. Common variation in meiosis genes shapes human recombination phenotypes and aneuploidy risk. _Nature_ | [Full Text](https://www.nature.com/articles/s41586-025-09964-2) | [Research Briefing](https://rdcu.be/e282d) | [Press](https://hub.jhu.edu/2026/01/21/genetic-factors-influencing-pregnancy-loss/)
 
 #### 2025
 
@@ -30,7 +33,8 @@ Dylan J. Taylor, Surya B. Chhetri, Michael G. Tassia, <strong>Arjun Biddanda</st
 
 Kateryna D. Makova, Brandon D. Pickett, ..., <strong>Arjun Biddanda</strong>, ..., Evan E. Eichler, Adam M. Phillippy. (2024). The Complete Sequence and Comparative Analysis of Ape Sex Chromosomes. _Nature_ | [Full Text](https://www.nature.com/articles/s41586-024-07473-2)
 
-<strong>Arjun Biddanda*</strong>, Esha Bandyopadhyay*, Constanza de la Fuente Castro*, David Witonsky, ... , Niraj Rai, Maanasa Raghavan. (2024) Distinct positions of genetic and oral histories - Perspectives from India. _HGG Advances_ | [Full Text](https://www.cell.com/hgg-advances/fulltext/S2666-2477(24)00044-7)
+<strong>Arjun Biddanda<sup>* </sup></strong>, Esha Bandyopadhyay<sup>* </sup>, Constanza de la Fuente Castro<sup>* </sup>, David Witonsky, ... , Niraj Rai, Maanasa Raghavan. (2024) Distinct positions of genetic and oral histories - Perspectives from India. _HGG Advances_ | [Full Text](https://www.cell.com/hgg-advances/fulltext/S2666-2477(24)00044-7)
+
 
 #### 2023
 
@@ -62,11 +66,11 @@ Peter de Barros Damgaard, Rui Martiniano, Jack Kamm, Jose Victor Moreno-Mayar, .
 
 Yedael Y. Waldman, <strong>Arjun Biddanda</strong>, Maya Dubrovsky, Christopher L. Campbell, Carole Oddoux, Eitan Friedman, Gil Atzmon, Eran Halperin, Harry Ostrer, Alon Keinan. (2016) The genetic history of Cochin Jews from India. _Human Genetics_ | [Full Text](https://www.ncbi.nlm.nih.gov/pubmed/27377974)
 
-Yedael Y. Waldman*, <strong>Arjun Biddanda*</strong>, Natalie R. Davidson, Paul Billing-Ross, Maya Dubrovsky, Christopher L. Campbell, Carole Oddoux, Eitan Friedman, Gil Atzmon, Eran Halperin, Harry Ostrer, Alon Keinan. (2016) The genetics of Bene Israel from India Reveals Both Substantial Jewish and Indian Ancestry. _Plos One_  | [Full Text](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0152056)
+Yedael Y. Waldman<sup>* </sup>, <strong>Arjun Biddanda<sup>* </sup></strong>, Natalie R. Davidson, Paul Billing-Ross, Maya Dubrovsky, Christopher L. Campbell, Carole Oddoux, Eitan Friedman, Gil Atzmon, Eran Halperin, Harry Ostrer, Alon Keinan. (2016) The genetics of Bene Israel from India Reveals Both Substantial Jewish and Indian Ancestry. _Plos One_  | [Full Text](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0152056)
 
 #### 2015
 
-Feng Gao*, Diana Chang*, <strong>Arjun Biddanda*</strong>, Li Ma, Yingjie Guo, Zilu Zhou, Alon Keinan. (2015) XWAS - A Software Toolset for Genetic Data Analysis and Association Studies of the X Chromosome. _Journal of Heredity_ | [Full Text](https://www.ncbi.nlm.nih.gov/pubmed/26268243) | [Software](http://keinanlab.cb.bscb.cornell.edu/content/xwas)
+Feng Gao<sup>* </sup>, Diana Chang<sup>* </sup>, <strong>Arjun Biddanda<sup>* </sup></strong>, Li Ma, Yingjie Guo, Zilu Zhou, Alon Keinan. (2015) XWAS - A Software Toolset for Genetic Data Analysis and Association Studies of the X Chromosome. _Journal of Heredity_ | [Full Text](https://www.ncbi.nlm.nih.gov/pubmed/26268243) | [Software](http://keinanlab.cb.bscb.cornell.edu/content/xwas)
 
 
 ### Technical Reports
