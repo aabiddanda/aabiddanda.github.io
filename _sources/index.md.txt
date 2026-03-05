@@ -41,6 +41,8 @@ aabiddanda [at] gmail [dot] com<br>
 ::::
 ----
 
+**I am on the academic job market! If your department is looking for a population geneticist with broad interests - please drop me a line.**
+
 
 <h3>About</h3>
 
