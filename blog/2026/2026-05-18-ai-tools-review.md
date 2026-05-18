@@ -41,24 +41,34 @@ A couple of tips I learned along the way of doing this that I think are somewhat
 
 3. Try to find certain ``plot elements'' from public online repositories if you can to supplement the AI generated ones during your revisions in an image editor. I have really liked the SVG library from the [NIH BioArt](https://bioart.niaid.nih.gov/) resource as well. These are really useful 
 
-4. **Bonus** Stylesheets. I have been wanting to make specifically loaded `matplotlib` stylesheets for my figures for a long time. The primary goal was to formally separate out my styling for figures in a paper and the same figure for a presentation (see here for the [design principles behind this]()). However, making a stylesheet is really quite annoying since you have to specify layouts and fontsizes. What I used AI for specifically was to design.  
+4. **Bonus** Stylesheets. I have been wanting to make specifically loaded `matplotlib` stylesheets for my figures for a long time. The primary goal was to formally separate out my styling for figures in a paper and the same figure for a presentation. Mainly because figures for papers tend to be a lot more information dense than [those required for a talk](https://rajlaboratory.blogspot.com/2014/04/figures-for-talks-and-figures-for-papers.html). However, making a stylesheet is really quite annoying since you have to specify layouts and fontsizes. What I used AI for specifically was to design a `matplotlib` stylesheet after feeding in a couple PDF versions of slides from talks (16:9 format, [Atkinson HyperLegible Font](https://www.brailleinstitute.org/freefont/)). This allows for very clearly different aesthetics for the same data to improve presentations and visual acuity. 
+
+```{image} ../../images/blog_images/ai/scatter_stylesheets.png
+:width: 530px
+:height: 230px
+:align: center
+```
+<center>Left side uses the stylesheet for figures, right for presentations.</center>
 
 
 ### Role 3: The Approximation Specialist
 
-I am just good enough at math / statistics to be dangerous (e.g., knowing how to model stuff pretty well). However, with the scales of modern biological datasets, it is often not the modeling aspects but rather identifying approximations which make methods actually tractable. This is just up against my knowledge boundary and I think is a kind of great sweetspot for AI to help you out, since the fun part of mathematical modelling you can do yourself, but the AI can help you with things like computing gradients and approximations. 
+I am *just* good enough at math / statistics to be dangerous (e.g., knowing how to model stuff pretty well). However, with the scales of modern biological datasets, it is often not the modeling aspects but rather identifying approximations which make methods actually tractable and useful. This happens to be just up against my knowledge boundary and I think is a kind of great sweetspot for AI to help you out, since the fun part of mathematical modelling you can do yourself like writing down distributions, but agents can help you with things like computing gradients and approximations. 
 
-My suggestions for this effect are to 
+As a quantitative researcher, I feel like it is quite important to at least sketch out the likelihood yourself if you can. This way, you at least know how you would *generate* data to represent your observed data. This is a great starting point for now thinking about approximations if you need them. A couple of unsolicited tips for this task: 
 
+1. Always ask for test data when the AI is evaluating the approximation. It is even better if you can provide a direct implementation for the likelihood calculation to benchmark against. Often a saddlepoint approximation or Taylor series type approximation will be extremely useful. 
 
-TODO
+2. Ask the AI to document and write tests - try to get it to use a ``property-based'' testing framework like [hypothesis](https://hypothesis.readthedocs.io/en/latest/). This definitely helps you identify the extremes where the approximation might actually break down. 
 
-
+3. Always ask for an expected speedup and check against a test implementation. 
 
 ## Outlook
 
 I think that I was motivated to start this by 1) [FOMO](https://en.wikipedia.org/wiki/Fear_of_missing_out) and 2) a general curiousity whether bringing AI in would make me a more productive/better/consistent scientist. In the early days I was broadly skeptical because of hallucinations and sacrificing the *correctness* of my work (and actually taking away some of the things that I enjoy on the day-to-day).
 
-In general, I remain somewhat skeptical of turning to AI wholesale for doing my actual *thinking* to some degree --- because I would like to validate any qualitative or quantitative claim that I make in my research. So for that reason I don't think I will be turning to AI for actually writing a first draft or even broader literature reviews in the recent future. Even quantitatively, I have found it is quite good at explaining why specific approximations (e.g., saddlepoints) work well and it is quite satisfying to learn a bit this way as well. 
+In general, I remain somewhat skeptical of turning to AI wholesale for doing my actual *thinking* --- because I would like to validate any qualitative or quantitative claim that I make in my research. So for that reason I don't think I will be turning to AI for actually writing a first draft or even broader literature reviews in the recent future. Even quantitatively, I have found it is quite good at explaining why specific approximations (e.g., saddlepoints) work well and it is quite satisfying to learn a bit this way as well. 
 
-However, what I've highlighted above are clear ways in which AI can be a useful sounding board for improving writing, figures, and in some cases scalability of your research. This is also a great boon for productivity and kind of treating it as a tool for ``first draft'' feedback before sending to colleagues to provide further comments which can be kind of nice. It also helped me at least very acutely identify skills I was bad at starting (e.g., making thematic figures), but was ok with doing after the initial version was put together (e.g., editing thematic figures). Finding these reductions in high early activation energy and making sure they pop up frequently enough in your life is critical for yourself to feel like the investment is worth it as an early career researcher. 
+However, what I've highlighted above are clear ways in which AI can be a useful sounding board for improving writing, figures, and in some cases scalability of your research. This is also a great boon for productivity and kind of treating it as a tool for first round of feedback before sending to colleagues to provide further comments which can be kind of nice. It also helped me at least very acutely identify skills I was bad at starting (e.g., making thematic figures), but was ok with doing after the initial version was put together (e.g., editing thematic figures). Finding these reductions in high early activation energy and making sure they pop up frequently enough in your life is critical for yourself to feel like the investment is worth it as an early career researcher. 
+
+I've also found that limiting my AI use to specific windows of time in my calendar blocks can be really helpful 
