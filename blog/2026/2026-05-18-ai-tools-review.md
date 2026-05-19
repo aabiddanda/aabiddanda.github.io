@@ -7,7 +7,7 @@ This blogpost is not really meant to be an endorsement of using AI broadly in ac
 I won't go through the pros/cons of using AI as directly in this blogpost. I have structured the post more to focus on the *roles* of AI that I found most (and least) helpful in my experience over my scientific life over the past two months and whether I think it was worth it overall.
 
 
-### Role 1: The Writing Reviewer / Editor 
+#### Role 1: The Writing Reviewer / Editor 
 
 I would say that academic writing is *annoying* to read at best, and sometimes *infuriating* to produce. However, there is a ton of value in having a soundboard for your writing in the form of AI. It can adapt to different styles (e.g., Grants, Review article, Research Article) and provide you feedback on individual paragraphs. My rough rule here is that 1) it is better to write some junk as your first draft that is genuinely your words, even if it is painful to read and 2) AI is a really helpful reviewer/editor, but do not let it take the first pass wholesale. The second point is somewhat critical, because you want to make sure that ideally what you're writing is not some strange synthesis of other folk's writing and consistent with your tone. 
 
@@ -25,7 +25,7 @@ This is somewhat of a trick prompt, because you provide a kind of brief statemen
 
 This one is one that I have used quite a bit especially if you are running afoul of word/character limits. I think that you can obviously tune the percentages in your prompting, but overall at a high level I have found that if you go higher than 20% it is very difficult to preserve the actual meaning of the text. Perhaps that is somewhat obvious! The sweetspot should be around 5-10% for most academic writing.  
 
-### Role 2: The Figure Design Consultant
+#### Role 2: The Figure Design Consultant
 
 I would like to say that I am pretty decent at figure design in my science. I like having TSVs that are easy and straightforward to organize into some key plots and figuring out how to most effectively convey data-centered information. This is not with reference to improving your plotting of *actual data* (not really at least). 
 
@@ -51,7 +51,7 @@ A couple of tips I learned along the way of doing this that I think are somewhat
 <center>Left side uses the stylesheet for figures, right for presentations.</center>
 
 
-### Role 3: The Approximation Specialist
+#### Role 3: The Approximation Specialist
 
 I am *just* good enough at math / statistics to be dangerous (e.g., knowing how to model stuff pretty well). However, with the scales of modern biological datasets, it is often not the modeling aspects but rather identifying approximations which make methods actually tractable and useful. This happens to be just up against my knowledge boundary and I think is a kind of great sweetspot for AI to help you out, since the fun part of mathematical modelling you can do yourself like writing down distributions, but agents can help you with things like computing gradients and approximations. 
 
@@ -63,12 +63,12 @@ As a quantitative researcher, I feel like it is quite important to at least sket
 
 3. Always ask for an expected speedup and check against a test implementation. 
 
-## Outlook
+#### Outlook
 
-I think that I was motivated to start this by 1) [FOMO](https://en.wikipedia.org/wiki/Fear_of_missing_out) and 2) a general curiousity whether bringing AI in would make me a more productive/better/consistent scientist. In the early days I was broadly skeptical because of hallucinations and sacrificing the *correctness* of my work (and actually taking away some of the things that I enjoy on the day-to-day).
+I think that I was motivated to start this by 1) [FOMO](https://en.wikipedia.org/wiki/Fear_of_missing_out) and 2) a general curiousity whether bringing AI in would make me a more productive/better/consistent scientist. In the early days I was broadly skeptical because of hallucinations and sacrificing the *correctness* of my work (and actually taking away some of the things that I enjoy on the day-to-day). I also want to reiterate that this whole post is just my opinion from a two month stint (which I anticipate lengthening for a little bit at least).
 
-In general, I remain somewhat skeptical of turning to AI wholesale for doing my actual *thinking* --- because I would like to validate any qualitative or quantitative claim that I make in my research. So for that reason I don't think I will be turning to AI for actually writing a first draft or even broader literature reviews in the recent future. Even quantitatively, I have found it is quite good at explaining why specific approximations (e.g., saddlepoints) work well and it is quite satisfying to learn a bit this way as well. 
+In general, I remain somewhat skeptical of turning to AI wholesale for doing my actual *thinking* --- because I would like to validate any qualitative or quantitative claim that I make in my research. So for that reason I don't think I will be turning to AI for actually writing a first draft or even broader literature reviews in the recent future. Even quantitatively, I have found it is quite good at explaining why specific approximations (e.g., saddlepoints) work well and it is quite satisfying to actually use it as a learning tool a bit. 
 
-However, what I've highlighted above are clear ways in which AI can be a useful sounding board for improving writing, figures, and in some cases scalability of your research. This is also a great boon for productivity and kind of treating it as a tool for first round of feedback before sending to colleagues to provide further comments which can be kind of nice. It also helped me at least very acutely identify skills I was bad at starting (e.g., making thematic figures), but was ok with doing after the initial version was put together (e.g., editing thematic figures). Finding these reductions in high early activation energy and making sure they pop up frequently enough in your life is critical for yourself to feel like the investment is worth it as an early career researcher. 
+What I've highlighted above are clear ways in which AI can be a useful sounding board for improving writing, figures, and in some cases scalability of your research. This is also a great boon for productivity and kind of treating it as a tool for first round of feedback before sending to colleagues to provide further comments which can be kind of nice. It also helped me at least very acutely identify skills I was bad at starting (e.g., making thematic figures), but was ok with doing after the initial version was put together (e.g., editing thematic figures). Finding these reductions in high early activation energy and making sure they pop up frequently enough in your life is critical for yourself to feel like the investment is worth it as an early career researcher. 
 
-I've also found that limiting my AI use to specific windows of time in my calendar blocks can be really helpful 
+I've also found that limiting my AI use to specific windows of time in my calendar blocks is also a little bit more helpful and now trying to block times where I want to be kind of AI-free. I have not relaly kind of found the ideal ratio of this new style of calendar blocking but broadly I think that it works quite well. I am slowly trying out agentic coding to see if it works well for actually building out software implementations of methods (particularly CLIs), and will put in some updates on this in the future. 
