@@ -31,13 +31,12 @@ Much of my current work is centered on human population genetics -with a goal to
 
 * Leveraging ARGs for population genetic inference and association testing for complex variants (e.g., CNVs)
 * Statistical considerations for meta-analysis of complex traits across multiple ancestries
-* Characterizing population demographic history of Indian populations
 
 <ins>**Representative Publications**</ins>
 
 * Yulin Zhang<sup>* &Dagger;</sup>, <strong> Arjun Biddanda<sup>* &Dagger;</sup> </strong>, Sarah A. Johnson, Colm O'Dushlaine, Priya Moorjani<sup>&Dagger;</sup>. Recovering signatures of archaic introgression using ancestral recombination graphs _bioRxiv_ | [Full Text](https://www.biorxiv.org/content/10.64898/2026.03.03.709416v1) | [Software](https://github.com/YulinZhang9806/trace)  
 * Brian C Zhang, <strong>Arjun Biddanda</strong>, Árni F Gunnarsson, Fergus Cooper, Pier Francesco Palamara. (2023) Biobank-scale inference of ancestral recombination graphs enables genealogy-based mixed model association of complex traits. _Nature Genetics_ | [Full Text](https://www.nature.com/articles/s41588-023-01379-x) | [Software](https://palamaralab.github.io/software/argneedle/)
-* <strong>Arjun Biddanda<sup>* </sup></strong>, Esha Bandyopadhyay<sup>* </sup>, Constanza de la Fuente Castro<sup>* </sup>, David Witonsky, ... , Niraj Rai, Maanasa Raghavan. (2024) Distinct positions of genetic and oral histories - Perspectives from India. _HGG Advances_ | [Full Text](https://www.cell.com/hgg-advances/fulltext/S2666-2477(24)00044-7)
+* <strong>Arjun Biddanda</strong>, Daniel P Rice, John Novembre. (2020). Geographic patterns of human allele frequency variation - a variant-centric perspective. _eLife_ | [Full Text](https://elifesciences.org/articles/60107) | [Software](https://aabiddanda.github.io/geovar/)
 
 ### Theoretical Population Genetics
 

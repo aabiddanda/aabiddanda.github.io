@@ -1,5 +1,9 @@
 # Blog 
 
+### 2026
+
+* [An internal experiment as an AI-skeptic](blog/2026/2026-05-18-ai-tools-review.md)
+
 ### 2024
 
 * [A maximal LD perspective on power in GWAS](blog/2024/2024-07-12-maxld.md)

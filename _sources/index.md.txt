@@ -19,7 +19,7 @@
 :columns: auto
 
 **Arjun Biddanda**<br>
-Postdoctoral Fellow<br>
+Postdoctoral Research Fellow<br>
 [Johns Hopkins University](https://bio.jhu.edu/)<br>
 aabiddanda [at] gmail [dot] com<br>
 
