@@ -1,6 +1,10 @@
 
 ## Software 
 
+### [pGermlinePoly](https://github.com/aabiddanda/pGermlinePoly)
+
+`pGermlinePoly` is an software tool to separate true somatic mutations from germline variation in "clonal" sequencing datasets in the absence of a germline control sample. The underlying model uses external annotations (e.g., population allele frequency) to estimate a posterior probability of germline polymorphism. The model is released prior to a preprint for ease of inclusion in collaborative pipelines. 
+
 ### [trace](https://github.com/aabiddanda/trace)
 
 `trace` is a model to infer introgression using ancestral recombination graphs (ARGs) based on a model looking for distortions in local genealogies. It was co-developed with Yulin Zhang at UC Berkeley. If you use this method, please cite this [preprint](https://www.biorxiv.org/content/10.64898/2026.03.03.709416v1)
