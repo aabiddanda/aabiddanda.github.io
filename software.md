@@ -1,7 +1,7 @@
 
 ## Software 
 
-### [pGermlinePoly](https://github.com/aabiddanda/pGermlinePoly)
+### [pGermlinePoly](https://aabiddanda.github.io/pGermlinePoly/index.html)
 
 `pGermlinePoly` is an software tool to separate true somatic mutations from germline variation in "clonal" sequencing datasets in the absence of a germline control sample. The underlying model uses external annotations (e.g., population allele frequency) to estimate a posterior probability of germline polymorphism. The model is released prior to a preprint for ease of inclusion in collaborative pipelines. 
 
@@ -9,9 +9,9 @@
 
 `trace` is a model to infer introgression using ancestral recombination graphs (ARGs) based on a model looking for distortions in local genealogies. It was co-developed with Yulin Zhang at UC Berkeley. If you use this method, please cite this [preprint](https://www.biorxiv.org/content/10.64898/2026.03.03.709416v1)
 
-### [karyohmm](https://github.com/mccoy-lab/karyohmm)
+### [karyohmm](https://aabiddanda.github.io/karyohmm/index.html)
 
-`karyoHMM` is a model to infer chromosomal gains and losses from noisy array-based PGT-A datasets. The model is based on conditional distributions of B-allele frequencies from genotyping arrays. If you use this package, please cite [this paper](https://www.nature.com/articles/s41586-025-09964-2)
+`karyoHMM` is a model to infer chromosomal gains and losses from noisy array-based PGT-A datasets. The model is based on conditional distributions of B-allele frequencies from genotyping arrays. The version linked above is the development version of the software. If you use this package, please cite [this paper](https://www.nature.com/articles/s41586-025-09964-2)
 
 ###  [geovar](https://aabiddanda.github.io/geovar/)
 

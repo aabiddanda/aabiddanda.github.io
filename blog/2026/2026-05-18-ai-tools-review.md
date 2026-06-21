@@ -29,13 +29,13 @@ This one is one that I have used quite a bit especially if you are running afoul
 
 I would like to say that I am pretty decent at figure design in my science. I like having TSVs that are easy and straightforward to organize into some key plots and figuring out how to most effectively convey data-centered information. This is not with reference to improving your plotting of *actual data* (not really at least). 
 
-The more (most?) complicated plots in science are what I like to call ``synthesis plots'', where you actually have little to no data, but it should convey a broader ``theme'' of the research or project or finding. If you have ever written for a journal that has required a kind of ``summary'' figure, it is those figures. You sadly cannot `matplotlib`-wizardry your way out of this one!
+The more (most?) complicated plots in science are what I like to call ''synthesis plots'', where you actually have little to no data, but it should convey a broader ''theme'' of the research or project or finding. If you have ever written for a journal that has required a summary figure, it is those figures. You sadly cannot `matplotlib`-wizard your way out of this one!
 
 In instances like this, I have found it very helpful to gather some figures as PNGs from various papers that kind of inspire the work and ask the AI to create a "thematic figure" which reflects this. If you have a passage of text / results that can also be used to synthesize the key figures. Also find some summary figures from papers that you like, and ask it to replicate the figure 
 
 A couple of tips I learned along the way of doing this that I think are somewhat intuitive, but useful nonetheless:
 
-1. **Always ask for some form of vector graphics if you can**. PNGs are great for intermediately putting into google docs, but you want to have at least some control using software like Affinity Designer to secure colorschemes and typefacing. 
+1. **Always ask for some form of vector graphics if you can**. PNGs are great for intermediate figures which are put into google docs, but you want to have at least some control using software like Affinity Designer to secure colorschemes and typefacing. 
 
 2. Ask for suggestions on "paneling" and ratios of panels specifically, because this setup of the initial "layout" can be massively beneficial. It can also be broadly useful to think of how specific panels may lead to information in others. 
 
