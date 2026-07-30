@@ -6,13 +6,13 @@
 
 ### Preprints
 
-Yulin Zhang<sup>* &Dagger;</sup>, <strong> Arjun Biddanda<sup>* &Dagger;</sup> </strong>, Sarah A. Johnson, Colm O'Dushlaine, Priya Moorjani<sup>&Dagger;</sup>. Recovering signatures of archaic introgression using ancestral recombination graphs _bioRxiv_ | [Full Text](https://www.biorxiv.org/content/10.64898/2026.03.03.709416v1) | [Software](https://github.com/YulinZhang9806/trace) 
-
 Ben Jeffrey, Yan Wong,  ...<strong> Arjun Biddanda</strong>, ..., Peter L. Ralph, Jerome Kelleher. Population-scale Ancestral Recombination Graphs with tskit 1.0. _arXiv_ | [Full Text](https://arxiv.org/abs/2602.09649)
 
 ### Peer-Reviewed 
 
 #### 2026
+
+Yulin Zhang<sup>* &Dagger;</sup>, <strong> Arjun Biddanda<sup>* &Dagger;</sup> </strong>, Sarah A. Johnson, Colm O'Dushlaine, Priya Moorjani<sup>&Dagger;</sup>. Recovering signatures of archaic introgression using ancestral recombination graphs _Science_ | [Full Text](https://www.science.org/doi/10.1126/science.aef8874) | [Software](https://github.com/YulinZhang9806/trace) | [Press](https://news.berkeley.edu/2026/07/30/new-technique-pinpoints-human-dna-inherited-from-ghost-ancestors/)
 
 Arun Das, <strong> Arjun Biddanda</strong>, Rajiv C. McCoy, Michael C. Schatz. Assembling unmapped reads reveals hidden variation in South Asian genomes. _Nature Communications_ | [Full Text](https://www.nature.com/articles/s41467-026-71755-8)
 
