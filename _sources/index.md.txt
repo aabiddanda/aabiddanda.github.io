@@ -41,12 +41,12 @@ aabiddanda [at] gmail [dot] com<br>
 ::::
 ----
 
-**I am on the academic job market! If your department is looking for a human geneticist with broad interests - please drop me a line.**
+**I am on the academic job market! If your department is looking for a population geneticist with broad interests - please drop me a line.**
 
 
 <h3>About</h3>
 
-I am a human geneticist developing statistical methods to understand human evolution and fertility traits. I am currently a postdoctoral fellow at [Johns Hopkins University](https://bio.jhu.edu/) advised by [Rajiv McCoy](https://mccoy-lab.org/). My [research interests](/research/) broadly span problems in theoretical and applied population genetics.
+I am a population geneticist developing statistical methods to understand human evolution and reproductive traits. I am currently a postdoctoral fellow at [Johns Hopkins University](https://bio.jhu.edu/) advised by [Rajiv McCoy](https://mccoy-lab.org/). My [research interests](/research/) broadly span problems in theoretical and applied population genetics.
 
 Previously, I was a postdoctoral fellow at the University of Oxford in the group of [Pier Palamara](https://palamaralab.github.io/) and also worked as a computational biologist at a biotechnology startup. I received my PhD in Human Genetics from the University of Chicago working with [John Novembre](http://jnpopgen.org/). 
 
