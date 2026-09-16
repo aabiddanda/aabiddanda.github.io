@@ -65,6 +65,7 @@ Previously, I was a postdoctoral fellow at the University of Oxford in the group
 :maxdepth: 1
 :titlesonly: true
 
+Home <self>
 research
 cv
 publications
