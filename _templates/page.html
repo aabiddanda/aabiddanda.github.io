@@ -1,0 +1,49 @@
+{#
+  Furo does not support inheriting from layout.html; documents are rendered
+  through page.html, which extends the theme's base.html.
+#}
+{% extends "!page.html" %}
+
+{#
+  Adds schema.org Person markup so search engines index the site as a person
+  (name, affiliation, research areas) rather than as an unlabelled web page.
+#}
+{% block extrahead %}
+  {{ super() }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Arjun Biddanda",
+    "givenName": "Arjun",
+    "familyName": "Biddanda",
+    "url": "https://aabiddanda.github.io/",
+    "image": "https://aabiddanda.github.io/_images/abiddanda_1.jpg",
+    "email": "mailto:aabiddanda@gmail.com",
+    "jobTitle": "Postdoctoral Research Fellow",
+    "description": "Population geneticist developing statistical methods for human evolutionary history and reproductive genetics.",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Johns Hopkins University",
+      "url": "https://bio.jhu.edu/"
+    },
+    "alumniOf": [
+      {"@type": "Organization", "name": "University of Oxford", "url": "https://www.ox.ac.uk/"},
+      {"@type": "Organization", "name": "University of Chicago", "url": "https://www.uchicago.edu/"}
+    ],
+    "knowsAbout": [
+      "Population genetics",
+      "Statistical genetics",
+      "Ancestral recombination graphs",
+      "Human evolutionary history",
+      "Aneuploidy",
+      "Reproductive genetics"
+    ],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=BWVZXhgAAAAJ&hl=en",
+      "https://github.com/aabiddanda",
+      "https://bsky.app/profile/aabiddanda.bsky.social"
+    ]
+  }
+  </script>
+{% endblock %}

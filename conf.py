@@ -13,9 +13,19 @@ from typing import Any, Dict
 # -- Project information -----------------------------------------------------
 #
 
-project = "Personal website"
-copyright = "2025, Arjun Biddanda"
+project = "Arjun Biddanda"
+copyright = "2026, Arjun Biddanda"
 author = "Arjun Biddanda"
+
+# Canonical site root. Required for sitemap generation and for resolving
+# OpenGraph image/URL metadata to absolute URLs.
+html_baseurl = "https://aabiddanda.github.io/"
+
+# One-line description reused for the meta description and social cards.
+site_description = (
+    "Arjun Biddanda is a population geneticist developing statistical methods "
+    "for human evolutionary history and reproductive genetics."
+)
 
 # -- General configuration ---------------------------------------------------
 #
@@ -32,8 +42,23 @@ extensions = [
     "sphinx_design",
     "sphinx_inline_tabs",
     "myst_nb",
+    "sphinx_sitemap",
+    "sphinxext.opengraph",
 ]
 templates_path = ["_templates"]
+
+# Without these, Sphinx globs every .md/.rst under the working tree -- including
+# the whole of .venv and the unpublished _drafts -- and builds them into the
+# deployed site. Anything listed here is neither built nor put in the sitemap.
+exclude_patterns = [
+    ".venv",
+    "_build",
+    "_drafts",
+    "README.md",
+    "**/.ipynb_checkpoints",
+    "Thumbs.db",
+    ".DS_Store",
+]
 
 # -- Options for extlinks ----------------------------------------------------
 #
@@ -134,6 +159,9 @@ html_sidebars = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static", "_static/aabiddanda_cv.pdf"]
+
+# Copied verbatim to the site root (robots.txt must live at the root to be read).
+html_extra_path = ["robots.txt"]
 # html_css_files = []
 html_css_files = [
       "css/override.css",
@@ -144,3 +172,35 @@ html_js_files = [
     'google_analytics_tracker.js',
 ]
 html_show_sphinx = False
+
+# -- Options for SEO / social sharing ----------------------------------------
+#
+# Without these, sharing a link to the site anywhere (Bluesky, Slack, email
+# previews) renders a bare URL with no title, blurb, or image.
+
+# OpenGraph / Twitter card metadata.
+ogp_site_url = html_baseurl
+ogp_site_name = "Arjun Biddanda"
+ogp_description_length = 200
+ogp_enable_meta_description = True
+ogp_default_image = html_baseurl + "_static/og-default.png"
+
+# Auto-generate a 1200x630 card per page (page title + site name + headshot),
+# so each page previews with its own heading rather than a single static image.
+ogp_social_cards = {
+    "enable": True,
+    "image": "images/abiddanda_1.jpg",
+    "site_url": "aabiddanda.github.io",
+    "line_color": "#A46F0D",
+}
+
+# `ogp_enable_meta_description` already emits description/twitter:card, so only
+# add tags it does not cover. Per-page descriptions are set in front matter.
+ogp_custom_meta_tags = [
+    '<meta name="author" content="Arjun Biddanda" />',
+]
+
+# Sitemap. The site is built with `-b dirhtml` and has no language or version
+# dimensions, so URLs are just the page link.
+sitemap_url_scheme = "{link}"
+sitemap_filename = "sitemap.xml"
