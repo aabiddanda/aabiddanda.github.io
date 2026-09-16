@@ -1,5 +1,11 @@
-<br>
-<br>
+---
+myst:
+  html_meta:
+    "description": "Arjun Biddanda is a population geneticist at Johns Hopkins University developing statistical methods for human evolutionary history, ancestral recombination graphs, and reproductive genetics."
+---
+
+# Arjun Biddanda
+
 <br>
 <br>
 
@@ -57,6 +63,7 @@ Previously, I was a postdoctoral fellow at the University of Oxford in the group
 :maxdepth: 1
 :titlesonly: true
 
+Home <self>
 research
 cv
 publications

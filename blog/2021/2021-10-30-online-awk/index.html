@@ -1,9 +1,23 @@
+
 <!doctype html>
 <html class="no-js" lang="en" data-content_root="../../../">
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Three Useful Algorithms in awk" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://aabiddanda.github.io/blog/2021/2021-10-30-online-awk/" />
+<meta property="og:site_name" content="Arjun Biddanda" />
+<meta property="og:description" content="Arjun Biddanda, Statistical Genetics" />
+<meta property="og:image:width" content="1146" />
+<meta property="og:image:height" content="600" />
+<meta property="og:image" content="https://aabiddanda.github.io/_images/social_previews/summary_blog_2021_2021-10-30-online-awk_a83b1792.png" />
+<meta property="og:image:alt" content="In modern data analysis, the data streams are often so big (on the order of millions of entries) that we often want to have some way to inquire about properties of data elements without having to l..." />
+<meta name="description" content="In modern data analysis, the data streams are often so big (on the order of millions of entries) that we often want to have some way to inquire about properties of data elements without having to l..." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="author" content="Arjun Biddanda" />
 <link rel="index" title="Index" href="../../../genindex/"><link rel="search" title="Search" href="../../../search/">
+        <link rel="canonical" href="https://aabiddanda.github.io/blog/2021/2021-10-30-online-awk/">
 
     <link rel="shortcut icon" href="../../../_static/favicon.ico"><!-- Generated with Sphinx 7.4.7 and Furo 2025.12.19 -->
         <title>Three Useful Algorithms in awk - Arjun Biddanda</title>
@@ -14,7 +28,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?v=8dab3a3b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/override.css?v=e89897b8" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/override.css?v=abf821ba" />
     <link rel="stylesheet" type="text/css" href="https://use.typekit.net/ajj5weq.css" />
     
     
@@ -48,7 +62,48 @@
       }
     }
   }
-</style></head>
+</style>
+  
+
+  
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Arjun Biddanda",
+    "givenName": "Arjun",
+    "familyName": "Biddanda",
+    "url": "https://aabiddanda.github.io/",
+    "image": "https://aabiddanda.github.io/_images/abiddanda_1.jpg",
+    "email": "mailto:aabiddanda@gmail.com",
+    "jobTitle": "Postdoctoral Research Fellow",
+    "description": "Population geneticist developing statistical methods for human evolutionary history and reproductive genetics.",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Johns Hopkins University",
+      "url": "https://bio.jhu.edu/"
+    },
+    "alumniOf": [
+      {"@type": "Organization", "name": "University of Oxford", "url": "https://www.ox.ac.uk/"},
+      {"@type": "Organization", "name": "University of Chicago", "url": "https://www.uchicago.edu/"}
+    ],
+    "knowsAbout": [
+      "Population genetics",
+      "Statistical genetics",
+      "Ancestral recombination graphs",
+      "Human evolutionary history",
+      "Aneuploidy",
+      "Reproductive genetics"
+    ],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=BWVZXhgAAAAJ&hl=en",
+      "https://github.com/aabiddanda",
+      "https://bsky.app/profile/aabiddanda.bsky.social"
+    ]
+  }
+  </script>
+</head>
   <body>
     
     <script>
@@ -196,10 +251,10 @@
       
       <div class="sidebar-sticky"><div class="sidebar-scroll"><a class="sidebar-brand" href="../../../">
   
-  <span class="sidebar-brand-text">Arjun Biddanda</span>
   
 </a><div class="sidebar-tree">
   <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../">Home</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../research/">Research</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../cv/">Curriculum Vitae</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../publications/">Publications</a></li>
@@ -251,9 +306,9 @@
 <section id="linear-time-algorithm-for-correlation">
 <h2>Linear-time Algorithm for Correlation<a class="headerlink" href="#linear-time-algorithm-for-correlation" title="Link to this heading">¶</a></h2>
 <p>One of the first things you might want to check may be the correlation between two columns in your data if they’re numeric values from a direct stream rather than loading the data into memory. This streaming algorithm is one such way:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># A port of Welford&#39;s online algorithm for correlations ..</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># A port of Welford's online algorithm for correlations ..</span>
 <span class="k">function</span><span class="w"> </span>corr<span class="o">(){</span>
-<span class="w">	</span>awk<span class="w"> </span><span class="s1">&#39;{</span>
+<span class="w">	</span>awk<span class="w"> </span><span class="s1">'{</span>
 <span class="s1">		n += 1; </span>
 <span class="s1">		x += $1; </span>
 <span class="s1">		y += $2; </span>
@@ -265,7 +320,7 @@
 <span class="s1">		vx = (1. - f)*(vx - f*dx*dx); </span>
 <span class="s1">		vy = (1-f)*(vy-f*dy*dy); </span>
 <span class="s1">		cxy = (1-f)*(cxy - f*dx*dy);} </span>
-<span class="s1">		END {print cxy/sqrt(vx * vy)}&#39;</span><span class="w"> </span><span class="nv">$1</span>
+<span class="s1">		END {print cxy/sqrt(vx * vy)}'</span><span class="w"> </span><span class="nv">$1</span>
 <span class="o">}</span>
 </pre></div>
 </div>
@@ -274,9 +329,9 @@
 <h2>Median Algorithm<a class="headerlink" href="#median-algorithm" title="Link to this heading">¶</a></h2>
 <p>This is a fairly simple algorithm that will come very close to the median (it won’t do the averaging though to break intermediate values):</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">function</span><span class="w"> </span>median<span class="o">(){</span>
-<span class="w">  </span>sort<span class="w"> </span>-n<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;BEGIN {cnt=0;} { </span>
+<span class="w">  </span>sort<span class="w"> </span>-n<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">'BEGIN {cnt=0;} { </span>
 <span class="s1">     vals[cnt] = $1; cnt++;</span>
-<span class="s1">     } END {print vals[int(cnt/2)]}&#39;</span>
+<span class="s1">     } END {print vals[int(cnt/2)]}'</span>
 <span class="o">}</span>
 </pre></div>
 </div>
@@ -286,13 +341,13 @@
 <h2>Outlier Detection via Inter-Quartile Range<a class="headerlink" href="#outlier-detection-via-inter-quartile-range" title="Link to this heading">¶</a></h2>
 <p>One of the typical checks that you might want to do for a data stream would be to check the number of points that fall outside some interquartile range. In order to calculate these interquartile ranges we can then calculate them as below:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">function</span><span class="w"> </span>iqr<span class="o">(){</span>
-<span class="w">  </span>sort<span class="w"> </span>-n<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{</span>
+<span class="w">  </span>sort<span class="w"> </span>-n<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">'{</span>
 <span class="s1">    vals[cnt] = $1; cnt++;</span>
 <span class="s1">    } END {</span>
 <span class="s1">      q1=int(cnt/4); </span>
 <span class="s1">      q3=int(q1*3); </span>
 <span class="s1">      print vals[q1], vals[q3], vals[q3] - vals[q1]</span>
-<span class="s1">  }&#39;</span>
+<span class="s1">  }'</span>
 <span class="o">}</span>
 </pre></div>
 </div>
@@ -310,7 +365,7 @@
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2025, Arjun Biddanda
+                Copyright &#169; 2026, Arjun Biddanda
             </div>
             Made with 
             <a href="https://github.com/pradyunsg/furo">Furo</a>

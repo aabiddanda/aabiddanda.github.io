@@ -9,9 +9,9 @@
 
 A large fraction of my research is centered on human population genetics - with a goal to better understand human evolutionary history and studies of human disease. A major throughline has been models of genealogical relationships within large samples, both for statistical genetics of complex traits or inference of population history. Some recent topics of interest include:
 
-* Population genetic inference using ARGs for demographic history, natural selection, and phenotypes 
+* Population genetic inference using ARGs for demographic history, natural selection, and phenotype association 
 * Refining genealogical inference with noisy samples and diverse mutational mechanisms (e.g., repeat polymorphisms)
-* Effective multi-ancestry study design and meta-analysis in genome-wide association studies
+* Effective multi-ancestry association study design and meta-analysis considering joint genealogies 
 
 <ins>**Representative Publications**</ins>
 
@@ -27,11 +27,12 @@ A large fraction of my research is centered on human population genetics - with 
 :align: right
 ```
 
-Nearly half of conceptions in humans fail to lead to live birth. A major driver of pregnancy losses are errors in chromosome segregation, resulting in an improper number of chromosomes, or aneuploidy. I have developed statistical models for the analysis of both chromosomal errors and other diverse error types, focusing primarily on interptation of pre-implantation genetic testing (PGT) data from in-vitro fertilization (IVF) embryos. My broader goal is to develop novel statistical methods to infer a wider spectrum of genetic errors occurring during early development and improve our understanding of such errors, the fitness consequences of these errors, and parental genetic risk --- collectively informing precision reproductive health.  
+Nearly half of conceptions in humans fail to lead to live birth. A major driver of pregnancy losses are errors in chromosome segregation, resulting in an improper number of chromosomes, or aneuploidy. I have developed statistical models for the analysis of both chromosomal errors and other diverse error types, focusing primarily on interptation of pre-implantation genetic testing (PGT) data from in-vitro fertilization (IVF) embryos. My broader goal is to develop statistical methods to infer a wider spectrum of genetic errors occurring during early development and improve our understanding of the fitness consequences of these errors, where early errors contribute to germline and somatic variation, and parental risk factors --- all to inform precision reproductive health.  
 
 Some active topics of research in this area:
 
-* Improving haplotype-based models for whole-chromosome and segmental aneuploidy detection 
+* Improving haplotype-based models for whole-chromosome and segmental aneuploidy detection
+* Leveraging short-timescale pedigree data for inference of selection 
 * Mathematical models of negative selection and evolutionary rescue during gestation
 
 <ins>**Representative Publications**</ins>
@@ -50,7 +51,7 @@ Much of my applied work draws on results from population genetic theory, and I e
 
 * Genealogical models with spatial and temporal structure
 * Evolution of recombination rates and modifiers of meiotic fidelity
-* Mathematical models for intra-cellular/somatic evolutionary inference 
+* Mathematical models for intra-cellular/somatic evolutionary trajectories 
 
 <ins>**Representative Publications**</ins>
 

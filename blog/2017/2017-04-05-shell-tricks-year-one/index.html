@@ -1,9 +1,23 @@
+
 <!doctype html>
 <html class="no-js" lang="en" data-content_root="../../../">
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Shell Tricks for Grad School" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://aabiddanda.github.io/blog/2017/2017-04-05-shell-tricks-year-one/" />
+<meta property="og:site_name" content="Arjun Biddanda" />
+<meta property="og:description" content="Arjun Biddanda, Statistical Genetics" />
+<meta property="og:image:width" content="1146" />
+<meta property="og:image:height" content="600" />
+<meta property="og:image" content="https://aabiddanda.github.io/_images/social_previews/summary_blog_2017_2017-04-05-shell-tricks-year-one_06cc4c0d.png" />
+<meta property="og:image:alt" content="Whenever you find yourself having to do something multiple times (e.g. copy a bunch of files at once) it is useful to have some shortcuts in the shell to be able to do a lot of these operations qui..." />
+<meta name="description" content="Whenever you find yourself having to do something multiple times (e.g. copy a bunch of files at once) it is useful to have some shortcuts in the shell to be able to do a lot of these operations qui..." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="author" content="Arjun Biddanda" />
 <link rel="index" title="Index" href="../../../genindex/"><link rel="search" title="Search" href="../../../search/">
+        <link rel="canonical" href="https://aabiddanda.github.io/blog/2017/2017-04-05-shell-tricks-year-one/">
 
     <link rel="shortcut icon" href="../../../_static/favicon.ico"><!-- Generated with Sphinx 7.4.7 and Furo 2025.12.19 -->
         <title>Shell Tricks for Grad School - Arjun Biddanda</title>
@@ -14,7 +28,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?v=8dab3a3b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/override.css?v=e89897b8" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/override.css?v=abf821ba" />
     <link rel="stylesheet" type="text/css" href="https://use.typekit.net/ajj5weq.css" />
     
     
@@ -48,7 +62,48 @@
       }
     }
   }
-</style></head>
+</style>
+  
+
+  
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Arjun Biddanda",
+    "givenName": "Arjun",
+    "familyName": "Biddanda",
+    "url": "https://aabiddanda.github.io/",
+    "image": "https://aabiddanda.github.io/_images/abiddanda_1.jpg",
+    "email": "mailto:aabiddanda@gmail.com",
+    "jobTitle": "Postdoctoral Research Fellow",
+    "description": "Population geneticist developing statistical methods for human evolutionary history and reproductive genetics.",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Johns Hopkins University",
+      "url": "https://bio.jhu.edu/"
+    },
+    "alumniOf": [
+      {"@type": "Organization", "name": "University of Oxford", "url": "https://www.ox.ac.uk/"},
+      {"@type": "Organization", "name": "University of Chicago", "url": "https://www.uchicago.edu/"}
+    ],
+    "knowsAbout": [
+      "Population genetics",
+      "Statistical genetics",
+      "Ancestral recombination graphs",
+      "Human evolutionary history",
+      "Aneuploidy",
+      "Reproductive genetics"
+    ],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=BWVZXhgAAAAJ&hl=en",
+      "https://github.com/aabiddanda",
+      "https://bsky.app/profile/aabiddanda.bsky.social"
+    ]
+  }
+  </script>
+</head>
   <body>
     
     <script>
@@ -196,10 +251,10 @@
       
       <div class="sidebar-sticky"><div class="sidebar-scroll"><a class="sidebar-brand" href="../../../">
   
-  <span class="sidebar-brand-text">Arjun Biddanda</span>
   
 </a><div class="sidebar-tree">
   <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../">Home</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../research/">Research</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../cv/">Curriculum Vitae</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../publications/">Publications</a></li>
@@ -255,7 +310,7 @@ targz<span class="w"> </span><span class="o">(){</span>
 <span class="w">	</span>tar<span class="w"> </span>-zcvf<span class="w"> </span><span class="si">${</span><span class="nv">dir</span><span class="si">}</span>.tar.gz<span class="w"> </span><span class="nv">$dir</span>
 <span class="o">}</span>
 
-<span class="nb">alias</span><span class="w"> </span><span class="nv">untar</span><span class="o">=</span><span class="s1">&#39;tar -xvf&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">untar</span><span class="o">=</span><span class="s1">'tar -xvf'</span>
 </pre></div>
 </div>
 <p>You could always use different flags for <code class="docutils literal notranslate"><span class="pre">tar</span></code> if you need to, but the vanilla version above gets you pretty far in having a nice function to compress those pesky directories that take up a lot of space and are not really doing a whole lot.</p>
@@ -272,12 +327,12 @@ jpgzip<span class="w"> </span><span class="o">(){</span>
 <section id="system-checks">
 <h2>System Checks<a class="headerlink" href="#system-checks" title="Link to this heading">¶</a></h2>
 <p>Having a macbook pro, sometimes plugging in <code class="docutils literal notranslate"><span class="pre">htop</span></code> is nice to be able to check the system and processes that are going on. However there are a couple of things that are generally nice to check, but are a little more elusive. The first is to be able to check your internet speed from within the terminal. You can use the function below to check it (it downloads an 10Mb file to <code class="docutils literal notranslate"><span class="pre">/dev/null</span></code>):</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">speedtest</span><span class="o">=</span><span class="s1">&#39;curl -o /dev/null http://speedtest.sea01.softlayer.com/downloads/test10.zip&#39;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">speedtest</span><span class="o">=</span><span class="s1">'curl -o /dev/null http://speedtest.sea01.softlayer.com/downloads/test10.zip'</span>
 </pre></div>
 </div>
 <p><em>EDIT (9-10-2017)</em> : I would recommend using the <a class="reference external" href="https://github.com/sivel/speedtest-cli"><code class="docutils literal notranslate"><span class="pre">speedtest-cli</span></code></a> instead of the above function. It gives you much more information and is quite handy when dealing with cafe wifi.</p>
 <p>One other thing that I have found nice from time to time is to check the battery health of my laptop (how many charge cycles it has gone through). This is a good indicator of <a class="reference external" href="https://support.apple.com/en-us/HT201585">how long a laptop will last</a></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">chkbat</span><span class="o">=</span><span class="s1">&#39;system_profiler SPPowerDataType | grep &quot;Cycle Count&quot;&#39;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">chkbat</span><span class="o">=</span><span class="s1">'system_profiler SPPowerDataType | grep "Cycle Count"'</span>
 </pre></div>
 </div>
 <p>Note that the above is only for Mac OS X, but I imagine there should be some Linux and Windows analogs of this function.</p>
@@ -289,7 +344,7 @@ jpgzip<span class="w"> </span><span class="o">(){</span>
 setupproject<span class="o">(){</span>
 <span class="w">	</span>mkdir<span class="w"> </span><span class="nv">$1</span>
 <span class="w">	</span>touch<span class="w"> </span><span class="nv">$1</span>/README.md
-<span class="w">	</span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">\n-------------------------------&quot;</span><span class="w"> </span>&gt;<span class="w"> </span><span class="nv">$1</span>/README.md
+<span class="w">	</span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">"</span><span class="nv">$1</span><span class="s2">\n-------------------------------"</span><span class="w"> </span>&gt;<span class="w"> </span><span class="nv">$1</span>/README.md
 <span class="w">	</span>mkdir<span class="w"> </span><span class="nv">$1</span>/data
 <span class="w">	</span>mkdir<span class="w"> </span><span class="nv">$1</span>/src
 <span class="w">	</span>mkdir<span class="w"> </span><span class="nv">$1</span>/plots
@@ -316,7 +371,7 @@ setuppy<span class="o">(){</span><span class="w"> </span>cp<span class="w"> </sp
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2025, Arjun Biddanda
+                Copyright &#169; 2026, Arjun Biddanda
             </div>
             Made with 
             <a href="https://github.com/pradyunsg/furo">Furo</a>
