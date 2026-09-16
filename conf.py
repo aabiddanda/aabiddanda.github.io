@@ -102,7 +102,7 @@ html_theme = "furo"
 html_title = "Arjun Biddanda"
 html_favicon = "./images/favicon.ico"
 html_theme_options = {
-    "sidebar_hide_name": False,
+    "sidebar_hide_name": True,
     "light_css_variables": {
         "font-stack": "acumin-pro, sans-serif",
         "color-background-primary": "#f8f8f8",
@@ -199,6 +199,34 @@ ogp_social_cards = {
 ogp_custom_meta_tags = [
     '<meta name="author" content="Arjun Biddanda" />',
 ]
+
+# sphinxext-opengraph derives og:description by walking the page body, which
+# here picks up the contact block. Pin it to a fixed tagline instead. The
+# per-page `name="description"` tags are left auto-generated, since those feed
+# search results rather than link previews.
+ogp_description_pinned = "Arjun Biddanda, Statistical Genetics"
+
+
+def setup(app):
+    import re
+
+    def _pin_og_description(app, pagename, templatename, context, doctree):
+        pinned = (
+            f'<meta property="og:description" '
+            f'content="{ogp_description_pinned}" />'
+        )
+        metatags = context.get("metatags", "")
+        if 'property="og:description"' in metatags:
+            metatags = re.sub(
+                r'<meta property="og:description"[^>]*>', pinned, metatags
+            )
+        else:
+            metatags += "\n" + pinned
+        context["metatags"] = metatags
+
+    # priority > 500 so this runs after sphinxext-opengraph's own handler.
+    app.connect("html-page-context", _pin_og_description, priority=900)
+
 
 # Sitemap. The site is built with `-b dirhtml` and has no language or version
 # dimensions, so URLs are just the page link.

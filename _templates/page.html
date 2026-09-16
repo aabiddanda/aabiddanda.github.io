@@ -10,6 +10,27 @@
 #}
 {% block extrahead %}
   {{ super() }}
+
+  {#
+    The homepage H1 exists only to give Sphinx a document title (it drives
+    <title>, og:title, and the a11y heading order). The visible name lives in
+    the intro card, so hide the heading without removing it from the DOM.
+  #}
+  {% if pagename == "index" %}
+  <style>
+    article[role="main"] h1 {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+  {% endif %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
