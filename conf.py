@@ -54,6 +54,7 @@ exclude_patterns = [
     ".venv",
     "_build",
     "_drafts",
+    "sandbox",
     "README.md",
     "**/.ipynb_checkpoints",
     "Thumbs.db",
