@@ -8,8 +8,6 @@ myst:
 
 <br>
 <br>
-<br>
-<br>
 
 ::::{grid} 2
 :padding: 1
