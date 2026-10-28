@@ -6,6 +6,8 @@
 
 ### Preprints
 
+Olivia S. Harringmeyer, <strong> Arjun Biddanda</strong>, Rajiv C. McCoy, Joshua M. Akey. Gene flux shapes diversity and evolution of the ancient 17q21.31 inversion polymorphism. _bioRxiv_ | [Full Text](https://www.biorxiv.org/content/10.64898/2026.09.28.755014v1.abstract)
+
 Ben Jeffrey, Yan Wong,  ...<strong> Arjun Biddanda</strong>, ..., Peter L. Ralph, Jerome Kelleher. Population-scale Ancestral Recombination Graphs with tskit 1.0. _arXiv_ | [Full Text](https://arxiv.org/abs/2602.09649)
 
 ### Peer-Reviewed 

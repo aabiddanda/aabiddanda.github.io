@@ -11,7 +11,7 @@ A large fraction of my research is centered on human population genetics - with 
 
 * Population genetic inference using ARGs for demographic history, natural selection, and phenotype association 
 * Refining genealogical inference with noisy samples and diverse mutational mechanisms (e.g., repeat polymorphisms)
-* Effective multi-ancestry association study design and meta-analysis considering joint genealogies 
+* Genealogical models of recombination in complex genomic regions (e.g., gene families)
 
 <ins>**Representative Publications**</ins>
 
@@ -32,7 +32,6 @@ Nearly half of conceptions in humans fail to lead to live birth. A major driver 
 Some active topics of research in this area:
 
 * Improving haplotype-based models for whole-chromosome and segmental aneuploidy detection
-* Leveraging short-timescale pedigree data for inference of selection 
 * Mathematical models of negative selection and evolutionary rescue during gestation
 
 <ins>**Representative Publications**</ins>
