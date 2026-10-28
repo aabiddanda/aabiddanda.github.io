@@ -1,13 +1,17 @@
 
 ## Software 
 
+### [cointf](https://aabiddanda.github.io/cointf/index.html)
+
+`cointf` is a python library implementing fast approximations to study crossover-interference from large-scale meiosis data. It contains bindings in both `python` and `R` via [`reticulate`](https://rstudio.github.io/reticulate/). This software is currently in a pre-release format prior to a preprint or publication. 
+ 
 ### [pGermlinePoly](https://aabiddanda.github.io/pGermlinePoly/index.html)
 
 `pGermlinePoly` is an software tool to separate true somatic mutations from germline variation in "clonal" sequencing datasets in the absence of a germline control sample. The underlying model uses external annotations (e.g., population allele frequency) to estimate a posterior probability of germline polymorphism. The model is released prior to a preprint for ease of inclusion in collaborative pipelines. 
 
 ### [trace](https://github.com/aabiddanda/trace)
 
-`trace` is a model to infer introgression using ancestral recombination graphs (ARGs) based on a model looking for distortions in local genealogies. It was co-developed with Yulin Zhang at UC Berkeley. If you use this method, please cite this [preprint](https://www.biorxiv.org/content/10.64898/2026.03.03.709416v1)
+`trace` is a model to infer introgression using ancestral recombination graphs (ARGs) based on a model looking for distortions in local genealogies. It was co-developed with Yulin Zhang at UC Berkeley. If you use this method, please cite this [paper](https://www.science.org/doi/10.1126/science.aef8874)
 
 ### [karyohmm](https://aabiddanda.github.io/karyohmm/index.html)
 
